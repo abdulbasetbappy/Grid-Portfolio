@@ -1,10 +1,11 @@
 <template>
     <!--Profile Details-->
     <div
-      class="col-span-12 md:row-span-2 md:row-start-1 md:col-span-4 rounded-md p-4 bg-white"
+    :class="{dark:isDarkMode}"
+      class="col-span-12 md:row-span-2 md:row-start-1 md:col-span-4 rounded-md p-4 bg-white dark:bg-black"
     >
       <!--Profile Picture-->
-      <div class="bg-orange-100 rounded-md">
+      <div class="bg-stone-100 rounded-md">
         <img
           src="~/assets/Profile.png"
           class="rounded-md h-[325px] w-[430px]"
@@ -12,7 +13,7 @@
         />
       </div>
       <!--Profile Info-->
-      <div class="py-4">
+      <div class="py-4 dark:text-slate-200">
         <h2 class="py-4 text-2xl font-semibold">Abdul Baset Bappy 👋</h2>
         <p>
           A Passionate <strong>Frontend Developer</strong> 🖥️ &
@@ -58,7 +59,10 @@
 </template>
 
 <script setup lang="ts">
+import { useDarkModeStore } from '~/store/darkMood'
 
+const darkModeStore = useDarkModeStore()
+const isDarkMode = computed(() => darkModeStore.darkMode)
 </script>
 
 <style scoped>

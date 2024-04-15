@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['nuxt-icon'],
+  modules: ['@pinia/nuxt','nuxt-icon'],
   css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
