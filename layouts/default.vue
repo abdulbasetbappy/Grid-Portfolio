@@ -2,5 +2,4 @@
        <Header />
         <slot />
         <Footer />
-  
 </template>
