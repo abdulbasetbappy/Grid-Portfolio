@@ -12,7 +12,7 @@ module.exports = {
     extend: {},
     fontFamily:{
      san:['poppins', 'sans-serif'],
-    }
+    },
   },
   plugins: [],
   /*-- Dark Mood ---*/

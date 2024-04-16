@@ -1,7 +1,7 @@
 <template>
   <header
     :class="{ dark: isDarkMode }"
-    class="sticky font-san max-w-screen-2xl mx-auto top-0"
+    class="sticky font-san max-w-screen-2xl mx-auto top-0 z-10"
   >
     <div>
       <div
