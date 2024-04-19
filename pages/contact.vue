@@ -1,12 +1,101 @@
 <template>
-    <div :class="{ dark: isDarkMode }" class="max-w-[1500px] scroll-smooth font-san m-auto grid grid-cols-12 grid-rows-1 p-8 gap-4 ">
-        <NuxtLayout name="profile" class=" sticky top-20 left-0 h-fit"></NuxtLayout>
-        <div class="col-span-12 md:col-span-8 rounded-xl p-4 bg-white dark:bg-slate-900 dark:text-slate-100">
-            About 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae harum eum pariatur vitae cumque, aut odit voluptas obcaecati amet consectetur exercitationem minus nesciunt! Ullam eveniet expedita quaerat sequi, sint excepturi laborum eius et, dolor nihil ipsum nam quas eum in libero debitis odio laudantium! Odio accusamus tenetur beatae qui officiis. Iure accusamus explicabo ullam, sequi qui, consectetur praesentium esse ea facere ex, dolore provident autem sed nihil delectus nostrum aliquid illum maiores optio? Architecto iure labore animi recusandae debitis minus impedit dolor magni totam nobis pariatur repellendus consequuntur dolorem eligendi consectetur, in ipsum corporis similique! Placeat possimus sint quidem doloremque harum ea voluptatum magnam itaque. Vero inventore placeat porro aliquid commodi repudiandae nihil vitae incidunt. Ipsum natus minima dicta, recusandae doloremque sunt doloribus. Atque officia tenetur quaerat perspiciatis illo fugiat cumque voluptas praesentium, illum nihil dolores minus porro molestias, quia iusto sit hic eligendi corrupti ut error iure, obcaecati veritatis? Totam culpa quia voluptatem molestiae veniam? Distinctio praesentium facilis voluptatum aliquid ratione dolorum voluptatem eos natus sit repellendus error, ipsa eveniet illum quibusdam neque. Alias ratione tempore cum totam eum tenetur excepturi in sunt quibusdam quia voluptate, vel officia qui necessitatibus cupiditate saepe id. Eum sunt, dolor praesentium neque eaque minus nesciunt doloribus omnis hic quod ut assumenda exercitationem, quaerat, veniam ullam officia alias? Impedit, facilis saepe provident doloribus totam quos quaerat quae corporis delectus iure minus, expedita reprehenderit repellat quis a minima. Cupiditate magni officiis autem ad quas laboriosam unde temporibus assumenda? Amet assumenda repellendus vel sunt unde aut velit tempora, nesciunt sed ipsa, atque corrupti accusamus maiores delectus aperiam? Sint molestiae deserunt, animi veniam nihil officia, similique exercitationem perspiciatis, facilis minus iure consequatur maxime iste. Tempora, veritatis. Quisquam ullam magni quaerat molestiae sit et quis facere iste optio eligendi ad excepturi dolores fugiat nulla, architecto aliquam. Modi fugiat neque nostrum porro. At, amet animi neque impedit possimus similique cumque libero fugiat, accusamus reiciendis ab ratione. Iste error aut maiores rem numquam neque. Reprehenderit reiciendis eum, asperiores aspernatur dolore eligendi, saepe molestiae incidunt blanditiis optio itaque. Nemo totam harum fugit, perferendis corrupti similique alias suscipit? Vel, porro ullam ipsum fugit quod eos nemo in rerum quidem nobis iste aspernatur facere provident obcaecati necessitatibus. At ex autem non itaque praesentium labore voluptate sunt, soluta mollitia, laudantium similique? Nostrum sunt, commodi consequatur eligendi neque doloribus dolore vero harum quibusdam quod autem omnis aperiam quaerat, qui, at natus facere eius. Assumenda tenetur porro deserunt cumque, tempora, inventore corrupti doloribus reprehenderit illum corporis ea eaque. Esse ipsa, voluptas corrupti architecto distinctio laboriosam beatae quo non sunt, commodi asperiores dignissimos expedita dolore? Nemo molestias tempore, labore eligendi itaque voluptatum quod quaerat quibusdam accusamus quas, recusandae sint dicta quidem ab iste praesentium laudantium possimus corrupti eum facilis aut dolor eos blanditiis? Molestiae architecto vero enim cupiditate nobis non amet cum officia? Pariatur sequi, quibusdam, illum blanditiis, vitae eveniet laborum fuga facere quaerat quasi voluptatem. Repellendus sapiente illo neque amet quidem omnis est quas facilis debitis odit? Culpa velit magnam nam amet labore beatae sunt autem.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur non, beatae vero earum illo quaerat tempore voluptatibus assumenda nesciunt. Cum at iste illum quis voluptatum. Quidem rerum, pariatur nemo voluptates itaque dolore nostrum tempora inventore quos voluptatem corrupti debitis expedita iusto vel cum non. Fugit asperiores itaque provident. Inventore expedita placeat saepe quis magni tempora exercitationem perspiciatis earum, harum labore. Corporis, reprehenderit, quam perferendis, mollitia veritatis minus consequuntur nesciunt officia quia officiis veniam cum aut eaque fugiat omnis delectus ullam voluptatem sit? Eligendi exercitationem repellendus necessitatibus tempora sequi quod voluptatibus vitae iusto ipsum id aliquid pariatur inventore impedit libero iste consequuntur eveniet deserunt dolores, animi quas. Ea fugit iure quam adipisci vel atque quia suscipit esse provident iusto voluptate, assumenda tenetur sint incidunt pariatur at voluptatibus sequi neque accusantium, laboriosam modi et nobis quibusdam. Aspernatur ut error ad velit odit sint commodi rerum soluta in sunt, voluptates nesciunt ea praesentium culpa quia accusantium reiciendis ratione unde est, laudantium assumenda quam autem veniam. Assumenda, ipsa nihil debitis culpa suscipit dolore facilis neque officiis? Maiores consectetur, facere temporibus porro quo eveniet placeat. Quo, maiores? Facilis accusamus dolorum id voluptates esse soluta in aliquam beatae repudiandae, maxime consectetur explicabo cupiditate et, ipsam commodi ipsum voluptatibus, molestiae voluptate nesciunt illum. Inventore ab delectus dolorem doloremque possimus reiciendis, praesentium, quibusdam labore nemo qui quia quas illum hic sequi recusandae cupiditate mollitia deleniti minus, at velit pariatur dignissimos enim officiis nulla! Culpa voluptatem quia facere! Enim porro delectus eligendi repellendus nostrum aspernatur optio eos est debitis ea alias laborum, voluptas placeat illum aliquid necessitatibus libero dolor nam reprehenderit doloribus dolore beatae error? Iure sint ab eveniet dolore in ratione, assumenda accusantium doloremque eaque sunt quaerat quod! Sunt impedit vitae assumenda earum illum exercitationem a quos ad, explicabo temporibus vel laborum possimus. Laudantium hic odio placeat id illum repudiandae! Amet corrupti sequi modi laborum veritatis debitis temporibus, sed est maiores quas in beatae officiis sapiente labore quos esse maxime aut fugit cumque alias laudantium. Nulla molestiae quasi eveniet eius vero nihil ab, pariatur corporis optio quaerat tempore exercitationem iusto quis minima autem veniam ipsam assumenda non rerum veritatis laborum libero architecto rem. Ad, numquam esse voluptate repellat maiores pariatur! Ipsa tempore odio amet laborum alias, maiores molestias rerum quidem porro reiciendis ullam possimus corrupti consectetur sapiente nihil numquam iusto saepe repellendus fugit reprehenderit quibusdam neque? Ea non fugit dolores voluptas provident repellendus. Nam a delectus veritatis tempora laborum. Aliquam quae ut dicta. Cumque earum illo nisi sunt quisquam minima beatae culpa amet, libero necessitatibus facilis debitis expedita! Accusamus veritatis debitis, possimus atque saepe tempore! Quasi excepturi placeat beatae minima molestiae blanditiis, minus deserunt voluptas et pariatur amet. Repellat cumque quis quibusdam sit fuga ratione, soluta voluptas incidunt culpa obcaecati aut vero minus unde ipsam dolore. Nobis, incidunt voluptatibus! Obcaecati alias excepturi rem. Quos dolorum autem repellat molestias, reprehenderit necessitatibus libero at inventore eius excepturi nulla unde dicta sit. Laudantium harum, temporibus aspernatur esse non veritatis. Officiis, autem quasi! Accusamus dolor error repellendus, tenetur quaerat illo dolorum perferendis. A necessitatibus obcaecati accusantium aliquam numquam repellat nihil atque voluptates debitis beatae natus sit harum sed expedita libero minima, voluptatem eum quasi. Molestias natus non provident, perferendis quod deleniti nulla pariatur. Eaque placeat nesciunt vel! Quibusdam saepe illum, quaerat voluptas incidunt eligendi labore. Repudiandae ea debitis voluptates perferendis maiores error cupiditate laborum aliquid, quam tenetur fugiat beatae! Quisquam magni itaque provident dolore consequatur blanditiis est, explicabo cupiditate quidem nulla non porro enim natus! Necessitatibus repellat corrupti blanditiis harum quasi unde labore earum culpa veritatis esse nulla doloribus ullam eaque quibusdam debitis, eligendi voluptate laudantium iste vel impedit, cum perferendis maiores.
+  <div
+    :class="{ dark: isDarkMode }"
+    class="max-w-[1500px] scroll-smooth font-san m-auto grid grid-cols-12 grid-rows-1 p-8 gap-4"
+  >
+    <NuxtLayout name="profile" class="sticky top-20 left-0 h-fit"></NuxtLayout>
+    <div
+      class="col-span-12 md:col-span-8 rounded-xl p-4 bg-white dark:bg-slate-900 dark:text-slate-100"
+    >
+      <!--Title-->
+      <div>
+        <h2 class="text-3xl mb-3 font-bold">
+          Let's 👋 <span class="text-blue-400"> Work </span>Together
+        </h2>
+        <p class="font-medium text-md">
+          I'm here to help if you're searching for a product designer to bring
+          your idea to life or a design partner to help take your business to
+          the next level.
+        </p>
+        <div class="py-4">
+          <button
+            class="m-2 bg-slate-700 text-slate-50 py-3 ml-0 px-4 rounded-md"
+          >
+            <Icon
+              name="material-symbols:add-call-outline-rounded"
+              class="h-6 w-6"
+            />
+            Make a Call
+          </button>
+          <button class="m-2 bg-slate-700 text-slate-50 py-3 px-4 rounded-md">
+            <Icon
+              name="material-symbols:cloud-download-outline-rounded"
+              class="h-6 w-6"
+            />
+            Download CV
+          </button>
         </div>
+      </div>
+      <!--Form-->
+      <div class="my-4">
+        <form class="">
+          <div class="flex justify-center items-center gap-4">
+            <div class="w-[50%]">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                class="w-full text-xl outline-none text-slate-700 rounded-md p-2"
+              />
+            </div>
+            <div class="w-[50%]">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                class="w-full text-xl text-slate-700 outline-none rounded-md p-2"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Your Subject"
+              class="w-full text-xl text-slate-700 outline-none rounded-md p-2"
+            />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              class="w-full text-xl text-slate-700 outline-none rounded-md p-2"
+            ></textarea>
+          </div>
+          <button>Send</button>
+        </form>
+      </div>
+      <!--Google Map-->
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7306.003959679149!2d90.42890129008046!3d23.711623337941433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9cc7d566d03%3A0x2472a49ac0504cd2!2sJatra%20Bari%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1713489414059!5m2!1sen!2sbd"
+          class="w-full h-96 rounded-xl"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -16,6 +105,4 @@ const darkModeStore = useDarkModeStore();
 const isDarkMode = computed(() => darkModeStore.darkMode);
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

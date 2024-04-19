@@ -7,6 +7,6 @@ export const useDarkModeStore = defineStore('darkMode', {
   actions: {
     toggleDarkMode() {
       this.darkMode = !this.darkMode;
-    },
+    }
   },
 });
