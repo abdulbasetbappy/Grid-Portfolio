@@ -1,41 +1,47 @@
 <template>
   <div :class="{ dark: isDarkMode }" class="w-full">
-    <div class="max-w-[1500px] m-auto grid grid-cols-12 p-8 font-san gap-4">
+    <div
+      class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm xs:max-w-screen-xs 2xs:max-w-screen-[345px] m-auto grid grid-cols-12 md:grid-cols-12 p-8 2xs:p-2 font-san gap-4"
+    >
       <!--Profile Details-->
       <NuxtLayout name="profile"></NuxtLayout>
 
       <!--Experience Details-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-4 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
       >
-        <h2 class="text-3xl pb-2 font-san font-semibold">Work Experience</h2>
+        <h2 class="text-3xl md:text-2xl pb-2 font-san font-semibold">
+          Work Experience
+        </h2>
         <div
-          class="flex justify-between items-center mt-2 p-4 rounded-xl bg-slate-50 dark:bg-slate-900"
+          class="flex justify-between items-center mt-2 md:p-3 p-4 rounded-xl bg-slate-50 dark:bg-slate-900"
         >
           <div>
-            <p>2023 - Present</p>
-            <p class="font-semibold text-xl">Frontend Developer</p>
+            <p class="text-xs">2023 - Present</p>
+            <p class="font-semibold text-xl md:text-base">Frontend Developer</p>
           </div>
           <div>
-            <img class="h-8" src="~/assets/wetechpro.png" alt="" />
+            <img class="h-8 md:h-6" src="~/assets/wetechpro.png" alt="" />
           </div>
         </div>
       </div>
 
       <!--Expertise-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-4 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
       >
-        <h2 class="text-3xl pb-2 font-san font-semibold">My Expert Area</h2>
+        <h2 class="text-3xl md:text-2xl pb-2 font-san font-semibold">
+          My Expert Area
+        </h2>
         <div
-          class="grid mt-4 grid-cols-3 grid-rows-2 justify-center items-center gap-3"
+          class="grid md:mt-2 mt-4 grid-cols-3 grid-rows-2 justify-center items-center gap-3"
         >
           <!--Vue-->
           <div class="flex justify-center items-center flex-col">
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="devicon:vuejs" class="h-14 w-14" />
+              <Icon name="devicon:vuejs" class="h-14 w-14 md:h-8 md:w-8" />
             </div>
             <p class="font-semibold text-slate-300">Vue</p>
           </div>
@@ -44,7 +50,7 @@
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="logos:pinia" class="h-14 w-14" />
+              <Icon name="logos:pinia" class="h-14 w-14 md:h-8 md:w-8" />
             </div>
             <p class="font-semibold text-slate-300">Pinia</p>
           </div>
@@ -53,7 +59,7 @@
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="logos:nuxt-icon" class="h-14 w-14" />
+              <Icon name="logos:nuxt-icon" class="h-14 w-14 md:h-8 md:w-8" />
             </div>
             <p class="text-slate-300 font-semibold">Nuxt</p>
           </div>
@@ -62,7 +68,10 @@
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="logos:tailwindcss-icon" class="h-12 w-12" />
+              <Icon
+                name="logos:tailwindcss-icon"
+                class="h-12 w-12 md:h-8 md:w-8"
+              />
             </div>
             <p class="text-slate-300 font-semibold">Tailwind</p>
           </div>
@@ -71,7 +80,10 @@
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="vscode-icons:file-type-scss" class="h-12 w-12" />
+              <Icon
+                name="vscode-icons:file-type-scss"
+                class="h-12 w-12 md:h-8 md:w-8"
+              />
             </div>
             <p class="text-slate-300 font-semibold">scss</p>
           </div>
@@ -80,7 +92,10 @@
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="vscode-icons:file-type-mongo" class="h-12 w-12" />
+              <Icon
+                name="vscode-icons:file-type-mongo"
+                class="h-12 w-12 md:h-8 md:w-8"
+              />
             </div>
             <p class="text-slate-300 font-semibold">MongoDB</p>
           </div>
@@ -89,7 +104,10 @@
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="logos:nodejs-icon-alt" class="h-12 w-12" />
+              <Icon
+                name="logos:nodejs-icon-alt"
+                class="h-12 w-12 md:h-8 md:w-8"
+              />
             </div>
             <p class="text-slate-300 font-semibold">NodeJs</p>
           </div>
@@ -98,7 +116,10 @@
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="skill-icons:expressjs-dark" class="h-12 w-12" />
+              <Icon
+                name="skill-icons:expressjs-dark"
+                class="h-12 w-12 md:h-8 md:w-8"
+              />
             </div>
             <p class="text-slate-300 font-semibold">ExpressJs</p>
           </div>
@@ -107,7 +128,7 @@
             <div
               class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
             >
-              <Icon name="devicon:firebase" class="h-12 w-12" />
+              <Icon name="devicon:firebase" class="h-12 w-12 md:h-8 md:w-8" />
             </div>
             <p class="text-slate-300 font-semibold">Firebase</p>
           </div>
@@ -116,39 +137,47 @@
 
       <!--Recent Projects Details-->
       <div
-        class="col-span-12 md:col-span-4 md:row-span-2 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 md:row-span-2 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
       >
         <div class="flex justify-between items-center">
-          <h2 class="text-3xl pb-2 font-san font-semibold">Recent Projects</h2>
+          <h2 class="text-3xl md:text-2xl pb-2 font-san font-semibold">
+            Recent Projects
+          </h2>
           <NuxtLink
             to="/works"
-            class="text-slate-400 text-lg dark:border-slate-400 border-b-2"
+            class="text-slate-400 text-lg md:text-base dark:border-slate-400 border-b-2"
           >
             All Projects
             <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />
           </NuxtLink>
         </div>
-        <div class="mt-6 flex flex-col justify-center items-center gap-6">
-          <div class="p-6 relative pb-0 dark:bg-slate-900 rounded-xl">
+        <div
+          class="mt-6 md:mt-4 flex flex-col justify-center items-center gap-6"
+        >
+          <div
+            class="p-6 md:p-4 relative pb-0 md:pb-0 dark:bg-slate-900 rounded-xl"
+          >
             <img
-              class="rounded-t-xl h-[240px] w-[320px]"
+              class="rounded-t-xl h-[240px] w-[320px] md:h-[200px]"
               src="~/assets/Porject01.png"
               alt=""
             />
             <p
-              class="absolute bottom-6 left-0 bg-slate-500 p-2 px-4 rounded-r-xl"
+              class="absolute bottom-6 md:bottom-4 left-0 bg-slate-500 p-2 px-4 md:px-2 md:text-sm rounded-r-xl"
             >
               Blog Website
             </p>
           </div>
-          <div class="p-6 pb-0 dark:bg-slate-900 relative rounded-xl">
+          <div
+            class="p-6 md:p-4 pb-0 md:pb-0 dark:bg-slate-900 relative rounded-xl"
+          >
             <img
-              class="rounded-t-xl h-[240px] w-[320px]"
+              class="rounded-t-xl h-[240px] w-[320px] md:h-[200px]"
               src="~/assets/Project02.png"
               alt=""
             />
             <p
-              class="absolute bottom-6 left-0 bg-slate-500 p-2 px-4 rounded-r-xl"
+              class="absolute bottom-6 md:bottom-4 left-0 bg-slate-500 p-2 px-4 md:px-2 md:text-sm rounded-r-xl"
             >
               Portfolio
             </p>
@@ -158,41 +187,56 @@
 
       <!--Services Details-->
       <div
-        class="col-span-12 md:col-span-5 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
       >
-        <h2 class="text-3xl font-san pb-2 font-semibold">Services I Offered</h2>
+        <h2 class="text-3xl md:text-2xl font-san pb-2 font-semibold">
+          Services I Offered
+        </h2>
         <!--MEVN-->
-        <div class="grid grid-cols-4 justify-center items-center gap-4">
+        <div
+          class="grid grid-cols-4 md:grid-cols-2 justify-center items-center md:gap-2 gap-4"
+        >
           <div class="text-center text-[80px] font-bold">M</div>
           <div class="text-center text-[80px] font-bold">E</div>
           <div class="text-center text-[80px] font-bold">V</div>
           <div class="text-center text-[80px] font-bold">N</div>
         </div>
+        <marquee
+          direction="rl"
+          behavior="scroll"
+          scrollamount="2"
+          delay="1s"
+          class="py-3 bg-slate-300 rounded-md xl:hidden 2xs:hidden md:block lg:block px-2 font-semibold text-xl text-slate-800"
+        >
+          Available For Hire 🚀 Crafting Digital Experiences 🎨
+        </marquee>
       </div>
 
       <!--project/experience year/client Count section-->
       <div
-        class="col-span-12 md:col-span-4 grid items-center rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 grid items-center rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
       >
-        <div class="grid grid-cols-3 justify-center gap-6 items-center">
+        <div
+          class="grid grid-cols-3 justify-center gap-6 md:gap-2 items-center"
+        >
           <div
-            class="text-center dark:bg-slate-900 h-full rounded-xl px-4 py-4"
+            class="text-center dark:bg-slate-900 h-full rounded-xl px-4 py-4 md:text-sm md:px-2 md:py-2"
           >
-            <span class="font-bold text-3xl" >3+</span> <br />
+            <span class="font-bold text-3xl md:text-2xl">3+</span> <br />
             years <br />
             Experience
           </div>
           <div
-            class="text-center dark:bg-slate-900 h-full rounded-xl px-4 py-4"
+            class="text-center dark:bg-slate-900 h-full rounded-xl px-4 py-4 md:text-sm md:px-2 md:py-2"
           >
-            <span class="font-bold text-3xl" >10+</span> <br />
+            <span class="font-bold text-3xl md:text-2xl">10+</span> <br />
             Projects <br />
             Completed
           </div>
           <div
-            class="text-center dark:bg-slate-900 h-full rounded-xl px-4 py-4"
+            class="text-center dark:bg-slate-900 h-full rounded-xl px-4 py-4 md:text-sm md:px-2 md:py-2"
           >
-            <span class="font-bold text-3xl" >5+</span><br />
+            <span class="font-bold text-3xl md:text-2xl">5+</span><br />
             Clients <br />
             Worked
           </div>
@@ -201,13 +245,15 @@
 
       <!--More About Me-->
       <div
-        class="col-span-12 md:col-span-3 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-5 rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
       >
         <div>
-          <Icon name="Signature" class="h-32 w-80" />
-          <div class="flex justify-between">
-            <p class="uppercase" >Credentials</p>
-            <NuxtLink to="/About" class="border-b-2" >
+          <div class="flex items-center justify-center">
+            <Icon name="Signature" class="h-32 w-80 md:h-24 md:w-60" />
+          </div>
+          <div class="flex items-center justify-between">
+            <p class="uppercase md:text-sm">Credentials</p>
+            <NuxtLink to="/About" class="border-b-2 md:text-sm">
               More About Me
               <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />
             </NuxtLink>
@@ -216,29 +262,31 @@
       </div>
 
       <!-- My Recent Blogs -->
-      <RecentBlog/>
+      <RecentBlog />
 
       <!--Let's Work Together-->
       <div
-        class="col-span-12 md:col-span-4 md:row-span-1 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
       >
         <marquee
           direction="rl"
           behavior="scroll"
           scrollamount="2"
           delay="1s"
-          class="py-3 bg-slate-300 rounded-md px-2 font-semibold text-xl text-slate-800"
+          class="py-3 xl:block 2xs:block md:hidden lg:hidden bg-slate-300 rounded-md px-2 font-semibold text-xl text-slate-800"
         >
           Available For Hire 🚀 Crafting Digital Experiences 🎨
         </marquee>
-        <p class="font-bold py-3 text-[50px]">
+        <p class="font-bold py-3 md:py-2 text-[50px] md:text-[30px]">
           Let's👋 <br />
           Work Together
         </p>
-        <NuxtLink to="/contact" class="border-b-4">
-          Let's Talk
-          <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />
-        </NuxtLink>
+        <div class="flex justify-end items-center">
+          <NuxtLink to="/contact" class="border-b-4">
+            Let's Talk
+            <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>

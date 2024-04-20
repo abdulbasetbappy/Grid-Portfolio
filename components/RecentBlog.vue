@@ -1,7 +1,7 @@
 <template>
         <!--Blog-->
         <div
-          class="col-span-12 md:col-span-8 md:row-span-1 col-end-6 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
+          class="col-span-12 md:col-span-12 md:row-span-1 col-end-6 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-200"
         >
           <div class="flex justify-between items-center pb-2">
             <h2 class="text-3xl font-san pb-2 font-semibold">
