@@ -1,14 +1,14 @@
 <template>
   <div :class="{ dark: isDarkMode }" class="w-full">
     <div
-      class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm xs:max-w-screen-xs 2xs:max-w-screen-[345px] m-auto grid grid-cols-12 md:grid-cols-12 p-8 2xs:p-2 font-san gap-4"
+      class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm xs:max-w-screen-xs 2xs:max-w-screen-[345px] m-auto md:m-auto 2xl:m-auto grid grid-cols-1 lg:grid-cols-12 sm:mx-24 md:grid-cols-12 p-8 2xs:p-2 font-san gap-4"
     >
       <!--Profile Details-->
       <NuxtLayout name="profile"></NuxtLayout>
 
       <!--Experience Details-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
       >
         <h2 class="text-3xl md:text-2xl pb-2 font-san font-semibold">
           Work Experience
@@ -28,7 +28,7 @@
 
       <!--Expertise-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
       >
         <h2 class="text-3xl md:text-2xl pb-2 font-san font-semibold">
           My Expert Area
@@ -137,7 +137,7 @@
 
       <!--Recent Projects Details-->
       <div
-        class="col-span-12 md:col-span-6 md:row-span-2 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
       >
         <div class="flex justify-between items-center">
           <h2 class="text-3xl md:text-2xl pb-2 font-san font-semibold">
@@ -187,14 +187,14 @@
 
       <!--Services Details-->
       <div
-        class="col-span-12 md:col-span-6 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-5 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
       >
         <h2 class="text-3xl md:text-2xl font-san pb-2 font-semibold">
           Services I Offered
         </h2>
         <!--MEVN-->
         <div
-          class="grid grid-cols-4 md:grid-cols-2 justify-center items-center md:gap-2 gap-4"
+          class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 justify-center items-center md:gap-2 gap-4"
         >
           <div class="text-center text-[80px] font-bold">M</div>
           <div class="text-center text-[80px] font-bold">E</div>
@@ -206,7 +206,7 @@
           behavior="scroll"
           scrollamount="2"
           delay="1s"
-          class="py-3 bg-slate-300 rounded-md xl:hidden 2xs:hidden md:block lg:block px-2 font-semibold text-xl text-slate-800"
+          class="py-3 bg-slate-300 rounded-md xl:hidden 2xs:hidden md:block lg:hidden px-2 font-semibold text-xl text-slate-800"
         >
           Available For Hire 🚀 Crafting Digital Experiences 🎨
         </marquee>
@@ -214,7 +214,7 @@
 
       <!--project/experience year/client Count section-->
       <div
-        class="col-span-12 md:col-span-6 grid items-center rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-7 grid items-center rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
       >
         <div
           class="grid grid-cols-3 justify-center gap-6 md:gap-2 items-center"
@@ -245,7 +245,7 @@
 
       <!--More About Me-->
       <div
-        class="col-span-12 md:col-span-5 rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-5 lg:col-span-5 rounded-xl md:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
       >
         <div>
           <div class="flex items-center justify-center">
@@ -266,14 +266,14 @@
 
       <!--Let's Work Together-->
       <div
-        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 lg:row-end-4 lg:col-span-7 rounded-xl p-6 md:p-4 bg-white dark:bg-black dark:text-slate-200"
       >
         <marquee
           direction="rl"
           behavior="scroll"
           scrollamount="2"
           delay="1s"
-          class="py-3 xl:block 2xs:block md:hidden lg:hidden bg-slate-300 rounded-md px-2 font-semibold text-xl text-slate-800"
+          class="py-3 xl:block 2xs:block md:hidden lg:block bg-slate-300 rounded-md px-2 font-semibold text-xl text-slate-800"
         >
           Available For Hire 🚀 Crafting Digital Experiences 🎨
         </marquee>

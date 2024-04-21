@@ -2,7 +2,8 @@
     <!--Profile Details-->
     <div
     :class="{dark:isDarkMode}"
-      class="col-span-12 row-span-2 md:row-span-2 md:row-start-1 md:col-span-6 rounded-xl p-6 md:p-4 bg-white dark:bg-black"
+      class="col-span-12 row-span-2 md:row-span-2  md:row-start-1 md:col-span-6
+      lg:col-span-4 rounded-xl p-6 md:p-4 bg-white dark:bg-black"
     >
       <!--Profile Picture-->
       <div class="bg-stone-100 dark:bg-slate-900 rounded-xl">
