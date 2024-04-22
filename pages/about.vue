@@ -14,9 +14,14 @@
           <h2 class="text-3xl font-bold">
             Hi, This Is <span class="text-blue-400"> Cris Rayaan </span>👋
           </h2>
-          <p class="bg-slate-500 py-3 px-5 rounded-xl text-xl text-slate-100">
-            Available For Hire
-          </p>
+          <div class="bg-slate-800 py-3 px-5 rounded-xl text-xl text-slate-100">
+          <div class="relative inline-flex">
+              <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+              <div class="w-4 h-4 bg-blue-500 rounded-full absolute top-0 left-0 animate-ping"></div>
+              <div class="w-4 h-4 bg-blue-500 rounded-full absolute top-0 left-0 animate-pulse"></div>
+          </div>
+          <p class="inline ml-2">Available For Hire</p>
+          </div>
         </div>
         <!--Description-->
         <div class="grid grid-cols-6 mt-4 gap-5 grid-rows-2">

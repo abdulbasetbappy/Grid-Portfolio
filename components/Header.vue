@@ -14,48 +14,50 @@
           >
         </NuxtLink>
         <!--Menu Navigation-->
-        <nav class="2xs:hidden lg:block">
-          <ul class="flex flex-row items-center gap-2 justify-end">
-            <li v-for="item in menuItems" :key="item.id" class="">
-              <NuxtLink
-                :to="item.path"
-                class="flex items-center justify-center transition-colors duration-300 flex-row text-slate-800 dark:text-slate-400 text-xl p-3 rounded-lg group hover:bg-slate-700 focus:bg-slate-700"
-              >
-                <Icon
-                  :name="item.iconName"
-                  class="group-hover:text-slate-100 group-focus:text-slate-100"
-                />
-                <span
-                  class="group-hover:text-slate-100 group-focus:text-slate-100"
-                  >{{ item.label }}</span
+        <div class="flex justify-end items-center"> 
+          <nav class="2xs:hidden lg:block">
+            <ul class="flex flex-row items-center gap-2 lg:gap-1 justify-end">
+              <li v-for="item in menuItems" :key="item.id" class="">
+                <NuxtLink
+                  :to="item.path"
+                  class="flex items-center justify-center transition-colors duration-300 flex-row text-slate-800 dark:text-slate-400 text-xl lg:text-sm p-3 rounded-lg group hover:bg-slate-700 focus:bg-slate-700"
                 >
-              </NuxtLink>
-            </li>
-          </ul>
-        </nav>
-        <!--Header Buttons-->
-        <div class="lg:flex items-center justify-center flex-row 2xs:hidden">
-          <button
-            v-if="!isDarkMode"
-            @click="toggleDarkMode"
-            class="p-2 text-slate-500 rounded-lg transition-colors duration-300 hover:bg-slate-200"
-          >
-            <Icon name="MoonIcon" />
-          </button>
-          <button
-            v-if="isDarkMode"
-            @click="toggleDarkMode"
-            class="p-2 rounded-lg transition-colors duration-300 hover:bg-slate-700"
-          >
-            <Icon name="SunIcon" />
-          </button>
-          <NuxtLink
-            to="/"
-            class="flex ml-2 items-center justify-center flex-row bg-slate-500 py-2 px-3 rounded-md text-slate-100 text-xl"
-          >
-            <span>Let's Talk</span>
-            <Icon name="GoArrowIcon" />
-          </NuxtLink>
+                  <Icon
+                    :name="item.iconName"
+                    class="group-hover:text-slate-100 group-focus:text-slate-100"
+                  />
+                  <span
+                    class="group-hover:text-slate-100 group-focus:text-slate-100"
+                    >{{ item.label }}</span
+                  >
+                </NuxtLink>
+              </li>
+            </ul>
+          </nav>
+          <!--Header Buttons-->
+          <div class="lg:flex items-center justify-center flex-row 2xs:hidden">
+            <button
+              v-if="!isDarkMode"
+              @click="toggleDarkMode"
+              class="p-2 text-slate-500 rounded-lg transition-colors duration-300 hover:bg-slate-200"
+            >
+              <Icon name="MoonIcon" />
+            </button>
+            <button
+              v-if="isDarkMode"
+              @click="toggleDarkMode"
+              class="p-2 rounded-lg transition-colors duration-300 hover:bg-slate-700"
+            >
+              <Icon name="SunIcon" />
+            </button>
+            <NuxtLink
+              to="/"
+              class="flex ml-2 items-center justify-center flex-row bg-slate-500 py-2 px-3 rounded-md text-slate-100 text-xl"
+            >
+              <span>Let's Talk</span>
+              <Icon name="GoArrowIcon" />
+            </NuxtLink>
+          </div>
         </div>
         <!--Header Navigation toggler-->
         <div
@@ -103,7 +105,6 @@
               </NuxtLink>
             </div>
 
-
             <!-- Sidebar content goes here -->
             <nav class="w-full">
               <ul>
@@ -121,7 +122,6 @@
                 </li>
               </ul>
             </nav>
-
 
             <!--Bottom Profile Card-->
             <div
