@@ -1,5 +1,5 @@
 <template>
-<div :class="{ dark_bg : isDarkMode, light_bg:!isDarkMode}" class=" py-6">
+<div :class="{ dark_bg : isDarkMode, light_bg:!isDarkMode}" class="2xs:py-3 md:py-4">
   <NuxtLayout>
   <NuxtPage />
 </NuxtLayout>
@@ -26,4 +26,27 @@ background-image:  linear-gradient(#e0e0e0 1.8px, transparent 1.8px), linear-gra
 background-size: 45px 45px, 45px 45px, 9px 9px, 9px 9px;
 background-position: -1.8px -1.8px, -1.8px -1.8px, -0.9px -0.9px, -0.9px -0.9px;
 }
+
+/*--------*/
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #28242b #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #28242b;
+    border-radius: 10px;
+    border: 0px none #ffffff;
+  }
 </style>
