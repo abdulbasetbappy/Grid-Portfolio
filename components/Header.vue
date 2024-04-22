@@ -51,7 +51,7 @@
               <Icon name="SunIcon" />
             </button>
             <NuxtLink
-              to="/"
+              to="/contact"
               class="flex ml-2 items-center justify-center flex-row bg-slate-500 py-2 px-3 rounded-md text-slate-100 text-xl"
             >
               <span>Let's Talk</span>
