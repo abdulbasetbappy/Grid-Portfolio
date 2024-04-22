@@ -4,7 +4,7 @@
           class="col-span-12 md:col-span-12 md:row-span-1 col-end-6 rounded-xl lg:p-6 2xs:p-4 xs:px-6 md:px-4 bg-white dark:bg-black dark:text-slate-200"
         >
           <div class="flex justify-between items-center pb-2">
-            <h2 class=" 2xs:text-xl xs:text-2xl lg:text-xl font-san pb-2 font-semibold">
+            <h2 class=" 2xs:text-xl xs:text-2xl lg:text-xl xl:text-3xl font-san pb-2 font-semibold">
               Recent Blog Posts
             </h2>
             <NuxtLink
@@ -17,9 +17,10 @@
           </div>
 
           <div class="grid grid-cols-3 md:grid-cols-3 2xs:grid-cols-1 2xs:px-2 md:px-0 gap-4 justify-center items-center">
+            <!--Blog 01-->
             <div class="relative">
               <img
-                class="h-52 2xs:h-60 md:h-48 w-full rounded-xl"
+                class="h-52 2xs:h-60 md:h-48 xl:h-56 w-full rounded-xl"
                 src="~/assets/Blog01.jpeg"
                 alt=""
               />
@@ -29,9 +30,10 @@
                 This is Like Haven & You Know...
               </h2>
             </div>
+            <!--Blog 02-->
             <div class="relative">
               <img
-                class="h-52 2xs:h-60 md:h-48 w-full rounded-xl"
+                class="h-52 2xs:h-60 md:h-48 xl:h-56 w-full rounded-xl"
                 src="~/assets/Blog02.png"
                 alt=""
               />
@@ -41,9 +43,10 @@
                 This is Like Haven & You Know...
               </h2>
             </div>
+            <!--Blog 03-->
             <div class="relative">
               <img
-                class="h-52 2xs:h-60 md:h-48 w-full rounded-xl"
+                class="h-52 2xs:h-60 md:h-48 xl:h-56 w-full rounded-xl"
                 src="~/assets/Blog03.jpg"
                 alt=""
               />

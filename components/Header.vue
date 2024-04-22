@@ -20,7 +20,7 @@
               <li v-for="item in menuItems" :key="item.id" class="">
                 <NuxtLink
                   :to="item.path"
-                  class="flex items-center justify-center transition-colors duration-300 flex-row text-slate-800 dark:text-slate-400 text-xl lg:text-sm p-3 rounded-lg group hover:bg-slate-700 focus:bg-slate-700"
+                  class="flex items-center justify-center transition-colors duration-300 flex-row text-slate-800 dark:text-slate-400 xl:text-xl lg:text-sm  p-3 rounded-lg group hover:bg-slate-700 focus:bg-slate-700"
                 >
                   <Icon
                     :name="item.iconName"
