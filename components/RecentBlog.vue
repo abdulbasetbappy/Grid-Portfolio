@@ -1,15 +1,15 @@
 <template>
         <!--Blog-->
         <div
-          class="col-span-12 md:col-span-12 md:row-span-1 col-end-6 rounded-xl p-6 2xs:p-4 xs:px-6 md:px-4 bg-white dark:bg-black dark:text-slate-200"
+          class="col-span-12 md:col-span-12 md:row-span-1 col-end-6 rounded-xl lg:p-6 2xs:p-4 xs:px-6 md:px-4 bg-white dark:bg-black dark:text-slate-200"
         >
           <div class="flex justify-between items-center pb-2">
-            <h2 class="text-3xl 2xs:text-xl xs:text-2xl font-san pb-2 font-semibold">
+            <h2 class=" 2xs:text-xl xs:text-2xl lg:text-xl font-san pb-2 font-semibold">
               Recent Blog Posts
             </h2>
             <NuxtLink
               to="/blog"
-              class="text-slate-400 text-lg 2xs:text-sm xs:text-base dark:border-slate-400 border-b-2"
+              class="text-slate-400 lg:text-lg 2xs:text-sm xs:text-base dark:border-slate-400 border-b-2"
             >
               All Blogs
               <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />

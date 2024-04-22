@@ -12,6 +12,8 @@ const darkModeStore = useDarkModeStore();
 const isDarkMode = computed(() => darkModeStore.darkMode);
 </script>
 <style>
+
+/*=======Background=========*/
 .dark_bg{
   background-color: #0f172a;
 opacity: 1;
@@ -27,7 +29,7 @@ background-size: 45px 45px, 45px 45px, 9px 9px, 9px 9px;
 background-position: -1.8px -1.8px, -1.8px -1.8px, -0.9px -0.9px, -0.9px -0.9px;
 }
 
-/*--------*/
+
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
@@ -46,7 +48,7 @@ background-position: -1.8px -1.8px, -1.8px -1.8px, -0.9px -0.9px, -0.9px -0.9px;
 
   *::-webkit-scrollbar-thumb {
     background-color: #28242b;
-    border-radius: 10px;
+    border-radius: 4px;
     border: 0px none #ffffff;
   }
 </style>
