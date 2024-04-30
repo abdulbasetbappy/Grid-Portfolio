@@ -25,7 +25,7 @@
       <!--Profile Buttons-->
       <div class="xl:py-4 md:py-2 2xs:py-2">
         <button
-          class="xl:m-1 md:m-1 2xs:text-sm xl:text-xl xl:py-4 lg:py-2 2xs:m-1 bg-slate-700 2xs:px-3 2xs:py-2 text-slate-50 2xl:p-4 xl:ml-0 2xs:ml-0 rounded-md"
+          class="xl:m-1 md:m-1 2xs:text-sm xl:text-lg xl:py-4 lg:py-2 2xs:m-1 bg-slate-700 2xs:px-3 2xs:py-2 text-slate-50 2xl:p-4 xl:ml-0 2xs:ml-0 rounded-md"
         >
           <Icon
             name="material-symbols:add-call-outline-rounded"
