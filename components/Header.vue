@@ -181,24 +181,18 @@ const menuItems = reactive([
   },
   {
     id: "03",
-    label: "Services",
-    path: "/Services",
-    iconName: "ServicesIcon",
-  },
-  {
-    id: "04",
     label: "Works",
     path: "/Works",
     iconName: "WorksIcon",
   },
   {
-    id: "05",
+    id: "04",
     label: "Blog",
     path: "/Blog",
     iconName: "BlogIcon",
   },
   {
-    id: "06",
+    id: "05",
     label: "Contact",
     path: "/Contact",
     iconName: "ContactIcon",
