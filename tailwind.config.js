@@ -9,7 +9,24 @@ module.exports = {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        wheel: 'wheel 2s infinite',
+      },
+      keyframes: {
+        wheel: {
+          to: {
+            opacity: 0,
+            top: '3.75rem', // 60px in rem
+          },
+        },
+      },
+    },
+    variants: {
+      extend: {
+        animation: ['hover', 'focus'],
+      },
+    },
     fontFamily:{
      san:['poppins', 'sans-serif'],
     },
