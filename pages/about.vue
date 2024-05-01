@@ -1,7 +1,7 @@
 <template>
   <div
     :class="{ dark: isDarkMode }"
-    class="2xs:max-w-screen-[345px] xs:max-w-screen-xs sm:max-w-screen-sm scroll-smooth font-san m-auto grid auto-rows-min grid-cols-12 2xs:grid-cols-1 2xs:py-2 2xs:px-0 p-8 gap-3"
+    class="2xs:max-w-screen-[345px] xs:max-w-screen-xs sm:max-w-screen-sm scroll-smooth font-san m-auto grid auto-rows-min grid-cols-12 2xs:grid-cols-1 2xs:py-0 2xs:px-0 2xs:m-2 p-8 gap-3"
   >
     <NuxtLayout
       name="profile"
@@ -16,7 +16,7 @@
           class="flex 2xs:flex-col 2xs:justify-start 2xs:items-start justify-between items-center"
         >
           <h2 class="2xs:text-2xl text-3xl font-bold">
-            Hi, This Is <span class="text-blue-400"> Abdul Baset </span>👋
+            Hi, This Is <span class="text-blue-400 2xs:inline-block"> Abdul Baset </span>👋
           </h2>
           <div
             class="bg-slate-900 md:py-3 md:px-5 rounded-xl 2xs:hidden md:text-xl text-slate-100"
@@ -35,7 +35,7 @@
         </div>
         <!--Description-->
         <div
-          class="grid grid-cols-6 auto-rows-fr mt-4 gap-5 2xs:grid-rows-3 grid-rows-2"
+          class="grid grid-cols-6 auto-rows-fr mt-4 md:gap-5 2xs:gap-2 2xs:grid-rows-3 grid-rows-2"
         >
           <!--Details Text-->
           <div class="2xs:col-span-6 md:col-span-4 row-start-1">
@@ -120,7 +120,7 @@
                 <p class="2xs:text-xs" >2023 - 2024</p>
                 <p class="font-semibold 2xs:text-sm md:text-xl">Frontend Developer</p>
               </div>
-              <div class="w-[30%]">
+              <div class="w-[30%] flex justify-end">
                 <img class="2xs:h-5 md:h-8" src="~/assets/ostad.png" alt="" />
               </div>
             </div>
@@ -137,7 +137,10 @@
               <div class="w-full">
                 <p class="2xs:text-xs" >2018 - 2020</p>
                 <p class="font-semibold 2xs:text-sm md:text-xl">BAUC - Mymensingh</p>
-                <p class="2xs:text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="2xs:text-xs">Higher Secondary In Science</p>
+              </div>
+              <div>
+                <img class="2xs:h-10 md:h-10" src="~/assets/bauc.png" alt="" />
               </div>
             </div>
             <div
@@ -146,7 +149,10 @@
               <div class="w-full">
                 <p class="2xs:text-xs" >2020 - 2025</p>
                 <p class="font-semibold 2xs:text-sm md:text-xl">University of Dhaka</p>
-                <p class="2xs:text-xs" >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="2xs:text-xs" >Bsc. in Botany</p>
+              </div>
+              <div>
+                <img class="2xs:h-10 md:h-10" src="~/assets/du.png" alt="" />
               </div>
             </div>
           </div>
