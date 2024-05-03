@@ -5,7 +5,7 @@
   >
     <NuxtLayout name="profile" class="sticky top-20 left-0 h-fit"></NuxtLayout>
     <div
-      class="col-span-12 md:col-span-8 rounded-xl p-4 bg-white dark:bg-slate-900 dark:text-slate-100"
+      class="col-span-12 md:col-span-8 rounded-xl p-4 bg-white dark:bg-black dark:text-slate-100"
     >
       <!--Title-->
       <div>
@@ -17,24 +17,39 @@
           your idea to life or a design partner to help take your business to
           the next level.
         </p>
-        <div class="py-4">
-          <button
-            class="m-2 bg-slate-700 text-slate-50 py-3 ml-0 px-4 rounded-md"
-          >
-            <Icon
-              name="material-symbols:add-call-outline-rounded"
-              class="h-6 w-6"
-            />
-            Make a Call
-          </button>
-          <button class="m-2 bg-slate-700 text-slate-50 py-3 px-4 rounded-md">
-            <Icon
-              name="material-symbols:cloud-download-outline-rounded"
-              class="h-6 w-6"
-            />
-            Download CV
-          </button>
+        <div class="py-4 grid grid-cols-12 gap-4 grid-rows-1">
+          <div class="col-span-5 flex bg-slate-900 p-2 rounded-lg justify-start gap-2 items-center flex-row">
+            <div>
+              <Icon name="material-symbols:mark-email-unread-outline-rounded" class="h-10 w-10" />
+            </div>
+            <div>
+              <p>abdulbasetbappy@hotmail.com</p>
+              <p>abdulbasetbappy@hotmail.com</p>
+            </div>
+          </div>
+          <div class="flex col-span-3 bg-slate-900 p-2 rounded-lg justify-start gap-2 items-center flex-row">
+            <div>
+              <Icon name="material-symbols:phone-in-talk-outline-rounded" class="h-10 w-10" />
+            </div>
+            <div>
+              <p>+8801799568976</p>
+              <p>+8801735465415</p>
+            </div>
+          </div>
+          <div class="flex col-span-4 bg-slate-900 p-2 rounded-lg justify-start items-center gap-2 flex-row">
+            <div>
+              <Icon name="material-symbols:house-outline-rounded" class="h-10 w-10" />
+            </div>
+            <div>
+              <p>89/9 Jamalpur,</p>
+              <p>Mymensingh, Bangladesh</p>
+            </div>
+          </div>
         </div>
+      </div>
+      <!--Social Media Contact-->
+      <div class="my-4">
+        <h1>Social Links</h1>
       </div>
       <!--Form-->
       <div class="my-4">
