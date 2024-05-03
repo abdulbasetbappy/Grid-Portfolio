@@ -5,21 +5,23 @@
     >
       <NuxtLayout
         name="profile"
-        class="2xs:static md:col-start-1 md:col-end-6 md:sticky md:top-10 left-0 h-fit"
+        class="2xs:static md:col-start-1 md:col-end-6 lg:col-span-4 md:sticky md:top-10 left-0 h-fit"
       ></NuxtLayout>
 
-      <div class="2xs:col-span-12 md:col-span-7 rounded-xl dark:text-slate-100">
+      <div class="2xs:col-span-12 md:col-span-7 lg:col-span-8 rounded-xl dark:text-slate-100">
         <!--About Me Block-->
         <div class="dark:bg-black 2xs:p-4 rounded-xl">
           <!--Title-->
           <div
-            class="flex 2xs:flex-col 2xs:justify-start 2xs:items-start justify-between items-center"
+            class="flex 2xs:flex-col 2xs:justify-start 2xs:items-start lg:justify-between lg:flex-row lg:items-center"
           >
-            <h2 class="2xs:text-2xl text-3xl font-bold">
+          <!--Title Text-->
+            <h2 class="2xs:text-2xl lg:text-3xl font-bold">
               Hi, This Is
               <span class="text-blue-400 2xs:inline-block"> Abdul Baset </span
               >👋
             </h2>
+            <!--Title Badge-->
             <div
               class="bg-slate-900 md:py-3 lg:px-5 rounded-xl 2xs:hidden lg:block md:text-xl text-slate-100"
             >
@@ -32,17 +34,17 @@
                   class="w-4 h-4 bg-blue-500 rounded-full absolute top-0 left-0 animate-pulse"
                 ></div>
               </div>
-              <p class="inline ml-2">Available For Hire</p>
+              <p class="inline lg:text-base ml-2">Available For Hire</p>
             </div>
           </div>
           <!--Description-->
           <div
-            class="grid grid-cols-6 auto-rows-fr mt-4 md:gap-5 2xs:gap-2 2xs:grid-rows-3 grid-rows-2"
+            class="grid grid-cols-6 auto-rows-fr mt-4 md:gap-5 2xs:gap-2 2xs:grid-rows-3 lg:grid-rows-2"
           >
             <!--Details Text-->
             <div class="2xs:col-span-6 lg:col-span-4 row-start-1">
               <p
-                class="2xs:font-normal md:font-semibold 2xs:text-sm lg:text-lg"
+                class="2xs:font-normal md:font-semibold lg:font-normal 2xs:text-sm lg:text-lg"
               >
                 A Passionate Full Stack Developer 🖥️ & Product Designer having
                 12 years of Experiences over 24+ Country Worldwide. Lorem ipsum
@@ -74,7 +76,7 @@
             </div>
             <!--Scroll Down For More-->
             <div
-              class="2xs:col-span-6 lg:col-span-4 lg:row-span-4 lg:row-start-1 2xs:row-start-3"
+              class="2xs:col-span-6 lg:col-span-4 lg:row-span-2 lg:row-start-1 2xs:row-start-3"
             >
               <div class="w-full h-full flex items-center justify-center">
                 <div class="field flex items-center justify-around w-72">
@@ -95,7 +97,7 @@
         <div class="dark:bg-black 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
           <!--Details-->
           <div
-            class="grid 2xs:auto-rows-fr 2xs:grid-cols-12 gap-6 lg:grid-rows-2 2xs:grid-rows-3"
+            class="grid 2xs:auto-rows-fr lg:auto-rows-fr 2xs:grid-cols-12 gap-6 lg:grid-rows-2 2xs:grid-rows-3"
           >
             <!--Experience-->
             <div class="2xs:col-span-12 lg:col-span-7 2xs:row-start-1">
@@ -141,7 +143,7 @@
             </div>
             <!--Education-->
             <div
-              class="2xs:col-span-12 lg:col-span-5 2xs:row-span-2 md:row-span-4 2xs:row-start-3"
+              class="2xs:col-span-12 lg:col-span-5 2xs:row-span-2 md:row-span-4 lg:row-span-2 2xs:row-start-3"
             >
               <h2 class="2xs:text-xl md:text-3xl font-semibold">Education</h2>
 
@@ -217,11 +219,11 @@
             <div
               class="2xs:col-span-12 lg:col-span-6 2xs:row-start-2 lg:row-start-1 gap-4"
             >
-              <h2 class="2xs:text-xl md:text-3xl 2xs:mt-2 font-semibold">
+              <h2 class="2xs:text-xl md:text-3xl 2xs:mt-2 lg:mt-0 font-semibold">
                 Backend
               </h2>
               <div
-                class="flex justify-around items-center md:mt-2 2xs:mb-1 md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
+                class="flex justify-around items-center md:mt-2 2xs:mb-1 lg:mb-0 md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
               >
                 <Icon name="teenyicons:nodejs-solid" class="h-8 w-8" />
                 <Icon name="simple-icons:express" class="h-8 w-8" />
@@ -232,9 +234,9 @@
             </div>
             <!--Other-->
             <div
-              class="2xs:col-span-12 lg:row-span-4 2xs:row-start-3 lg:row-start-2"
+              class="2xs:col-span-12 lg:row-span-1 2xs:row-start-3 lg:row-start-2"
             >
-              <h2 class="2xs:text-xl md:text-3xl 2xs:mt-2 font-semibold">
+              <h2 class="2xs:text-xl md:text-3xl 2xs:mt-2 lg:mt-0 font-semibold">
                 Other Tools
               </h2>
               <div
