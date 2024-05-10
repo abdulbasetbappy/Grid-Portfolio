@@ -1,9 +1,9 @@
 <template>
     <div
       :class="{ dark: isDarkMode }"
-      class="max-w-[1500px] scroll-smooth font-san m-auto grid grid-cols-12 grid-rows-1 p-8 gap-4"
+      class="2xs:max-w-screen-[345px] xs:max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl scroll-smooth font-san grid auto-rows-min md:grid-cols-12 2xs:grid-cols-1 2xs:p-2 2xs:m-auto m-2 p-8 gap-3"
     >
-      <NuxtLayout name="profile" class="sticky top-20 left-0 h-fit"></NuxtLayout>
+      <NuxtLayout name="profile" class="2xs:static md:col-start-1 md:col-end-6 lg:col-span-4 md:sticky md:top-10 left-0 h-fit"></NuxtLayout>
       <div
         class="col-span-12 md:col-span-8 rounded-xl p-6 bg-white dark:bg-slate-900 dark:text-slate-100"
       >
