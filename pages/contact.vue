@@ -3,11 +3,11 @@
     :class="{ dark: isDarkMode }"
     class="2xs:max-w-screen-[345px] xs:max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl scroll-smooth font-san grid auto-rows-min md:grid-cols-12 2xs:grid-cols-1 2xs:p-2 2xs:m-auto m-2 p-8 gap-3"
   >
-    <NuxtLayout name="profile"         class="2xs:static md:col-start-1 md:col-end-6 lg:col-span-4 md:sticky md:top-10 left-0 h-fit"></NuxtLayout>
+    <NuxtLayout name="profile" class="2xs:static md:col-start-1 md:col-end-6 lg:col-span-4 md:sticky md:top-10 left-0 h-fit"></NuxtLayout>
     <div
-      class="col-span-12 md:col-span-8 rounded-xl p-4 bg-white dark:bg-black dark:text-slate-100"
+      class="col-span-12 md:col-span-7 lg:col-span-8 md:col-start-6 lg:col-start-5 rounded-xl p-4 bg-white dark:bg-black dark:text-slate-100"
     >
-      <!--Title-->
+      <!--Title-->  
       <div>
         <h2 class="text-3xl mb-3 font-bold">
           Let's 👋 <span class="text-blue-400"> Work </span>Together
@@ -17,8 +17,10 @@
           your idea to life or a design partner to help take your business to
           the next level.
         </p>
+
+        <!--Contact-->
         <div class="py-4 grid grid-cols-12 gap-4 grid-rows-1">
-          <div class="col-span-5 flex bg-slate-900 p-2 rounded-lg justify-start gap-2 items-center flex-row">
+          <div class="2xs:col-span-12 md:col-span-5 flex bg-slate-900 p-2 rounded-lg justify-start gap-2 items-center flex-row">
             <div>
               <Icon name="material-symbols:mark-email-unread-outline-rounded" class="h-10 w-10" />
             </div>
@@ -27,7 +29,7 @@
               <p>abdulbasetbappy@hotmail.com</p>
             </div>
           </div>
-          <div class="flex col-span-3 bg-slate-900 p-2 rounded-lg justify-start gap-2 items-center flex-row">
+          <div class="flex 2xs:col-span-12 md:col-span-3 bg-slate-900 p-2 rounded-lg justify-start gap-2 items-center flex-row">
             <div>
               <Icon name="material-symbols:phone-in-talk-outline-rounded" class="h-10 w-10" />
             </div>
@@ -36,7 +38,7 @@
               <p>+8801735465415</p>
             </div>
           </div>
-          <div class="flex col-span-4 bg-slate-900 p-2 rounded-lg justify-start items-center gap-2 flex-row">
+          <div class="flex 2xs:col-span-12 md:col-span-4 bg-slate-900 p-2 rounded-lg justify-start items-center gap-2 flex-row">
             <div>
               <Icon name="material-symbols:house-outline-rounded" class="h-10 w-10" />
             </div>
@@ -48,14 +50,25 @@
         </div>
       </div>
       <!--Social Media Contact-->
-      <div class="my-4">
-        <h1>Social Links</h1>
+      <div class="my-4 flex justify-center items-center gap-2" >
+        <NuxtLink to="https://www.facebook.com/abdulbasetbappy.info" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
+          <Icon name="mdi:facebook" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 " />
+        </NuxtLink>
+        <NuxtLink to="www.github.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
+          <Icon name="mdi:github" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8" />
+        </NuxtLink>
+        <NuxtLink to="https://www.codepen.com/abdulbasetbappy" class="border-none p-2  rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
+          <Icon name="mdi:codepen" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8" />
+        </NuxtLink>
+        <NuxtLink to="https://www.youtube.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
+          <Icon name="mdi:youtube" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8" />
+        </NuxtLink>
       </div>
       <!--Form-->
       <div class="my-4">
         <form class="">
-          <div class="flex justify-center items-center gap-4">
-            <div class="w-[50%]">
+          <div class="flex justify-center 2xs:flex-col md:flex-row  items-center 2xs:gap-0 md:gap-4">
+            <div class="2xs:w-[100%] md:w-[50%]">
               <label for="name">Name</label>
               <input
                 type="text"
@@ -65,7 +78,7 @@
                 class="w-full text-xl outline-none text-slate-700 rounded-md p-2"
               />
             </div>
-            <div class="w-[50%]">
+            <div class="2xs:w-[100%] md:w-[50%]">
               <label for="email">Email</label>
               <input
                 type="email"
@@ -95,7 +108,7 @@
               class="w-full text-xl text-slate-700 outline-none rounded-md p-2"
             ></textarea>
           </div>
-          <button>Send</button>
+          <button class="bg-slate-700 rounded-lg py-2 text-lg w-full" >Send</button>
         </form>
       </div>
       <!--Google Map-->

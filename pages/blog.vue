@@ -5,7 +5,7 @@
   >
     <NuxtLayout name="profile" class="2xs:static md:col-start-1 md:col-end-6 lg:col-span-4 md:sticky md:top-10 left-0 h-fit"></NuxtLayout>
     <div
-      class="col-span-12 md:col-span-8 rounded-xl p-6 bg-white dark:bg-slate-900 dark:text-slate-100"
+      class="col-span-12 md:col-span-7 lg:col-span-8 md:col-start-6 lg:col-start-5 rounded-xl p-6 bg-white dark:bg-black dark:text-slate-100"
     >
       <!--Title-->
       <div class="">
@@ -20,12 +20,12 @@
       </div>
 
       <!--Blogs Archive-->
-      <div class="grid md:grid-cols-2 mt-4">
+      <div class="grid md:grid-cols-1 lg:grid-cols-2 mt-4">
         <!--single-Blog-->
         <div class="md:col-span-1 p-4">
           <!--single-Blog-Image-->
           <div class="relative">
-            <img class="rounded-xl" src="~/assets/Blog02.png" alt="" />
+            <img class="rounded-xl w-full h-[155px]" src="~/assets/Blog02.png" alt="" />
             <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
           </div>
           <!--single-Blog-Details-->
@@ -39,7 +39,7 @@
         <div class="md:col-span-1 p-4">
           <!--single-Blog-Image-->
           <div class="relative">
-            <img class="rounded-xl" src="~/assets/Blog01.jpeg" alt="" />
+            <img class="rounded-xl w-full h-[155px]" src="~/assets/Blog01.jpeg" alt="" />
             <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
           </div>
           <!--single-Blog-Details-->
@@ -52,7 +52,7 @@
         <div class="md:col-span-1 p-4">
           <!--single-Blog-Image-->
           <div class="relative">
-            <img class="rounded-xl h-64 w-full" src="~/assets/Porject01.png" alt="" />
+            <img class="rounded-xl w-full h-[155px]" src="~/assets/Porject01.png" alt="" />
             <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
           </div>
           <!--single-Blog-Details-->
@@ -65,7 +65,7 @@
         <div class="md:col-span-1 p-4">
           <!--single-Blog-Image-->
           <div class="relative">
-            <img class="rounded-xl  h-64 w-full" src="~/assets/Blog02.png" alt="" />
+            <img class="rounded-xl w-full h-[155px]" src="~/assets/Blog02.png" alt="" />
             <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
           </div>
           <!--single-Blog-Details-->
@@ -78,7 +78,7 @@
         <div class="md:col-span-1 p-4">
           <!--single-Blog-Image-->
           <div class="relative">
-            <img class="rounded-xl  h-64 w-full" src="~/assets/Blog03.jpg" alt="" />
+            <img class="rounded-xl w-full h-[155px]" src="~/assets/Blog03.jpg" alt="" />
             <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
           </div>
           <!--single-Blog-Details-->
@@ -91,7 +91,7 @@
         <div class="md:col-span-1 p-4">
           <!--single-Blog-Image-->
           <div class="relative">
-            <img class="rounded-xl  h-64 w-full" src="~/assets/Project02.png" alt="" />
+            <img class="rounded-xl w-full h-[155px]" src="~/assets/Project02.png" alt="" />
             <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
           </div>
           <!--single-Blog-Details-->
