@@ -3,7 +3,7 @@
     <div
     :class="{dark:isDarkMode}"
       class="col-span-12 row-span-2 md:row-span-2 font-lob md:row-start-1 md:col-span-6
-      lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 md:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-40 bg-opacity-50"
+      lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 md:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30"
     >
       <!--Profile Picture-->
       <div class="bg-stone-100 flex justify-center items-center overflow-hidden dark:bg-slate-900 rounded-xl">

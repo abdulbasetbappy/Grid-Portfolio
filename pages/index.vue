@@ -1,6 +1,6 @@
 <template>
   <div class="w-[400px] h-[800px] rotate-[30deg] opacity-75 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-0 left-[5%] blur-[90px] translate-x-[-50px] translate-y-[-100px]"></div>
-  <div class="w-[600px] h-[1000px] rotate-90 opacity-75 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%] left-[40%] blur-[90px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[600px] h-[1000px] rotate-90 opacity-35 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%] left-[40%] blur-[90px] translate-x-[-50px] translate-y-[-50px]"></div>
 
   <div :class="{ dark: isDarkMode }" class="w-full">
     <div
@@ -12,7 +12,7 @@
 
       <!--Experience Details-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
       <!--Title-->
         <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl pb-2 font-san font-semibold">
@@ -42,7 +42,7 @@
 
       <!--Expertise-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
       <!--Title-->
         <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl pb-2 font-san font-semibold">
@@ -55,7 +55,7 @@
           <!--Vue-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class="py-3 flex justify-center w-full rounded-md"
             >
               <Icon name="devicon:vuejs" class="xl:h-14 2xl:h-16 w-14 2xs:h-8 2xs:w-8" />
             </div>
@@ -64,7 +64,7 @@
           <!--Pinia-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class="py-3 flex justify-center w-full rounded-md"
             >
               <Icon name="logos:pinia" class="xl:h-14 w-14 2xs:h-8 2xl:h-16 2xs:w-8" />
             </div>
@@ -73,7 +73,7 @@
           <!--Nuxt-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class="py-3 flex justify-center w-full rounded-md"
             >
               <Icon name="logos:nuxt-icon" class="xl:h-14 w-14 2xl:h-16 2xs:h-8 2xs:w-8" />
             </div>
@@ -82,7 +82,7 @@
           <!--Tailwind CSS-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class=" py-3 flex justify-center w-full rounded-md"
             >
               <Icon
                 name="logos:tailwindcss-icon"
@@ -94,7 +94,7 @@
           <!--SCSS-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class="py-3 flex justify-center w-full rounded-md"
             >
               <Icon
                 name="vscode-icons:file-type-scss"
@@ -106,7 +106,7 @@
           <!--MongoDB-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class=" py-3 flex justify-center w-full rounded-md"
             >
               <Icon
                 name="vscode-icons:file-type-mongo"
@@ -118,7 +118,7 @@
           <!--NodeJs-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class=" py-3 flex justify-center w-full rounded-md"
             >
               <Icon
                 name="logos:nodejs-icon-alt"
@@ -130,7 +130,7 @@
           <!--ExpressJs-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class="py-3 flex justify-center w-full rounded-md"
             >
               <Icon
                 name="skill-icons:expressjs-dark"
@@ -142,7 +142,7 @@
           <!--Firebase-->
           <div class="flex justify-center items-center flex-col">
             <div
-              class="bg-slate-400 dark:bg-slate-900 py-3 flex justify-center w-full rounded-md"
+              class="py-3 flex justify-center w-full rounded-md"
             >
               <Icon name="devicon:firebase" class="xl:h-12 2xl:h-14 w-12 2xs:h-8 2xs:w-8" />
             </div>
@@ -153,7 +153,7 @@
 
       <!--Recent Projects Details-->
       <div
-        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
 
         <!--Title-->
@@ -214,7 +214,7 @@
 
       <!--Services Details-->
       <div
-        class="col-span-12 md:col-span-6 lg:col-span-5 rounded-xl xl:p-6 2xs:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-5 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
         <!--Title-->
         <h2 class="xl:text-3xl 2xl:text-4xl 2xs:text-2xl lg:text-xl font-san pb-2 lg:pb-0 font-semibold">
@@ -222,12 +222,20 @@
         </h2>
         <!--MEVN-->
         <div
-          class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 justify-center items-center md:gap-0 xl:gap-4"
+          class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-3 justify-center items-center md:gap-0 xl:gap-4"
         >
-          <div class="text-center text-[80px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] font-bold">M</div>
-          <div class="text-center text-[80px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] font-bold">E</div>
-          <div class="text-center text-[80px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] font-bold">V</div>
-          <div class="text-center text-[80px] lg:text-[60px] xl:text-[70px] 2xl:text-[80px] font-bold">N</div>
+          <div class="">
+            <Icon name="mdi:responsive" class="h-12 w-12" />
+            <p class=" text-[20px] font-bold">Responsive</p>
+          </div>
+          <div class="text-center  font-bold">
+            <Icon name="iconoir:design-nib" class="h-12 w-12"/>
+            <p class=" text-[20px] font-bold">Pixel Perfect</p>
+          </div>
+          <div class="text-center font-bold">
+            <Icon name="ph:terminal-bold" class="h-12 w-12"/>
+            <p class=" text-[20px] font-bold">Code Quality</p>
+          </div>
         </div>
         <!--Only For Small Devices-->
         <marquee
@@ -243,14 +251,14 @@
 
       <!--Project/Experience/Client Section-->
       <div
-        class="col-span-12 md:col-span-6 lg:col-span-7 grid items-center rounded-xl 2xs:p-4 xl:p-6 md:p-3 lg:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-7 grid items-center rounded-xl 2xs:p-4 xl:p-6 md:p-3 lg:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
         <div
           class="grid grid-cols-3 justify-center gap-6 2xs:gap-2 lg:gap-4 items-center"
         >
         <!--Years Experience-->
           <div
-            class="text-center dark:bg-slate-900 h-full rounded-xl xl:p-4 2xl:py-8 2xl:text-2xl 2xs:p-2 lg:p-4 2xs:text-sm md:text-base xl:text-lg"
+            class="text-center h-full rounded-xl xl:p-4 2xl:py-8 2xl:text-2xl 2xs:p-2 lg:p-4 2xs:text-sm md:text-base xl:text-lg"
           >
             <span class="font-bold text-3xl 2xs:text-2xl md:text-3xl xl:text-4xl 2xl:text-[50px]">3+</span>
             <br />
@@ -259,7 +267,7 @@
           </div>
           <!--Projects Completed-->
           <div
-            class="text-center dark:bg-slate-900 h-full rounded-xl p-4 lg:p-4 2xl:py-8 2xl:text-2xl 2xs:text-sm 2xs:p-2 xl:text-lg md:text-base"
+            class="text-center  h-full rounded-xl p-4 lg:p-4 2xl:py-8 2xl:text-2xl 2xs:text-sm 2xs:p-2 xl:text-lg md:text-base"
           >
             <span class="font-bold text-3xl 2xs:text-2xl md:text-3xl xl:text-4xl 2xl:text-[50px]">10+</span>
             <br />
@@ -268,7 +276,7 @@
           </div>
           <!--Clients Worked -->
           <div
-            class="text-center dark:bg-slate-900 h-full rounded-xl p-4 lg:p-4 2xl:py-8 2xl:text-2xl 2xs:text-sm 2xs:p-2 xl:text-lg md:text-base"
+            class="text-center h-full rounded-xl p-4 lg:p-4 2xl:py-8 2xl:text-2xl 2xs:text-sm 2xs:p-2 xl:text-lg md:text-base"
           >
             <span class="font-bold text-3xl 2xs:text-2xl md:text-3xl xl:text-4xl 2xl:text-[50px]">5+</span
             ><br />
@@ -280,7 +288,7 @@
 
       <!--More About Me-->
       <div
-        class="col-span-12 md:col-span-5 lg:col-span-5 rounded-xl 2xs:p-4 p-6 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-5 lg:col-span-5 rounded-xl 2xs:p-4 p-6 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
         <div class="">
           <div class="flex items-center justify-center">
@@ -304,7 +312,7 @@
 
       <!--Let's Work Together-->
       <div
-        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 lg:row-end-4 lg:col-span-7 rounded-xl p-6 2xs:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 lg:row-end-4 lg:col-span-7 rounded-xl p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
       <!--Headline-->
         <marquee

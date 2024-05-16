@@ -1,7 +1,7 @@
 <template>
         <!--Blog-->
         <div
-          class="col-span-12 md:col-span-12 md:row-span-1 col-end-6 rounded-xl lg:p-6 2xs:p-4 xs:px-6 md:px-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
+          class="col-span-12 md:col-span-12 md:row-span-1 col-end-6 rounded-xl lg:p-6 2xs:p-4 xs:px-6 md:px-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
         >
         <!--Title-->
           <div class="flex justify-between items-center pb-2">
