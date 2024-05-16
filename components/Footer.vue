@@ -1,7 +1,7 @@
 <template>
     <div>
         <footer class="text-white text-center">
-            <p>&copy; 2021 All Right Reserved By <strong>Abdul Baset Bappy</strong></p>
+            <p class="2xs:text-sm lg:text-base">&copy; 2021 All Right Reserved By <strong>Abdul Baset Bappy</strong></p>
         </footer>
     </div>
 </template>

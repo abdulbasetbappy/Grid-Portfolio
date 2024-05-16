@@ -1,14 +1,18 @@
 <template>
+  <div class="w-[400px] h-[800px] rotate-[30deg] opacity-75 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-0 left-[5%] blur-[90px] translate-x-[-50px] translate-y-[-100px]"></div>
+  <div class="w-[600px] h-[1000px] rotate-90 opacity-75 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%] left-[40%] blur-[90px] translate-x-[-50px] translate-y-[-50px]"></div>
+
   <div :class="{ dark: isDarkMode }" class="w-full">
     <div
-      class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm xs:max-w-screen-xs 2xs:max-w-screen-[345px] m-auto md:m-auto 2xl:m-auto grid grid-cols-1 lg:grid-cols-12 sm:mx-16 md:grid-cols-12 p-8 2xs:p-2 font-san gap-4 2xs:gap-2 xl:gap-3 2xl:gap-4 " 
+      class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm xs:max-w-screen-xs 2xs:max-w-screen-[345px] m-auto md:m-auto 2xl:m-auto grid grid-cols-1 lg:grid-cols-12 sm:mx-16 md:grid-cols-12 p-8 2xs:p-2 font-san gap-4 2xs:gap-2 xl:gap-3 2xl:gap-4" 
     >
+    
       <!--Profile Details-->
       <NuxtLayout name="profile"></NuxtLayout>
 
       <!--Experience Details-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
       >
       <!--Title-->
         <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl pb-2 font-san font-semibold">
@@ -16,7 +20,7 @@
         </h2>
         <!--First Experience Details-->
         <div
-          class="flex justify-between items-center mt-2 md:p-3 p-4 rounded-xl bg-slate-50 dark:bg-slate-900"
+          class="flex justify-between items-center mt-2 md:p-3 p-4 rounded-xl bg-opacity-80 bg-slate-300 dark:bg-slate-900"
         >
           <div>
             <p class="text-xs xl:text-lg 2xl:text-xl">2023 - Present</p>
@@ -38,7 +42,7 @@
 
       <!--Expertise-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
       >
       <!--Title-->
         <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl pb-2 font-san font-semibold">
@@ -149,7 +153,7 @@
 
       <!--Recent Projects Details-->
       <div
-        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
       >
 
         <!--Title-->
@@ -210,7 +214,7 @@
 
       <!--Services Details-->
       <div
-        class="col-span-12 md:col-span-6 lg:col-span-5 rounded-xl xl:p-6 2xs:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-5 rounded-xl xl:p-6 2xs:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
       >
         <!--Title-->
         <h2 class="xl:text-3xl 2xl:text-4xl 2xs:text-2xl lg:text-xl font-san pb-2 lg:pb-0 font-semibold">
@@ -239,7 +243,7 @@
 
       <!--Project/Experience/Client Section-->
       <div
-        class="col-span-12 md:col-span-6 lg:col-span-7 grid items-center rounded-xl 2xs:p-4 xl:p-6 md:p-3 lg:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-7 grid items-center rounded-xl 2xs:p-4 xl:p-6 md:p-3 lg:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
       >
         <div
           class="grid grid-cols-3 justify-center gap-6 2xs:gap-2 lg:gap-4 items-center"
@@ -276,7 +280,7 @@
 
       <!--More About Me-->
       <div
-        class="col-span-12 md:col-span-5 lg:col-span-5 rounded-xl 2xs:p-4 p-6 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-5 lg:col-span-5 rounded-xl 2xs:p-4 p-6 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
       >
         <div class="">
           <div class="flex items-center justify-center">
@@ -300,7 +304,7 @@
 
       <!--Let's Work Together-->
       <div
-        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 lg:row-end-4 lg:col-span-7 rounded-xl p-6 2xs:p-4 bg-white dark:bg-black dark:text-slate-200"
+        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 lg:row-end-4 lg:col-span-7 rounded-xl p-6 2xs:p-4 bg-opacity-80 bg-slate-300 dark:bg-black dark:text-slate-200"
       >
       <!--Headline-->
         <marquee
@@ -308,7 +312,7 @@
           behavior="scroll"
           scrollamount="infinite"
           delay="1s"
-          class="xl:py-3 2xs:py-2 xl:block 2xs:block md:hidden lg:block bg-slate-300 rounded-md xl:px-2 font-semibold 2xs:text-lg xl:text-2xl 2xl:text-3xl text-slate-800"
+          class="xl:py-3 2xs:py-2 xl:block 2xs:block md:hidden lg:block bg-slate-400 rounded-md xl:px-2 font-semibold 2xs:text-lg xl:text-2xl 2xl:text-3xl text-slate-800"
         >
           Available For Hire 🚀 Crafting Digital Experiences 🎨
         </marquee>

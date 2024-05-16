@@ -5,7 +5,7 @@
   >
     <div>
       <div
-        class="flex bg-white p-2 rounded-lg dark:bg-black dark:text-white items-center justify-between"
+        class="flex backdrop-blur-lg p-2 rounded-lg dark:bg-black dark:text-white items-center justify-between"
       >
         <!--Logo-->
         <NuxtLink to="/" class="flex items-center justify-center flex-row">
