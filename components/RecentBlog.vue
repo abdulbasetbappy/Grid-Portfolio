@@ -6,7 +6,7 @@
     <!--Title-->
     <div class="flex justify-between items-center pb-2">
       <h2
-        class="2xs:text-xl xs:text-2xl lg:text-xl xl:text-3xl font-san pb-2 font-semibold"
+        class="2xs:text-xl xs:text-2xl text-slate-800 dark:text-slate-200 lg:text-xl xl:text-3xl font-san pb-2 font-semibold"
       >
         Recent Blog Posts
       </h2>

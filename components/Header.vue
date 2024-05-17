@@ -76,7 +76,7 @@
         <transition name="slide">
           <div
             v-if="showSidebar"
-            class="fixed lg:hidden top-0 right-0 h-full flex flex-col p-2 justify-around items-center w-[70%] bg-gray-800 text-white z-20"
+            class="fixed lg:hidden top-0 right-0 h-full flex flex-col p-2 justify-around items-center w-[70%] bg-gray-800 text-white z-30"
           >
             <!--Header Buttons-->
             <div
