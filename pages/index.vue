@@ -1,6 +1,9 @@
 <template>
   <div class="w-[400px] h-[800px] rotate-[30deg] opacity-75 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-0 left-[5%] blur-[90px] translate-x-[-50px] translate-y-[-100px]"></div>
-  <div class="w-[600px] h-[1000px] rotate-90 opacity-35 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%] left-[40%] blur-[90px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[600px] h-[800px] rotate-90 opacity-35 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%] left-[35%] blur-[90px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[300px] h-[300px] rotate-90 opacity-75 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[20%] left-[70%] blur-[90px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[400px] h-[500px] rotate-90 opacity-35 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[160%] left-[10%] blur-[90px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[300px] h-[700px] rotate-90 opacity-55 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[140%] left-[60%] blur-[90px] translate-x-[-50px] translate-y-[-50px]"></div>
 
   <div :class="{ dark: isDarkMode }" class="w-full">
     <div
@@ -12,7 +15,7 @@
 
       <!--Experience Details-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
       <!--Title-->
         <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl pb-2 font-san font-semibold">
@@ -20,7 +23,7 @@
         </h2>
         <!--First Experience Details-->
         <div
-          class="flex justify-between items-center mt-2 md:p-3 p-4 rounded-xl bg-opacity-80 bg-slate-300 dark:bg-slate-900"
+          class="flex justify-between items-center mt-2 md:p-3 p-4 rounded-xl bg-opacity-80  "
         >
           <div>
             <p class="text-xs xl:text-lg 2xl:text-xl">2023 - Present</p>
@@ -42,7 +45,7 @@
 
       <!--Expertise-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
       <!--Title-->
         <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl pb-2 font-san font-semibold">
@@ -59,7 +62,7 @@
             >
               <Icon name="devicon:vuejs" class="xl:h-14 2xl:h-16 w-14 2xs:h-8 2xs:w-8" />
             </div>
-            <p class="font-semibold text-slate-300">Vue</p>
+            <p class="font-semibold text-slate-400 ">Vue</p>
           </div>
           <!--Pinia-->
           <div class="flex justify-center items-center flex-col">
@@ -68,7 +71,7 @@
             >
               <Icon name="logos:pinia" class="xl:h-14 w-14 2xs:h-8 2xl:h-16 2xs:w-8" />
             </div>
-            <p class="font-semibold text-slate-300">Pinia</p>
+            <p class="font-semibold text-slate-400">Pinia</p>
           </div>
           <!--Nuxt-->
           <div class="flex justify-center items-center flex-col">
@@ -77,7 +80,7 @@
             >
               <Icon name="logos:nuxt-icon" class="xl:h-14 w-14 2xl:h-16 2xs:h-8 2xs:w-8" />
             </div>
-            <p class="text-slate-300 font-semibold">Nuxt</p>
+            <p class="text-slate-400 font-semibold">Nuxt</p>
           </div>
           <!--Tailwind CSS-->
           <div class="flex justify-center items-center flex-col">
@@ -89,7 +92,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-300 font-semibold">Tailwind</p>
+            <p class="text-slate-400 font-semibold">Tailwind</p>
           </div>
           <!--SCSS-->
           <div class="flex justify-center items-center flex-col">
@@ -101,7 +104,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-300 font-semibold">scss</p>
+            <p class="text-slate-400 font-semibold">scss</p>
           </div>
           <!--MongoDB-->
           <div class="flex justify-center items-center flex-col">
@@ -113,7 +116,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-300 font-semibold">MongoDB</p>
+            <p class="text-slate-400 font-semibold">MongoDB</p>
           </div>
           <!--NodeJs-->
           <div class="flex justify-center items-center flex-col">
@@ -125,7 +128,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-300 font-semibold">NodeJs</p>
+            <p class="text-slate-400 font-semibold">NodeJs</p>
           </div>
           <!--ExpressJs-->
           <div class="flex justify-center items-center flex-col">
@@ -137,7 +140,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-300 font-semibold">ExpressJs</p>
+            <p class="text-slate-400 font-semibold">ExpressJs</p>
           </div>
           <!--Firebase-->
           <div class="flex justify-center items-center flex-col">
@@ -146,14 +149,14 @@
             >
               <Icon name="devicon:firebase" class="xl:h-12 2xl:h-14 w-12 2xs:h-8 2xs:w-8" />
             </div>
-            <p class="text-slate-300 font-semibold">Firebase</p>
+            <p class="text-slate-400 font-semibold">Firebase</p>
           </div>
         </div>
       </div>
 
       <!--Recent Projects Details-->
       <div
-        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
+        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
 
         <!--Title-->
@@ -165,7 +168,7 @@
           </h2>
           <NuxtLink
             to="/works"
-            class="text-slate-400 2xl:text-xl 2xs:text-base lg:text-sm dark:border-slate-400 border-b-2"
+            class="dark:text-slate-400 text-slate-600 2xl:text-xl 2xs:text-base lg:text-sm border-slate-600 dark:border-slate-400 border-b-2"
           >
             All Projects
             <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />
@@ -178,7 +181,7 @@
         >
           <!--Project 01-->
           <div
-            class="xl:p-6 md:p-4 relative pb-0 md:pb-0 xl:pb-0 dark:bg-slate-900 rounded-xl"
+            class="xl:p-6 md:p-4 relative pb-0 md:pb-0 xl:pb-0 bg-opacity-35 bg-slate-400 dark:bg-slate-900 dark:bg-opacity-35 rounded-xl"
           >
             <img
               class="rounded-t-xl 2xl:h-[245px] xl:h-[225px] 2xl:w-[340px] w-[320px] 2xs:h-[220px] lg:h-[190px]"
@@ -186,7 +189,7 @@
               alt=""
             />
             <p
-              class="absolute bottom-6 2xs:bottom-4 left-0 bg-slate-500 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm rounded-r-xl lg:text-xs 2xl:text-xl"
+              class="absolute bottom-6 2xs:bottom-4 left-0 text-slate-200 bg-slate-500 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm rounded-r-xl lg:text-xs 2xl:text-xl"
             >
               Blog Website
             </p>
@@ -194,7 +197,7 @@
 
           <!--Project 02-->
           <div
-            class="xl:p-6 md:p-4 pb-0 md:pb-0 xl:pb-0 dark:bg-slate-900 relative rounded-xl"
+            class="xl:p-6 md:p-4 pb-0 md:pb-0 xl:pb-0 bg-opacity-35 bg-slate-400 dark:bg-slate-900 dark:bg-opacity-35 relative rounded-xl"
           >
             <img
               class="rounded-t-xl 2xl:h-[245px] 2xl:w-[340px] xl:h-[225px] w-[320px] 2xs:h-[220px] lg:h-[190px]"
@@ -202,7 +205,7 @@
               alt=""
             />
             <p
-              class="absolute bottom-6 2xs:bottom-4 left-0 bg-slate-500 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm lg:text-xs rounded-r-xl 2xl:text-xl"
+              class="absolute bottom-6 2xs:bottom-4 left-0 text-slate-200 bg-slate-500 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm lg:text-xs rounded-r-xl 2xl:text-xl"
             >
               Portfolio
             </p>
