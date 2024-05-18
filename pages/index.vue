@@ -1,23 +1,26 @@
 <template>
-  <div class="w-[400px] 2xs:w-[200px] h-[800px] rotate-[30deg] opacity-75 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-0 left-[5%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-100px]"></div>
+  <!--Background OverLays-->
+  <div class="w-[400px] 2xs:w-[200px] sm:w-[350px] md:w-[200px] lg:w-[350px] h-[800px] md:h-[600px] lg:h-[800px] rotate-[30deg] opacity-75 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-0 left-[5%] xs:left-[20%] md:left-[15%] sm:left-[25%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-100px]"></div>
 
-  <div class="w-[600px] 2xs:w-[250px] h-[800px] 2xs:h-[550px] rotate-45 opacity-35 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%] left-[35%] 2xs:left-[5%] blur-[90px] translate-x-[-30px] translate-y-[-30px]"></div>
+  <div class="w-[600px] 2xs:w-[250px] sm:w-[350px] md:w-[250px] h-[800px] 2xs:h-[450px] sm:h-[550px] md:h-[300px] lg:h-[500px] rotate-45 xs:rotate-12 opacity-35 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%] xs:top-[70%] md:top-[10%] left-[25%] 2xs:left-[5%] xs:left-[30%] md:left-[50%] lg:left-[65%] blur-[90px] translate-x-[-30px] lg:translate-y-[-30px]"></div>
 
-  <div class="w-[300px] 2xs:w-[150px] h-[300px] 2xs:h-[500px] rotate-90 opacity-75 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[20%] 2xs:top-[130%] left-[70%] 2xs:left-[15%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[300px] 2xs:w-[150px] sm:w-[200px] h-[300px] 2xs:h-[500px] rotate-90 opacity-95 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[20%] 2xs:top-[130%] md:top-[50%] xl:top-[60%] left-[60%] 2xs:left-[15%] sm:left-[15%] xs:left-[45%] md:left-[15%] lg:left-[35%] xl:left-[45%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-50px]"></div>
 
-  <div class="w-[400px] 2xs:w-[180px] h-[500px] 2xs:h-[600px] rotate-90 2xs:rotate-45 opacity-35 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[160%] 2xs:top-[190%] left-[10%] blur-[90px] 2xs:blur-[70px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[400px] 2xs:w-[180px] sm:w-[300px] h-[500px] 2xs:h-[600px] lg:h-[500px] rotate-90 2xs:rotate-45 lg:rotate-[60] opacity-35 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[160%] 2xs:top-[190%] sm:top-[175%] md:top-[70%] lg:top-[75%] xl:top-[90%] left-[10%] xs:left-[36%] sm:left-[25%] md:left-[45%] lg:left-[60%] lg:blur-[90px] 2xs:blur-[70px] translate-x-[-50px] translate-y-[-50px]"></div>
 
-  <div class="w-[300px] h-[700px] 2xs:h-[950px] rotate-90 2xs:rotate-6 opacity-55 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[140%] 2xs:top-[245%] left-[60%] 2xs:left-[15%] blur-[90px] 2xs:blur-[30px] translate-x-[-30px] translate-y-[-50px]"></div>
+  <div class="w-[300px] h-[700px] 2xs:h-[950px] md:h-[820px] lg:h-[550px] xl:h-[750px] rotate-90 xs:-rotate-12 2xs:rotate-6 md:-rotate-45 opacity-55 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[140%] 2xs:top-[245%] md:top-[100%] lg:top-[80%] xl:top-[90%] left-[60%] 2xs:left-[15%] xs:left-[30%] sm:left-[10%] blur-[90px] 2xs:blur-[30px] translate-x-[-30px] translate-y-[-50px]"></div>
 
+
+  <!--Main Home Page-->
   <div :class="{ dark: isDarkMode }" class="w-full">
     <div
       class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm xs:max-w-screen-xs 2xs:max-w-screen-[345px] m-auto md:m-auto 2xl:m-auto grid grid-cols-1 lg:grid-cols-12 sm:mx-16 md:grid-cols-12 p-8 2xs:p-2 font-san gap-4 2xs:gap-2 xl:gap-3 2xl:gap-4" 
     >
     
-      <!--Profile Details-->
+      <!--Profile Card Details From Profile Layout-->
       <NuxtLayout name="profile"></NuxtLayout>
 
-      <!--Experience Details-->
+      <!--Work Experience Details Section-->
       <div
         class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
@@ -47,7 +50,7 @@
         </div>
       </div>
 
-      <!--Expertise-->
+      <!--Expertise Section-->
       <div
         class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
@@ -158,7 +161,7 @@
         </div>
       </div>
 
-      <!--Recent Projects Details-->
+      <!--Recent Projects Details Section-->
       <div
         class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
@@ -219,7 +222,7 @@
 
       </div>
 
-      <!--Services Details-->
+      <!--Services Details Section Responsive/Design/Code/Efficiency-->
       <div
         class="col-span-12 md:col-span-6 lg:col-span-6 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl grid items-center justify-center bordered shadow-xl bg-slate-200 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
@@ -256,7 +259,7 @@
         </marquee>
       </div>
 
-      <!--Project/Experience/Client Section-->
+      <!-- Total Project/Experience/Client Count Section-->
       <div
         class="col-span-12 md:col-span-6 lg:col-span-6 grid items-center rounded-xl 2xs:p-4 xl:p-6 md:p-3 lg:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
@@ -299,17 +302,19 @@
         </div>
       </div>
 
-      <!--More About Me-->
+      <!--More About Me With Signature Section-->
       <div
         class="col-span-12 md:col-span-5 lg:col-span-5 rounded-xl 2xs:p-4 p-6 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
         <div class="">
+          <!--My Signature-->
           <div class="flex items-center justify-center">
             <Icon
               name="Signature"
               class="h-32 w-80 text-slate-500 2xs:h-24 2xs:w-60 md:h-36 md:w-72 lg:h-40 lg:w-80 xl:h-50 xl:w-80 "
             />
           </div>
+          <!--Buttons-->
           <div class="flex items-center justify-between xl:mt-4 2xl:mt-16">
             <p class="uppercase 2xs:text-sm xl:text-xl text-slate-600 dark:text-slate-400 xl:font-semibold 2xl:text-2xl">Credentials</p>
             <NuxtLink to="/About" class="border-b-2 border-slate-600 text-slate-800 dark:text-slate-200 2xs:text-sm xl:text-xl 2xl:text-xl">
@@ -320,14 +325,14 @@
         </div>
       </div>
 
-      <!-- My Recent Blogs -->
+      <!-- My Recent Blogs Card From RecentBlog Component-->
       <RecentBlog />
 
-      <!--Let's Work Together-->
+      <!--Let's Work Together Section-->
       <div
         class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 lg:row-end-4 lg:col-span-7 rounded-xl p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
       >
-      <!--Headline-->
+      <!--Top Headline-->
         <marquee
           direction="rl"
           behavior="scroll"
@@ -337,7 +342,7 @@
         >
           Available For Hire 🚀 Crafting Digital Experiences 🎨
         </marquee>
-      <!--Main Content-->
+        <!--Main Content-->
         <p
           class="font-bold xl:pt-2 text-slate-600 dark:text-slate-400 md:pt-2 lg:pt-2 lg:leading-tight xl:text-[46px] 2xl:text-[56px] 2xs:text-[30px] xs:text-[40px]"
         >
@@ -357,8 +362,10 @@
 </template>
 
 <script setup lang="ts">
+//Import All The Stores
 import { useDarkModeStore } from "~/store/darkMood";
 
+// Control DarkMode
 const darkModeStore = useDarkModeStore();
 const isDarkMode = computed(() => darkModeStore.darkMode);
 </script>

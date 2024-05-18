@@ -1,20 +1,26 @@
 <template>
+  <!--Main Header Section-->
   <header
     :class="{ dark: isDarkMode }"
     class="sticky font-san 2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm xs:max-w-screen-xs mx-auto top-0 z-10"
   >
+  <!--Header Container-->
     <div>
       <div
         class="flex backdrop-blur-lg p-2 rounded-lg  dark:text-white items-center justify-between"
       >
         <!--Logo-->
         <NuxtLink to="/" class="flex items-center justify-center flex-row">
-          <span class="text-sky-700 font-semibold text-3xl"
-            >#<span class="text-slate-500 text-2xl">Bappy</span></span
-          >
+          <span class="text-sky-700 font-semibold text-3xl">
+            #
+            <span class="text-slate-500 text-2xl">
+              Bappy
+            </span>
+          </span>
         </NuxtLink>
-        <!--Menu Navigation-->
+        <!--Menu Navigation Section-->
         <div class="flex justify-end items-center"> 
+          <!--Header Navbar-->
           <nav class="2xs:hidden lg:block">
             <ul class="flex flex-row items-center gap-2 lg:gap-1 justify-end">
               <li v-for="item in menuItems" :key="item.id" class="">
@@ -35,7 +41,7 @@
             </ul>
           </nav>
           <!--Header Buttons-->
-          <div class="lg:flex items-center justify-center flex-row 2xs:hidden">
+          <div class="lg:flex items-center justify-center mx-2 flex-row 2xs:hidden">
             <button
               v-if="!isDarkMode"
               @click="toggleDarkMode"
@@ -72,8 +78,9 @@
             class="w-[50%] group-hover:w-full transition-all ease-in-out duration-700 bg-slate-400 h-1 rounded-md"
           ></div>
         </div>
-        <!-- Sidebar -->
+        <!-- Main Sidebar -->
         <transition name="slide">
+          <!--Sidebar Container-->
           <div
             v-if="showSidebar"
             class="fixed lg:hidden top-0 right-0 h-full flex flex-col p-2 justify-around items-center w-[70%] bg-gray-800 text-white z-30"
@@ -105,7 +112,7 @@
               </NuxtLink>
             </div>
 
-            <!-- Sidebar content goes here -->
+            <!--Sidebar Content/Navbar Goes Here -->
             <nav class="w-full">
               <ul>
                 <li v-for="item in menuItems" :key="item.id">
@@ -123,7 +130,7 @@
               </ul>
             </nav>
 
-            <!--Bottom Profile Card-->
+            <!--Bottom Profile Card Section-->
             <div
               class="w-full flex flex-row items-center justify-start p-2 dark:bg-slate-700 rounded-xl"
             >
@@ -139,7 +146,7 @@
             </div>
           </div>
         </transition>
-        <!-- Overlay -->
+        <!--Sidebar Background Overlay -->
         <div
           v-if="showSidebar"
           @click="toggleSidebar"
@@ -151,20 +158,24 @@
 </template>
 
 <script setup lang="ts">
+//Import All The Stores
 import { useDarkModeStore } from "~/store/darkMood";
 import { useSideBarStore } from "~/store/sideBar";
-//DarMood
+
+//Control DarkMode
 const darkModeStore = useDarkModeStore();
 const isDarkMode = computed(() => darkModeStore.darkMode);
 const toggleDarkMode = () => {
   darkModeStore.toggleDarkMode();
 };
-//Sidebar
+
+//Control Sidebar
 const sideBarStore = useSideBarStore();
 const showSidebar = computed(() => sideBarStore.showSidebar);
 const toggleSidebar = () => {
   sideBarStore.toggleSidebar();
 };
+
 //Reactive Variables - Menu Items
 const menuItems = reactive([
   {
@@ -201,16 +212,15 @@ const menuItems = reactive([
 </script>
 
 <style scoped>
+/*-- Sidebar Transition Animation --*/
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.8s ease;
 }
-
 .slide-enter-to,
 .slide-leave {
   transform: translateX(0);
 }
-
 .slide-enter,
 .slide-leave-to {
   transform: translateX(100%);

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <footer class="dark:text-slate-200 text-slate-800 text-center">
+        <footer class="dark:text-slate-800 text-slate-200 text-center">
             <p class="2xs:text-sm lg:text-base">&copy; 2021 All Right Reserved By <strong>Abdul Baset Bappy</strong></p>
         </footer>
     </div>
