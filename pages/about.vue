@@ -56,19 +56,19 @@
               class="2xs:col-span-6 lg:col-span-4 grid grid-cols-3 row-start-2 2xs:gap-2 md:gap-4"
             >
               <div
-                class="flex flex-col justify-center items-center gap-2 bg-slate-600 rounded-xl p-2"
+                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-slate-700 rounded-xl p-2"
               >
                 <span class="2xs:text-3xl md:text-[60px] font-bold">2+</span>
                 <span class="2xs:text-sm text-center">Year of Experience</span>
               </div>
               <div
-                class="flex flex-col justify-center items-center gap-2 bg-slate-600 rounded-xl p-2"
+                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-slate-700 rounded-xl p-2"
               >
                 <span class="2xs:text-3xl font-bold md:text-[60px]">10+</span>
                 <span class="2xs:text-sm text-center">Projects Completed </span>
               </div>
               <div
-                class="flex flex-col justify-center items-center gap-2 bg-slate-600 rounded-xl p-2"
+                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-slate-700 rounded-xl p-2"
               >
                 <span class="2xs:text-3xl md:text-[60px] font-bold">5+</span>
                 <span class="2xs:text-sm text-center">Clients Worked </span>
@@ -97,7 +97,7 @@
         <div class="backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
           <!--Details-->
           <div
-            class="grid 2xs:auto-rows-fr lg:auto-rows-fr 2xs:grid-cols-12 gap-6 lg:grid-rows-2 2xs:grid-rows-3"
+            class="grid 2xs:auto-rows-fr lg:auto-rows-fr 2xs:grid-cols-12 2xs:gap-3 sm:gap-6 lg:grid-rows-2 2xs:grid-rows-3"
           >
             <!--Experience-->
             <div class="2xs:col-span-12 lg:col-span-7 2xs:row-start-1">
@@ -219,7 +219,7 @@
             <div
               class="2xs:col-span-12 lg:col-span-6 2xs:row-start-2 lg:row-start-1 gap-4"
             >
-              <h2 class="2xs:text-xl md:text-3xl 2xs:mt-2 lg:mt-0 font-semibold">
+              <h2 class="2xs:text-xl md:text-3xl 2xs:mt-1 lg:mt-0 font-semibold">
                 Backend
               </h2>
               <div
