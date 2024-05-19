@@ -12,7 +12,7 @@
       </h2>
       <NuxtLink
         to="/blog"
-        class="text-slate-400 lg:text-lg 2xl:text-xl 2xs:text-sm xs:text-base dark:border-slate-400 border-b-2"
+        class="text-slate-800 dark:text-slate-400 lg:text-lg 2xl:text-xl 2xs:text-sm xs:text-base dark:border-slate-400 border-slate-400 border-b-2"
       >
         All Blogs
         <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />
@@ -34,14 +34,14 @@
         <div
           class="absolute left-0 bottom-0 h-[95%] w-full p-3 flex justify-end items-start flex-col rounded-b-xl 2xl:text-2xl bg-gradient-to-t from-slate-900 from-10% via-slate-900 via-40% to-transparent"
         >
-          <h2 class="text-md 2xs:text-base 2xs:font-bold text-slate-200">
+          <h2 class="text-md 2xs:text-base md:text-sm lg:text-base 2xs:font-bold text-slate-200">
             Want To Upgrade Your Brain? Stop Doing These 7 Things
           </h2>
           <div class="flex flex-row gap-6 text-slate-500 text-sm">
-            <p>
+            <p class="md:text-xs lg:text-sm">
               <Icon name="material-symbols:readiness-score-outline-sharp" class=""/>
               15 min read</p>
-            <p>
+            <p class="md:text-xs lg:text-sm">
               <Icon name="material-symbols:calendar-month-outline" class=""/>
               Nov 6, 2023</p>
           </div>
@@ -57,14 +57,14 @@
         <div
           class="absolute left-0 bottom-0 h-[95%] w-full p-3 flex justify-end items-start flex-col rounded-b-xl 2xl:text-2xl bg-gradient-to-t from-slate-900 from-10% via-slate-900 via-40% to-transparent"
         >
-          <h2 class="text-md 2xs:text-base 2xs:font-bold text-slate-200">
+          <h2 class="text-md 2xs:text-base md:text-sm lg:text-base 2xs:font-bold text-slate-200">
             Want To Upgrade Your Brain? Stop Doing These 7 Things
           </h2>
           <div class="flex flex-row gap-6 text-slate-500 text-sm">
-            <p>
+            <p class="md:text-xs lg:text-sm">
               <Icon name="material-symbols:readiness-score-outline-sharp" class=""/>
               15 min read</p>
-            <p>
+            <p class="md:text-xs lg:text-sm">
               <Icon name="material-symbols:calendar-month-outline" class=""/>
               Nov 6, 2023</p>
           </div>
@@ -80,14 +80,14 @@
         <div
           class="absolute left-0 bottom-0 h-[95%] w-full p-3 flex justify-end items-start flex-col rounded-b-xl 2xl:text-2xl bg-gradient-to-t from-slate-900 from-10% via-slate-900 via-40% to-transparent"
         >
-          <h2 class="text-md 2xs:text-base 2xs:font-bold text-slate-200">
+          <h2 class="text-md 2xs:text-base md:text-sm lg:text-base 2xs:font-bold text-slate-200">
             Want To Upgrade Your Brain? Stop Doing These 7 Things
           </h2>
           <div class="flex flex-row gap-6 text-slate-500 text-sm">
-            <p>
+            <p class="md:text-xs lg:text-sm">
               <Icon name="material-symbols:readiness-score-outline-sharp" class=""/>
               15 min read</p>
-            <p>
+            <p class="md:text-xs lg:text-sm">
               <Icon name="material-symbols:calendar-month-outline" class=""/>
               Nov 6, 2023</p>
           </div>

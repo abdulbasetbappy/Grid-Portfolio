@@ -43,16 +43,16 @@
       </div>
       <!--Social Links-->
       <div class="flex flex-row xl:gap-2 2xs:gap-1 mb-2">
-        <NuxtLink to="https://www.facebook.com/abdulbasetbappy.info" class="border-none p-2 rounded-md dark:bg-opacity-65 bg-slate-200 opacity-65 dark:bg-slate-900 dark:border-none">
+        <NuxtLink to="https://www.facebook.com/abdulbasetbappy.info" class="border-none p-2 rounded-md dark:bg-opacity-65 bg-slate-300 opacity-65 dark:bg-slate-900 dark:border-none">
           <Icon name="mdi:facebook" class="xl:h-8 2xs:h-6 transition-all duration-150 2xs:w-6 text-slate-500 dark:text-slate-400 group-hover:text-slate-200 xl:w-8 " />
         </NuxtLink>
-        <NuxtLink to="https://www.github.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-slate-200 opacity-65 dark:bg-opacity-65 dark:bg-slate-900 dark:border-none">
+        <NuxtLink to="https://www.github.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-slate-300 opacity-65 dark:bg-opacity-65 dark:bg-slate-900 dark:border-none">
           <Icon name="mdi:github" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 dark:text-slate-400 xl:w-8" />
         </NuxtLink>
-        <NuxtLink to="https://www.codepen.com/abdulbasetbappy" class="border-none p-2 dark:bg-opacity-65 rounded-md opacity-65 bg-slate-200 dark:bg-slate-900 dark:border-none">
+        <NuxtLink to="https://www.codepen.com/abdulbasetbappy" class="border-none p-2 dark:bg-opacity-65 rounded-md opacity-65 bg-slate-300 dark:bg-slate-900 dark:border-none">
           <Icon name="mdi:codepen" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 dark:text-slate-400 xl:w-8" />
         </NuxtLink>
-        <NuxtLink to="https://www.youtube.com/abdulbasetbappy" class="border-none p-2 opacity-65 rounded-md dark:bg-opacity-65 bg-slate-200 dark:bg-slate-900 dark:border-none">
+        <NuxtLink to="https://www.youtube.com/abdulbasetbappy" class="border-none p-2 opacity-65 rounded-md dark:bg-opacity-65 bg-slate-300 dark:bg-slate-900 dark:border-none">
           <Icon name="mdi:youtube" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 dark:text-slate-400 xl:w-8" />
         </NuxtLink>
       </div>

@@ -1,14 +1,14 @@
 <template>
-  <!--Background OverLays-->
-  <div class="w-[400px] 2xs:w-[200px] sm:w-[350px] md:w-[200px] lg:w-[350px] h-[800px] md:h-[600px] lg:h-[800px] rotate-[30deg] opacity-75 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-0 left-[5%] xs:left-[20%] md:left-[15%] sm:left-[25%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-100px]"></div>
+  <!--Background OverLays
+  <div class="w-[400px] 2xs:w-[200px] sm:w-[350px] md:w-[200px] lg:w-[350px] h-[800px] 2xs:h-[500px] md:h-[600px] lg:h-[800px] rotate-[30deg] opacity-75 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-0 left-[5%] 2xs:left-[15%] xs:left-[20%] md:left-[15%] sm:left-[25%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-100px]"></div>
 
-  <div class="w-[600px] 2xs:w-[250px] sm:w-[350px] md:w-[250px] h-[800px] 2xs:h-[450px] sm:h-[550px] md:h-[300px] lg:h-[500px] rotate-45 xs:rotate-12 opacity-35 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%] xs:top-[70%] md:top-[10%] left-[25%] 2xs:left-[5%] xs:left-[30%] md:left-[50%] lg:left-[65%] blur-[90px] translate-x-[-30px] lg:translate-y-[-30px]"></div>
+  <div class="w-[600px] 2xs:w-[250px] sm:w-[350px] md:w-[250px] h-[800px] 2xs:h-[320px] sm:h-[550px] md:h-[300px] lg:h-[500px] rotate-45 2xs:rotate-45 xs:rotate-12 opacity-35 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%]  2xs:top-[30%] xs:top-[70%] md:top-[10%] left-[25%] 2xs:left-[0%] xs:left-[30%] md:left-[50%] lg:left-[65%] blur-[90px] 2xs:blur-[60px] md:blur-[90px] translate-x-[-30px] lg:translate-y-[-30px]"></div>
 
-  <div class="w-[300px] 2xs:w-[150px] sm:w-[200px] h-[300px] 2xs:h-[500px] rotate-90 opacity-95 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[20%] 2xs:top-[130%] md:top-[50%] xl:top-[60%] left-[60%] 2xs:left-[15%] sm:left-[15%] xs:left-[45%] md:left-[15%] lg:left-[35%] xl:left-[45%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[300px] 2xs:w-[150px] sm:w-[200px] h-[300px] 2xs:h-[400px] rotate-90 2xs:rotate-45 opacity-95 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[20%] 2xs:top-[50%] md:top-[50%] xl:top-[60%] left-[60%] 2xs:left-[15%] sm:left-[15%] xs:left-[45%] md:left-[15%] lg:left-[35%] xl:left-[45%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-50px]"></div>
 
-  <div class="w-[400px] 2xs:w-[180px] sm:w-[300px] h-[500px] 2xs:h-[600px] lg:h-[500px] rotate-90 2xs:rotate-45 lg:rotate-[60] opacity-35 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[160%] 2xs:top-[190%] sm:top-[175%] md:top-[70%] lg:top-[75%] xl:top-[90%] left-[10%] xs:left-[36%] sm:left-[25%] md:left-[45%] lg:left-[60%] lg:blur-[90px] 2xs:blur-[70px] translate-x-[-50px] translate-y-[-50px]"></div>
+  <div class="w-[400px] 2xs:w-[180px] sm:w-[300px] h-[500px] 2xs:h-[600px] lg:h-[500px] rotate-90 2xs:-rotate-12 lg:rotate-[60] opacity-35 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[160%] 2xs:top-[80%] sm:top-[175%] md:top-[70%] lg:top-[75%] xl:top-[90%] left-[10%] xs:left-[36%] sm:left-[25%] md:left-[45%] lg:left-[60%] lg:blur-[90px] 2xs:blur-[70px] translate-x-[-50px] translate-y-[-50px]"></div>
 
-  <div class="w-[300px] h-[700px] 2xs:h-[950px] md:h-[820px] lg:h-[550px] xl:h-[750px] rotate-90 xs:-rotate-12 2xs:rotate-6 md:-rotate-45 opacity-55 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[140%] 2xs:top-[245%] md:top-[100%] lg:top-[80%] xl:top-[90%] left-[60%] 2xs:left-[15%] xs:left-[30%] sm:left-[10%] blur-[90px] 2xs:blur-[30px] translate-x-[-30px] translate-y-[-50px]"></div>
+  <div class="w-[300px] 2xs:w-[250px] h-[700px] 2xs:h-[950px] md:h-[820px] lg:h-[550px] xl:h-[750px] rotate-90 xs:-rotate-12 2xs:rotate-6 md:-rotate-45 opacity-55 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[140%] 2xs:top-[120%] md:top-[100%] lg:top-[80%] xl:top-[90%] left-[60%] 2xs:left-[15%] xs:left-[30%] sm:left-[10%] blur-[90px] 2xs:blur-[30px] translate-x-[-30px] translate-y-[-50px]"></div>-->
 
 
   <!--Main Home Page-->
@@ -25,12 +25,12 @@
         class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
       <!--Title-->
-        <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl pb-2 font-san font-semibold">
+        <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl 2xs:pb-0 md:pb-2 font-san font-semibold">
           Work Experience
         </h2>
         <!--First Experience Details-->
         <div
-          class="flex justify-between items-center mt-2 md:p-3 p-4 rounded-xl bg-opacity-80  "
+          class="flex justify-between items-center md:mt-2 2xs:mt-0 md:p-3 p-4 rounded-xl bg-opacity-80  "
         >
           <div>
             <p class="text-xs xl:text-lg 2xl:text-xl">2023 - Present</p>
@@ -42,7 +42,7 @@
           </div>
           <div>
             <img
-              class="xl:h-6 2xs:h-6 lg:h-5 2xl:h-7"
+              class="xl:h-6 2xs:h-5 sm:h-6 lg:h-5 2xl:h-7"
               src="~/assets/wetechpro.png"
               alt=""
             />
@@ -69,7 +69,7 @@
             >
               <Icon name="devicon:vuejs" class="xl:h-14 2xl:h-16 w-14 2xs:h-8 2xs:w-8" />
             </div>
-            <p class="font-semibold text-slate-400 ">Vue</p>
+            <p class="font-semibold 2xs:text-xs sm:text-sm text-slate-400 ">Vue</p>
           </div>
           <!--Pinia-->
           <div class="flex justify-center items-center flex-col">
@@ -78,7 +78,7 @@
             >
               <Icon name="logos:pinia" class="xl:h-14 w-14 2xs:h-8 2xl:h-16 2xs:w-8" />
             </div>
-            <p class="font-semibold text-slate-400">Pinia</p>
+            <p class="font-semibold 2xs:text-xs sm:text-sm text-slate-400">Pinia</p>
           </div>
           <!--Nuxt-->
           <div class="flex justify-center items-center flex-col">
@@ -87,7 +87,7 @@
             >
               <Icon name="logos:nuxt-icon" class="xl:h-14 w-14 2xl:h-16 2xs:h-8 2xs:w-8" />
             </div>
-            <p class="text-slate-400 font-semibold">Nuxt</p>
+            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">Nuxt</p>
           </div>
           <!--Tailwind CSS-->
           <div class="flex justify-center items-center flex-col">
@@ -99,7 +99,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-400 font-semibold">Tailwind</p>
+            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">Tailwind</p>
           </div>
           <!--SCSS-->
           <div class="flex justify-center items-center flex-col">
@@ -111,7 +111,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-400 font-semibold">scss</p>
+            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">scss</p>
           </div>
           <!--MongoDB-->
           <div class="flex justify-center items-center flex-col">
@@ -123,7 +123,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-400 font-semibold">MongoDB</p>
+            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">MongoDB</p>
           </div>
           <!--NodeJs-->
           <div class="flex justify-center items-center flex-col">
@@ -135,7 +135,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-400 font-semibold">NodeJs</p>
+            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">NodeJs</p>
           </div>
           <!--ExpressJs-->
           <div class="flex justify-center items-center flex-col">
@@ -147,7 +147,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-400 font-semibold">ExpressJs</p>
+            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">ExpressJs</p>
           </div>
           <!--Firebase-->
           <div class="flex justify-center items-center flex-col">
@@ -156,7 +156,7 @@
             >
               <Icon name="devicon:firebase" class="xl:h-12 2xl:h-14 w-12 2xs:h-8 2xs:w-8" />
             </div>
-            <p class="text-slate-400 font-semibold">Firebase</p>
+            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">Firebase</p>
           </div>
         </div>
       </div>
@@ -175,7 +175,7 @@
           </h2>
           <NuxtLink
             to="/works"
-            class="dark:text-slate-400 text-slate-600 2xl:text-xl 2xs:text-base lg:text-sm border-slate-600 dark:border-slate-400 border-b-2"
+            class="dark:text-slate-400 text-slate-600 2xl:text-xl 2xs:text-sm lg:text-sm border-slate-600 dark:border-slate-400 border-b-2"
           >
             All Projects
             <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />
@@ -196,7 +196,7 @@
               alt=""
             />
             <p
-              class="absolute bottom-6 2xs:bottom-4 left-0 text-slate-200 bg-slate-500 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm rounded-r-xl lg:text-xs 2xl:text-xl"
+              class="absolute bottom-6 2xs:bottom-4 left-0 text-slate-200 bg-slate-700 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm rounded-r-xl lg:text-xs 2xl:text-xl"
             >
               Blog Website
             </p>
@@ -212,7 +212,7 @@
               alt=""
             />
             <p
-              class="absolute bottom-6 2xs:bottom-4 left-0 text-slate-200 bg-slate-500 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm lg:text-xs rounded-r-xl 2xl:text-xl"
+              class="absolute bottom-6 2xs:bottom-4 left-0 text-slate-200 bg-slate-700 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm lg:text-xs rounded-r-xl 2xl:text-xl"
             >
               Portfolio
             </p>
@@ -224,27 +224,27 @@
 
       <!--Services Details Section Responsive/Design/Code/Efficiency-->
       <div
-        class="col-span-12 md:col-span-6 lg:col-span-6 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl grid items-center justify-center bordered shadow-xl bg-slate-200 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-6 rounded-xl xl:p-6 2xs:p-6 backdrop-blur-3xl grid items-center justify-center bordered shadow-xl bg-slate-200 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
       >
         <!--Main Services-->
         <div
-          class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 justify-center items-center md:gap-8 lg:gap-3 xl:gap-4"
+          class="grid grid-cols-4 md:grid-cols-2 lg:grid-cols-4 justify-center items-center 2xs:gap-3 sm:gap-10 md:gap-8 lg:gap-3 xl:gap-8"
         >
           <div class="text-center font-bold">
-            <Icon name="mdi:responsive" class="h-12 w-12" />
-            <p class=" text-[16px] mt-2 font-bold">Responsive</p>
+            <Icon name="mdi:responsive" class="sm:h-12 sm:w-12 xl:h-16 xl:w-16 2xs:h-10 2xs:w-10" />
+            <p class="2xs:text-[14px] md:text-[16px] xl:text-[18px] mt-2 2xs:font-normal sm:font-bold">Responsive</p>
           </div>
           <div class="text-center font-bold">
-            <Icon name="iconoir:design-nib" class="h-12 w-12"/>
-            <p class=" text-[16px] mt-2 font-bold">Design</p>
+            <Icon name="iconoir:design-nib" class="sm:h-12 sm:w-12 xl:h-16 xl:w-16 2xs:h-10 2xs:w-10"/>
+            <p class="2xs:text-[14px] md:text-[16px] xl:text-[18px] mt-2 2xs:font-normal sm:font-bold">Design</p>
           </div>
           <div class="text-center font-bold">
-            <Icon name="ph:terminal-bold" class="h-12 w-12"/>
-            <p class=" text-[16px] mt-2 font-bold">Code</p>
+            <Icon name="ph:terminal-bold" class="sm:h-12 sm:w-12 xl:h-16 xl:w-16 2xs:h-10 2xs:w-10"/>
+            <p class="2xs:text-[14px] md:text-[16px] xl:text-[18px] mt-2 2xs:font-normal sm:font-bold">Code</p>
           </div>
           <div class="text-center font-bold">
-            <Icon name="material-symbols:network-check-rounded" class="h-12 w-12"/>
-            <p class=" text-[16px] mt-2 font-bold">Efficiency</p>
+            <Icon name="material-symbols:network-check-rounded" class="sm:h-12 sm:w-12 2xs:h-10 2xs:w-10 xl:h-16 xl:w-16"/>
+            <p class="2xs:text-[14px] md:text-[16px] xl:text-[18px] mt-2 2xs:font-normal sm:font-bold">Efficiency</p>
           </div>
         </div>
         <!--Only For Small Devices-->
@@ -253,7 +253,7 @@
           behavior="scroll"
           scrollamount="2"
           delay="1s"
-          class="py-3 bg-slate-300 rounded-md xl:hidden 2xs:hidden md:block lg:hidden px-2 md:mt-5 font-semibold text-xl text-slate-800"
+          class="py-3 dark:bg-slate-700 bg-slate-300 rounded-md xl:hidden 2xs:hidden md:block lg:hidden px-2 md:mt-5 font-semibold text-xl text-slate-800 dark:text-slate-400"
         >
           Available For Hire 🚀 Crafting Digital Experiences 🎨
         </marquee>
@@ -270,7 +270,7 @@
           <div
             class="text-center h-full rounded-xl xl:p-4 2xl:py-8 2xl:text-2xl 2xs:p-2 lg:p-2 2xs:text-sm md:text-base xl:text-lg"
           >
-            <span class="font-bold text-3xl 2xs:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[50px]">3+</span>
+            <span class="font-bold text-3xl 2xs:text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl">3+</span>
             <span class="text-md">
               <br />
             years <br />
@@ -279,24 +279,24 @@
           </div>
           <!--Projects Completed-->
           <div
-            class="text-center  h-full rounded-xl p-4 lg:p-2 2xl:py-8 2xl:text-2xl 2xs:text-sm 2xs:p-2 xl:text-lg md:text-base"
+            class="text-center h-full rounded-xl xl:p-4 2xl:py-8 2xl:text-2xl 2xs:p-2 lg:p-2 2xs:text-sm md:text-base xl:text-lg"
           >
-            <span class="font-bold text-3xl 2xs:text-2xl md:text-3xl xl:text-4xl 2xl:text-[50px]">10+</span>
+            <span class="font-bold text-3xl 2xs:text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl">10+</span>
             <span class="text-md">
               <br />
-            Projects <br />
-            Completed
+              Projects <br />
+              Completed
             </span>
           </div>
           <!--Clients Worked -->
           <div
-            class="text-center h-full rounded-xl p-4 lg:p-2 2xl:py-8 2xl:text-2xl 2xs:text-sm 2xs:p-2 xl:text-lg md:text-base"
+            class="text-center h-full rounded-xl xl:p-4 2xl:py-8 2xl:text-2xl 2xs:p-2 lg:p-2 2xs:text-sm md:text-base xl:text-lg"
           >
-            <span class="font-bold text-3xl 2xs:text-2xl md:text-3xl xl:text-4xl 2xl:text-[50px]">5+</span>
+            <span class="font-bold text-3xl 2xs:text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-6xl">2+</span>
             <span class="text-md">
               <br />
-            Clients <br />
-            Worked
+              Clients <br />
+              Worked
             </span>
           </div>
         </div>
@@ -311,15 +311,15 @@
           <div class="flex items-center justify-center">
             <Icon
               name="Signature"
-              class="h-32 w-80 text-slate-500 2xs:h-24 2xs:w-60 md:h-36 md:w-72 lg:h-40 lg:w-80 xl:h-50 xl:w-80 "
+              class="h-32 w-80 text-slate-500 2xs:h-24 2xs:w-60 md:h-32 md:w-72 lg:h-40 lg:w-80 xl:h-50 xl:w-80 "
             />
           </div>
           <!--Buttons-->
-          <div class="flex items-center justify-between xl:mt-4 2xl:mt-16">
+          <div class="flex items-end justify-between  xl:mt-4 2xl:mt-16">
             <p class="uppercase 2xs:text-sm xl:text-xl text-slate-600 dark:text-slate-400 xl:font-semibold 2xl:text-2xl">Credentials</p>
-            <NuxtLink to="/About" class="border-b-2 border-slate-600 text-slate-800 dark:text-slate-200 2xs:text-sm xl:text-xl 2xl:text-xl">
+            <NuxtLink to="/About" class="border-b-2 border-slate-400 text-slate-800 dark:text-slate-400 2xs:text-sm xl:text-xl 2xl:text-xl">
               More About Me
-              <Icon name="ph:arrow-elbow-right-light" class="h-8 w-8" />
+              <Icon name="ph:arrow-elbow-right-light" class="md:h-8 md:w-8 2xs:h-6 2xs:w-6" />
             </NuxtLink>
           </div>
         </div>
@@ -351,9 +351,9 @@
         </p>
         <!--Button-->
         <div class="flex justify-end items-center">
-          <NuxtLink to="/contact" class="border-b-2 border-slate-600 text-slate-800 dark:text-slate-200 2xs:text-base lg:text-sm xl:text-xl 2xl:text-xl">
+          <NuxtLink to="/contact" class="border-b-2 border-slate-400 text-slate-800 dark:text-slate-200 2xs:text-sm md:text-base   lg:text-sm xl:text-xl 2xl:text-xl">
             Let's Talk
-            <Icon name="ph:arrow-elbow-right-light" class="h-8 w-8" />
+            <Icon name="ph:arrow-elbow-right-light" class="md:h-8 md:w-8 2xs:w-6 2xs:h-6" />
           </NuxtLink>
         </div>
       </div>

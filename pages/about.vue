@@ -10,7 +10,7 @@
 
       <div class="2xs:col-span-12 md:col-span-7 lg:col-span-8 rounded-xl dark:text-slate-100">
         <!--About Me Block-->
-        <div class="dark:bg-black 2xs:p-4 rounded-xl">
+        <div class="backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200 2xs:p-4 rounded-xl">
           <!--Title-->
           <div
             class="flex 2xs:flex-col 2xs:justify-start 2xs:items-start lg:justify-between lg:flex-row lg:items-center"
@@ -94,7 +94,7 @@
         </div>
 
         <!-- All Details -->
-        <div class="dark:bg-black 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
+        <div class="backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
           <!--Details-->
           <div
             class="grid 2xs:auto-rows-fr lg:auto-rows-fr 2xs:grid-cols-12 gap-6 lg:grid-rows-2 2xs:grid-rows-3"
@@ -184,7 +184,7 @@
         </div>
 
         <!-- Tools That I Use -->
-        <div class="dark:bg-black 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
+        <div class="backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
           <!--Details-->
           <div
             class="grid lg:grid-cols-12 lg:gap-6 h-fit lg:grid-rows-2 2xs:grid-rows-3"
@@ -261,7 +261,7 @@
           <div class="grid grid-cols-12 md:gap-6 2xs:gap-3 h-full grid-rows-1">
             <!--Signature-->
             <div class="2xs:col-span-5 md:col-span-5 row-start-1">
-              <div class="2xs:p-2 md:p-4 rounded-xl bg-slate-50 dark:bg-black">
+              <div class="2xs:p-2 md:p-4 rounded-xl backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30">
                 <Icon
                   name="Signature"
                   class="2xs:h-12 2xs:w-32 md:h-20 md:w-80"
@@ -271,7 +271,7 @@
             <!--Marquee-->
             <div class="2xs:col-span-7 md:col-span-7 row-start-1">
               <div
-                class="2xs:p-2 md:p-4 rounded-xl flex items-center justify-center h-full bg-slate-50 dark:bg-black"
+                class="2xs:p-2 md:p-4 rounded-xl flex items-center justify-center h-full backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30"
               >
                 <marquee
                   direction="rl"
