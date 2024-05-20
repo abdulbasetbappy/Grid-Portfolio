@@ -1,15 +1,15 @@
 <template>
   <div
     :class="{ dark: isDarkMode }"
-    class="2xs:max-w-screen-[345px] xs:max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl scroll-smooth font-san grid auto-rows-min md:grid-cols-12 2xs:grid-cols-1 2xs:p-2 2xs:m-auto m-2 p-8 gap-3"
+    class="2xs:max-w-screen-[345px] xs:max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl scroll-smooth font-san grid auto-rows-min md:grid-cols-12 2xs:grid-cols-1 2xs:p-2 2xs:m-auto m-2 p-8 gap-4 2xs:gap-2 xl:gap-3 2xl:gap-4"
   >
-    <NuxtLayout name="profile" class="2xs:static md:col-start-1 md:col-end-6 lg:col-span-4 md:sticky md:top-[4.8rem] left-0 h-fit"></NuxtLayout>
+    <NuxtLayout name="profile" class="2xs:static md:col-start-1 md:col-end-7 lg:col-span-4 md:sticky md:top-[4.8rem] left-0 h-fit"></NuxtLayout>
     <div
-      class="col-span-12 md:col-span-7 md:sticky md:top-[4.8rem] left-0 lg:col-span-8 md:col-start-6 lg:col-start-5 rounded-xl p-4 backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-100"
+      class="col-span-12 md:col-span-6 md:sticky md:top-[4.8rem] left-0 lg:col-span-8 md:col-start-7 lg:col-start-5 rounded-xl p-4 backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-100"
     >
       <!--Title-->  
       <div>
-        <h2 class="text-3xl mb-3 font-bold">
+        <h2 class="2xs:text-3xl sm:text-4xl mb-3 font-bold">
           Let's 👋 <span class="text-blue-400"> Work </span>Together
         </h2>
         <p class="font-medium text-md">
@@ -19,32 +19,25 @@
         </p>
 
         <!--Contact-->
-        <div class="py-4 grid grid-cols-12 gap-4 grid-rows-1">
-          <div class="2xs:col-span-12 md:col-span-5 flex bg-slate-900 p-2 rounded-lg justify-start gap-2 items-center flex-row">
+        <div class="py-4 grid grid-cols-12 gap-4 lg:gap-2 grid-rows-1 md:grid-rows-3 lg:grid-rows-1">
+          <!--Mail-->
+          <div class="2xs:col-span-12 md:col-span-12 md:row-span-1 lg:col-span-6 flex bg-slate-900 p-2 sm:p-4 rounded-lg justify-start gap-2 items-center flex-row">
             <div>
-              <Icon name="material-symbols:mark-email-unread-outline-rounded" class="h-10 w-10" />
+              <Icon name="material-symbols:mark-email-unread-outline-rounded" class="h-10 w-10 xl:h-12 xl:w-12" />
             </div>
-            <div>
-              <p>abdulbasetbappy@hotmail.com</p>
+            <div class="2xs:text-sm xs:text-base lg:text-sm">
+              <p>Mail:</p>
               <p>abdulbasetbappy@hotmail.com</p>
             </div>
           </div>
-          <div class="flex 2xs:col-span-12 md:col-span-3 bg-slate-900 p-2 rounded-lg justify-start gap-2 items-center flex-row">
+          <!--Call-->
+          <div class="flex 2xs:col-span-12 md:col-span-12 lg:col-span-6 bg-slate-900 p-2 sm:p-4 rounded-lg justify-start gap-2 items-center flex-row">
             <div>
-              <Icon name="material-symbols:phone-in-talk-outline-rounded" class="h-10 w-10" />
+              <Icon name="material-symbols:phone-in-talk-outline-rounded" class="h-10 w-10 xl:h-12 xl:w-12" />
             </div>
-            <div>
-              <p>+8801799568976</p>
-              <p>+8801735465415</p>
-            </div>
-          </div>
-          <div class="flex 2xs:col-span-12 md:col-span-4 bg-slate-900 p-2 rounded-lg justify-start items-center gap-2 flex-row">
-            <div>
-              <Icon name="material-symbols:house-outline-rounded" class="h-10 w-10" />
-            </div>
-            <div>
-              <p>89/9 Jamalpur,</p>
-              <p>Mymensingh, Bangladesh</p>
+            <div class="2xs:text-sm xs:text-base lg:text-sm">
+              <p>Call:</p>
+              <p>+8801904015818</p>
             </div>
           </div>
         </div>
@@ -52,43 +45,46 @@
       <!--Social Media Contact-->
       <div class="my-4 flex justify-center items-center gap-2" >
         <NuxtLink to="https://www.facebook.com/abdulbasetbappy.info" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
-          <Icon name="mdi:facebook" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 " />
+          <Icon name="mdi:facebook" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 sm:w-8 sm:h-8 " />
         </NuxtLink>
         <NuxtLink to="www.github.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
-          <Icon name="mdi:github" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8" />
+          <Icon name="mdi:github" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 sm:w-8 sm:h-8" />
         </NuxtLink>
         <NuxtLink to="https://www.codepen.com/abdulbasetbappy" class="border-none p-2  rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
-          <Icon name="mdi:codepen" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8" />
+          <Icon name="mdi:codepen" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 sm:w-8 sm:h-8" />
         </NuxtLink>
         <NuxtLink to="https://www.youtube.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
-          <Icon name="mdi:youtube" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8" />
+          <Icon name="mdi:youtube" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 sm:w-8 sm:h-8" />
         </NuxtLink>
       </div>
       <!--Form-->
       <div class="my-4">
         <form class="">
-          <div class="flex justify-center 2xs:flex-col md:flex-row  items-center 2xs:gap-0 md:gap-4">
-            <div class="2xs:w-[100%] md:w-[50%]">
+          <div class="flex justify-center 2xs:flex-col sm:flex-row  items-center 2xs:gap-2 md:gap-4">
+            <!--Name-->
+            <div class="2xs:w-[100%] sm:w-[50%]">
               <label for="name">Name</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 placeholder="Your Name"
-                class="w-full text-xl outline-none text-slate-700 rounded-md p-2"
+                class="w-full 2xs:text-sm sm:text-base outline-none placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 rounded-md p-2"
               />
             </div>
-            <div class="2xs:w-[100%] md:w-[50%]">
+            <!--Email-->
+            <div class="2xs:w-[100%] sm:w-[50%]">
               <label for="email">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Your Email"
-                class="w-full text-xl text-slate-700 outline-none rounded-md p-2"
+                class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
               />
             </div>
           </div>
+          <!--Subject-->
           <div>
             <label for="subject">Subject</label>
             <input
@@ -96,19 +92,21 @@
               id="subject"
               name="subject"
               placeholder="Your Subject"
-              class="w-full text-xl text-slate-700 outline-none rounded-md p-2"
+              class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
             />
           </div>
+          <!--Message-->
           <div>
             <label for="message">Message</label>
             <textarea
               id="message"
               name="message"
               placeholder="Your Message"
-              class="w-full text-xl text-slate-700 outline-none rounded-md p-2"
+              class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
             ></textarea>
           </div>
-          <button class="bg-slate-700 rounded-lg py-2 text-lg w-full" >Send</button>
+          <!--Send Button-->
+          <button class="bg-slate-700 rounded-lg mt-2 py-2 2xs:text-base w-full" >Send</button>
         </form>
       </div>
       <!--Google Map-->

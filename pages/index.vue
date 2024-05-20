@@ -1,17 +1,4 @@
 <template>
-  <!--Background OverLays
-  <div class="w-[400px] 2xs:w-[200px] sm:w-[350px] md:w-[200px] lg:w-[350px] h-[800px] 2xs:h-[500px] md:h-[600px] lg:h-[800px] rotate-[30deg] opacity-75 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-0 left-[5%] 2xs:left-[15%] xs:left-[20%] md:left-[15%] sm:left-[25%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-100px]"></div>
-
-  <div class="w-[600px] 2xs:w-[250px] sm:w-[350px] md:w-[250px] h-[800px] 2xs:h-[320px] sm:h-[550px] md:h-[300px] lg:h-[500px] rotate-45 2xs:rotate-45 xs:rotate-12 opacity-35 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[60%]  2xs:top-[30%] xs:top-[70%] md:top-[10%] left-[25%] 2xs:left-[0%] xs:left-[30%] md:left-[50%] lg:left-[65%] blur-[90px] 2xs:blur-[60px] md:blur-[90px] translate-x-[-30px] lg:translate-y-[-30px]"></div>
-
-  <div class="w-[300px] 2xs:w-[150px] sm:w-[200px] h-[300px] 2xs:h-[400px] rotate-90 2xs:rotate-45 opacity-95 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[20%] 2xs:top-[50%] md:top-[50%] xl:top-[60%] left-[60%] 2xs:left-[15%] sm:left-[15%] xs:left-[45%] md:left-[15%] lg:left-[35%] xl:left-[45%] blur-[90px] 2xs:blur-[60px] translate-x-[-50px] translate-y-[-50px]"></div>
-
-  <div class="w-[400px] 2xs:w-[180px] sm:w-[300px] h-[500px] 2xs:h-[600px] lg:h-[500px] rotate-90 2xs:-rotate-12 lg:rotate-[60] opacity-35 2xs:opacity-90 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[160%] 2xs:top-[80%] sm:top-[175%] md:top-[70%] lg:top-[75%] xl:top-[90%] left-[10%] xs:left-[36%] sm:left-[25%] md:left-[45%] lg:left-[60%] lg:blur-[90px] 2xs:blur-[70px] translate-x-[-50px] translate-y-[-50px]"></div>
-
-  <div class="w-[300px] 2xs:w-[250px] h-[700px] 2xs:h-[950px] md:h-[820px] lg:h-[550px] xl:h-[750px] rotate-90 xs:-rotate-12 2xs:rotate-6 md:-rotate-45 opacity-55 2xs:opacity-85 bg-gradient-to-r from-red-600 to-purple-600 rounded-[100%] absolute top-[140%] 2xs:top-[120%] md:top-[100%] lg:top-[80%] xl:top-[90%] left-[60%] 2xs:left-[15%] xs:left-[30%] sm:left-[10%] blur-[90px] 2xs:blur-[30px] translate-x-[-30px] translate-y-[-50px]"></div>-->
-
-
-  <!--Main Home Page-->
   <div :class="{ dark: isDarkMode }" class="w-full">
     <div
       class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm xs:max-w-screen-xs 2xs:max-w-screen-[345px] m-auto md:m-auto 2xl:m-auto grid grid-cols-1 lg:grid-cols-12 sm:mx-16 md:grid-cols-12 p-8 2xs:p-2 font-san gap-4 2xs:gap-2 xl:gap-3 2xl:gap-4" 
