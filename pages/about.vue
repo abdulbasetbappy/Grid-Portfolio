@@ -137,7 +137,7 @@
                   </p>
                 </div>
                 <div class="w-[30%] flex justify-end">
-                  <img class="2xs:h-5 md:h-8 lg:h-6 xl:h-8" src="~/assets/ostad.png" alt="" />
+                  <img class="2xs:h-5 md:h-8 lg:h-6 xl:h-8" src="~/assets/Os.png" alt="" />
                 </div>
               </div>
             </div>
