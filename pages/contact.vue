@@ -68,6 +68,7 @@
                 type="text"
                 id="name"
                 name="name"
+                v-model="formData.name"
                 placeholder="Your Name"
                 class="w-full 2xs:text-sm sm:text-base outline-none placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 rounded-md p-2"
               />
@@ -78,6 +79,7 @@
               <input
                 type="email"
                 id="email"
+                v-model="formData.email"
                 name="email"
                 placeholder="Your Email"
                 class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
@@ -91,6 +93,7 @@
               type="text"
               id="subject"
               name="subject"
+              v-model="formData.subject"
               placeholder="Your Subject"
               class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
             />
@@ -100,13 +103,14 @@
             <label for="message">Message</label>
             <textarea
               id="message"
+              v-model="formData.message"
               name="message"
               placeholder="Your Message"
               class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
             ></textarea>
           </div>
           <!--Send Button-->
-          <button class="bg-slate-700 rounded-lg mt-2 py-2 2xs:text-base w-full" >Send</button>
+          <button class="bg-slate-700 rounded-lg mt-2 py-2 2xs:text-base w-full" @click.prevent="handleSend">Send</button>
         </form>
       </div>
       <!--Google Map-->
@@ -129,6 +133,23 @@ import { useDarkModeStore } from "~/store/darkMood";
 
 const darkModeStore = useDarkModeStore();
 const isDarkMode = computed(() => darkModeStore.darkMode);
+
+
+const formData = reactive({
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+})
+const mail = useMail()
+const handleSend = () => {
+  console.log(formData);
+  mail.send({
+  from: formData.email,
+  subject: formData.subject,
+  text: formData.message,
+})
+}
 </script>
 
 <style scoped></style>
