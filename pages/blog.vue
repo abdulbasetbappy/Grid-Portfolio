@@ -18,93 +18,49 @@
           the next level.
         </p>
       </div>
-
+<div class="grid md:grid-cols-1 lg:grid-cols-2 mt-4">
       <!--Blogs Archive-->
-      <div class="grid md:grid-cols-1 lg:grid-cols-2 mt-4">
+      <ContentList 
+      path="/posts"
+      fields = "title,date,thumbnail,category"
+      v-slot="{list}"
+      :query="{
+        draft: false,
+        sort: [
+          {
+            date: -1,
+          },
+        ],
+      }"
+      >
         <!--single-Blog-->
-        <div class="md:col-span-1 p-4">
+        <div
+        v-for="blog in list"
+        :key="blog._path"
+         class="md:col-span-1 p-4">
           <!--single-Blog-Image-->
           <div class="relative">
-            <img class="rounded-xl w-full h-[155px]" src="~/assets/Blog02.png" alt="" />
-            <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
+            <img 
+            v-if="blog.thumbnail"
+            :src="blog.thumbnail"
+            :alt="blog.title"
+            class="rounded-xl w-full h-[155px] lg:h-[220px]" />
+            <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">{{ blog.category }}</p>
           </div>
           <!--single-Blog-Details-->
           <div class="pt-2">
-            <h2 class="text-2xl font-semibold pb-2">Want To Upgrade Your Brain? Stop Doing These 7 Things</h2>
-            <div><span class="mr-6"> 15 min read </span><span> Nov 6, 2023</span></div>
+            <NuxtLink :to="blog.slug" class="text-2xl font-semibold pb-2">{{ blog.title }}</NuxtLink>
+            <div><span class="mr-6"> {{ blog.readTime }} </span><span>{{ blog.date }}</span></div>
           </div>
           
         </div>
-        <!--single-Blog-->
-        <div class="md:col-span-1 p-4">
-          <!--single-Blog-Image-->
-          <div class="relative">
-            <img class="rounded-xl w-full h-[155px]" src="~/assets/Blog01.jpeg" alt="" />
-            <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
-          </div>
-          <!--single-Blog-Details-->
-          <div class="pt-2">
-            <h2 class="text-2xl font-semibold pb-2">Want To Upgrade Your Brain? Stop Doing These 7 Things</h2>
-            <div><span class="mr-6"> 15 min read </span><span> Nov 6, 2023</span></div>
-          </div>
-        </div>
-        <!--single-Blog-->
-        <div class="md:col-span-1 p-4">
-          <!--single-Blog-Image-->
-          <div class="relative">
-            <img class="rounded-xl w-full h-[155px]" src="~/assets/Porject01.png" alt="" />
-            <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
-          </div>
-          <!--single-Blog-Details-->
-          <div class="pt-2">
-            <h2 class="text-2xl font-semibold pb-2">Want To Upgrade Your Brain? Stop Doing These 7 Things</h2>
-            <div><span class="mr-6"> 15 min read </span><span> Nov 6, 2023</span></div>
-          </div>
-        </div>
-        <!--single-Blog-->
-        <div class="md:col-span-1 p-4">
-          <!--single-Blog-Image-->
-          <div class="relative">
-            <img class="rounded-xl w-full h-[155px]" src="~/assets/Blog02.png" alt="" />
-            <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
-          </div>
-          <!--single-Blog-Details-->
-          <div class="pt-2">
-            <h2 class="text-2xl font-semibold pb-2">Want To Upgrade Your Brain? Stop Doing These 7 Things</h2>
-            <div><span class="mr-6"> 15 min read </span><span> Nov 6, 2023</span></div>
-          </div>
-        </div>
-        <!--single-Blog-->
-        <div class="md:col-span-1 p-4">
-          <!--single-Blog-Image-->
-          <div class="relative">
-            <img class="rounded-xl w-full h-[155px]" src="~/assets/Blog03.jpg" alt="" />
-            <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
-          </div>
-          <!--single-Blog-Details-->
-          <div class="pt-2">
-            <h2 class="text-2xl font-semibold pb-2">Want To Upgrade Your Brain? Stop Doing These 7 Things</h2>
-            <div><span class="mr-6"> 15 min read </span><span> Nov 6, 2023</span></div>
-          </div>
-        </div>
-        <!--single-Blog-->
-        <div class="md:col-span-1 p-4">
-          <!--single-Blog-Image-->
-          <div class="relative">
-            <img class="rounded-xl w-full h-[155px]" src="~/assets/Project02.png" alt="" />
-            <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
-          </div>
-          <!--single-Blog-Details-->
-          <div class="pt-2">
-            <h2 class="text-2xl font-semibold pb-2">Want To Upgrade Your Brain? Stop Doing These 7 Things</h2>
-            <div><span class="mr-6"> 15 min read </span><span> Nov 6, 2023</span></div>
-          </div>
-        </div>
-      </div>
+      </ContentList>
+</div>
+
       <!--Pagination-->
       <div class=" flex justify-center items-center gap-4 my-4">
-        <button class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl">Previous</button>
-        <button class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl">Next</button>
+        <button class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-left-alt-rounded" /></button>
+        <button class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-right-alt-rounded" /></button>
       </div>
     </div>
   </div>

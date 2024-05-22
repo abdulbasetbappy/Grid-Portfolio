@@ -1,4 +1,5 @@
 <template>
+    <NuxtLoadingIndicator />
   <div
     :class="{ dark_bg: isDarkMode, light_bg: !isDarkMode }"
     class="2xs:py-3 md:py-4 w-[100%] h-full bg-[url('~/assets/graph-paper.svg')]"
