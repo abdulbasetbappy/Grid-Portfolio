@@ -25,7 +25,7 @@
         <div class="md:col-span-1 p-4">
           <!--single-Blog-Image-->
           <div class="relative">
-            <img class="rounded-xl w-full h-[355px]" src="~/assets/Blog02.png" alt="" />
+            <img class="rounded-xl w-full h-[355px]" src="~/assets/Porject01.png" alt="" />
             <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">Web Development</p>
           <!--single-Blog-Details-->
           <div class="absolute top-0 cursor-pointer gap-4 left-0 flex justify-center items-center opacity-0 hover:opacity-100 hover:transition-all hover:duration-700 hover:ease-in-out rounded-lg hover:bg-slate-900 hover:bg-opacity-30 w-full h-full">

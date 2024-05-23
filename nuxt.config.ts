@@ -27,8 +27,5 @@ export default defineNuxtConfig({
     api: {
       baseURL: '/content'
     },
-    experimental: {
-      search: true,
-    }
   }
 })

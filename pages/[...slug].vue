@@ -5,9 +5,6 @@ import { useDarkModeStore } from "~/store/darkMood";
 const darkModeStore = useDarkModeStore();
 const isDarkMode = computed(() => darkModeStore.darkMode);
 
-function handleTags(category: any) {
-  return `#${category}`;
-}
 // Reactive variable to hold unique categories
 const uniqueCategories: any = ref([]);
 
@@ -26,6 +23,7 @@ const uniqueCategories: any = ref([]);
   });
   uniqueCategories.value = Array.from(categories);
 })();
+
 </script>
 
 <template>
@@ -48,17 +46,17 @@ const uniqueCategories: any = ref([]);
           <div class=" p-5 flex items-center justify-start">
             <h1 class="text-3xl font-bold">{{ doc.title }}</h1>
           </div>
-          <div class="flex flex-row justify-between items-center text-center px-5 pt-0">
-            <p class="text-gray-500 text-sm mt-2">
+          <div class="flex flex-row justify-around items-center text-center px-5 pt-0">
+            <p class="text-slate-500 text-sm mt-2">
               <Icon name="material-symbols:contract-edit-outline-rounded" class="h-5 w-5" />
               {{ doc.author }}</p>
-            <p class="text-gray-500 text-sm mt-2">
+            <p class="text-slate-500 text-sm mt-2">
               <Icon name="material-symbols:calendar-month-outline-rounded" class="h-5 w-5" />
               {{ doc.date }}</p>
-            <p class="text-gray-500 text-sm mt-2">
+            <p class="text-slate-500 text-sm mt-2">
               <Icon name="material-symbols:music-cast-rounded" class="h-5 w-5" />
               {{ doc.readTime }}</p>
-            <p class="text-gray-500 text-sm mt-2">
+            <p class="text-slate-500 text-sm mt-2">
               <Icon name="material-symbols:category-outline-rounded" class="h-5 w-5" /> 
               {{ doc.category }}
             </p>
@@ -71,7 +69,9 @@ const uniqueCategories: any = ref([]);
           <!-- Content  -->
           <ContentRenderer path="/Posts" :value="doc" />
           <!-- ./ Content  -->
-          <p v-for="tag in doc.tags" class="inline-block mr-2">#{{ tag }}</p>
+          <p v-for="tag in doc.tags" class="inline-block mt-6 mr-2">#{{ tag }}</p>
+          <p class=" mt-[-15px] text-xs mr-2" >👉If You Got Any Error Or Have Any Queries Feel Free to Contact❤Me.</p>
+
         </div>
         <!-- ./ Content  -->
       </ContentDoc>
@@ -81,7 +81,7 @@ const uniqueCategories: any = ref([]);
       <div
         class="bg-slate-200 backdrop-blur-3xl shadow-xl dark:bg-slate-800 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200 rounded-xl"
       >
-        <!--Search Bar-->
+        <!--Search Bar
         <div class="p-4 relative mx-auto text-gray-600">
           <input
             class="border-none w-full font-medium caret-slate-700 border-gray-300 bg-white h-12 px-4 pr-10 rounded-lg text-lg focus:outline-none"
@@ -109,10 +109,10 @@ const uniqueCategories: any = ref([]);
               />
             </svg>
           </button>
-        </div>
+        </div>-->
 
         <!--Feature Blog-->
-        <div class="p-4">
+        <div class="p-4 pb-0">
           <h3 class="text-xl font-bold">Feature Blog</h3>
           <ContentList
             path="/posts"
@@ -140,14 +140,14 @@ const uniqueCategories: any = ref([]);
                 :alt="blog.title"
                 class="h-14 w-20 rounded-lg"
               />
-              <h3 class="text-gray-400 leading-5 text-lg">{{ blog.title }}</h3>
+              <h3 class="text-gray-400 leading-5 text-base">{{ blog.title }}</h3>
             </nuxt-link>
           </ContentList>
         </div>
         <!--./Feature Blog-->
 
         <!-- Unique Tags -->
-        <div class="p-4">
+        <div class="p-4 pt-0">
           <h2 class="my-3 text-xl font-bold">All Tags</h2>
           <div class="flex flex-wrap gap-2">
             <!-- Call a method to fetch unique categories -->
@@ -157,7 +157,7 @@ const uniqueCategories: any = ref([]);
               class="my-2"
             >
               <span
-                class="text-gray-800 bg-slate-400 px-3 py-2 rounded-lg text-xl"
+                class="dark:text-slate-400 text-slate-600 dark:bg-slate-800 bg-slate-300 px-3 py-2 rounded-lg text-base"
                 >#{{ category }}</span
               >
             </div>
@@ -171,7 +171,7 @@ const uniqueCategories: any = ref([]);
             <!--Title-->
             <div class="flex items-start justify-start gap-2">
               <img
-                src="~/assets/Porject01.png"
+                src="~/public/Abdul-Baset-Bappy.png"
                 alt="Abdul Baset Bappy"
                 class="h-10 w-10 mt-2 rounded-[50%]"
               />
@@ -198,7 +198,7 @@ const uniqueCategories: any = ref([]);
                 <p class="inline text-slate-800 dark:text-slate-200 ml-2">Active</p>
               </div>
             </div>
-            <p class="p-2">
+            <p class="text-sm p-2 pb-0">
               A Passionate <strong>Frontend Developer</strong> 🖥️ & <strong>WordPress Designer</strong> having 1+
               years of Experiences over 3+ Country Worldwide.
             </p>
@@ -244,7 +244,7 @@ const uniqueCategories: any = ref([]);
               </div>
 
               <!--Signature-->
-              <Icon name="Signature" class="h-16 w-28 text-slate-500" />
+              <Icon name="Signature" class="h-12 w-28 text-slate-500" />
             </div>
           </div>
         </div>

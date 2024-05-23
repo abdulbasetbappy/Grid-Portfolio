@@ -31,6 +31,7 @@
             date: -1,
           },
         ],
+        limit: 10,
       }"
       >
         <!--single-Blog-->
@@ -59,8 +60,8 @@
 
       <!--Pagination-->
       <div class=" flex justify-center items-center gap-4 my-4">
-        <button class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-left-alt-rounded" /></button>
-        <button class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-right-alt-rounded" /></button>
+        <NuxtLink class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-left-alt-rounded" /></NuxtLink>
+        <NuxtLink  class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-right-alt-rounded" /></NuxtLink>
       </div>
     </div>
   </div>
@@ -68,7 +69,6 @@
 
 <script setup lang="ts">
 import { useDarkModeStore } from "~/store/darkMood";
-
 const darkModeStore = useDarkModeStore();
 const isDarkMode = computed(() => darkModeStore.darkMode);
 </script>

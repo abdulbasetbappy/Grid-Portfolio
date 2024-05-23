@@ -23,76 +23,50 @@
     <div
       class="grid grid-cols-3 md:grid-cols-3 2xs:grid-cols-1 2xs:px-2 md:px-0 gap-4 justify-center items-center"
     >
-      <!--Blog 01-->
-      <div class="relative">
+    <ContentList 
+      path="/posts"
+      fields = "title,date,thumbnail,category"
+      v-slot="{list}"
+      :query="{
+        draft: false,
+        sort: [
+          {
+            date: -1,
+          },
+        ],
+        limit: 3,
+      }"
+      >
+      <!--Main Blog-->
+      <div
+      v-for="blog in list"
+        :key="blog._path"
+      class="relative">
         <img
           class="h-52 2xs:h-60 md:h-48 xl:h-56 2xl:h-64 w-full rounded-xl"
-          src="~/assets/Blog01.jpeg"
-          alt=""
+          v-if="blog.thumbnail"
+            :src="blog.thumbnail"
+            :alt="blog.title"
         />
 
         <div
           class="absolute left-0 bottom-0 h-[95%] w-full p-3 flex justify-end items-start flex-col rounded-b-xl 2xl:text-2xl bg-gradient-to-t from-slate-900 from-10% via-slate-900 via-40% to-transparent"
         >
-          <h2 class="text-md 2xs:text-base md:text-sm lg:text-base 2xs:font-bold text-slate-200">
-            Want To Upgrade Your Brain? Stop Doing These 7 Things
-          </h2>
+          <nuxt-link :to="blog.slug" class="text-md 2xs:text-base md:text-sm lg:text-base 2xs:font-bold leading-4 text-slate-200">
+            {{ blog.title }}
+          </nuxt-link>
           <div class="flex flex-row gap-6 text-slate-500 text-sm">
             <p class="md:text-xs lg:text-sm">
               <Icon name="material-symbols:readiness-score-outline-sharp" class=""/>
-              15 min read</p>
+              {{ blog.readTime }} </p>
             <p class="md:text-xs lg:text-sm">
               <Icon name="material-symbols:calendar-month-outline" class=""/>
-              Nov 6, 2023</p>
+              {{ blog.date }}</p>
           </div>
         </div>
       </div>
-      <!--Blog 02-->
-      <div class="relative">
-        <img
-          class="h-52 2xs:h-60 md:h-48 xl:h-56 2xl:h-64 w-full rounded-xl"
-          src="~/assets/Blog02.png"
-          alt=""
-        />
-        <div
-          class="absolute left-0 bottom-0 h-[95%] w-full p-3 flex justify-end items-start flex-col rounded-b-xl 2xl:text-2xl bg-gradient-to-t from-slate-900 from-10% via-slate-900 via-40% to-transparent"
-        >
-          <h2 class="text-md 2xs:text-base md:text-sm lg:text-base 2xs:font-bold text-slate-200">
-            Want To Upgrade Your Brain? Stop Doing These 7 Things
-          </h2>
-          <div class="flex flex-row gap-6 text-slate-500 text-sm">
-            <p class="md:text-xs lg:text-sm">
-              <Icon name="material-symbols:readiness-score-outline-sharp" class=""/>
-              15 min read</p>
-            <p class="md:text-xs lg:text-sm">
-              <Icon name="material-symbols:calendar-month-outline" class=""/>
-              Nov 6, 2023</p>
-          </div>
-        </div>
-      </div>
-      <!--Blog 03-->
-      <div class="relative">
-        <img
-          class="h-52 2xs:h-60 md:h-48 xl:h-56 2xl:h-64 w-full rounded-xl"
-          src="~/assets/Blog03.jpg"
-          alt=""
-        />
-        <div
-          class="absolute left-0 bottom-0 h-[95%] w-full p-3 flex justify-end items-start flex-col rounded-b-xl 2xl:text-2xl bg-gradient-to-t from-slate-900 from-10% via-slate-900 via-40% to-transparent"
-        >
-          <h2 class="text-md 2xs:text-base md:text-sm lg:text-base 2xs:font-bold text-slate-200">
-            Want To Upgrade Your Brain? Stop Doing These 7 Things
-          </h2>
-          <div class="flex flex-row gap-6 text-slate-500 text-sm">
-            <p class="md:text-xs lg:text-sm">
-              <Icon name="material-symbols:readiness-score-outline-sharp" class=""/>
-              15 min read</p>
-            <p class="md:text-xs lg:text-sm">
-              <Icon name="material-symbols:calendar-month-outline" class=""/>
-              Nov 6, 2023</p>
-          </div>
-        </div>
-      </div>
+
+    </ContentList>
     </div>
   </div>
 </template>
