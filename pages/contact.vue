@@ -5,7 +5,7 @@
   >
     <NuxtLayout name="profile" class="2xs:static md:col-start-1 md:col-end-7 lg:col-span-4 md:sticky md:top-[4.8rem] left-0 h-fit"></NuxtLayout>
     <div
-      class="col-span-12 md:col-span-6 md:sticky md:top-[4.8rem] left-0 lg:col-span-8 md:col-start-7 lg:col-start-5 rounded-xl p-4 backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-100"
+      class="col-span-12 md:col-span-6 md:sticky md:top-[4.8rem] left-0 lg:col-span-8 md:col-start-7 lg:col-start-5 rounded-xl p-4 backdrop-blur-3xl shadow-xl bg-neutral-100 dark:bg-neutral-700 dark:bg-opacity-30 bg-opacity-30 dark:text-neutral-100"
     >
       <!--Title-->  
       <div>
@@ -21,7 +21,7 @@
         <!--Contact-->
         <div class="py-4 grid grid-cols-12 gap-4 lg:gap-2 grid-rows-1 md:grid-rows-3 lg:grid-rows-1">
           <!--Mail-->
-          <div class="2xs:col-span-12 md:col-span-12 md:row-span-1 lg:col-span-6 flex bg-slate-900 p-2 sm:p-4 rounded-lg justify-start gap-2 items-center flex-row">
+          <div class="2xs:col-span-12 md:col-span-12 md:row-span-1 lg:col-span-6 flex bg-neutral-900 p-2 sm:p-4 rounded-lg justify-start gap-2 items-center flex-row">
             <div>
               <Icon name="material-symbols:mark-email-unread-outline-rounded" class="h-10 w-10 xl:h-12 xl:w-12" />
             </div>
@@ -31,7 +31,7 @@
             </div>
           </div>
           <!--Call-->
-          <div class="flex 2xs:col-span-12 md:col-span-12 lg:col-span-6 bg-slate-900 p-2 sm:p-4 rounded-lg justify-start gap-2 items-center flex-row">
+          <div class="flex 2xs:col-span-12 md:col-span-12 lg:col-span-6 bg-neutral-900 p-2 sm:p-4 rounded-lg justify-start gap-2 items-center flex-row">
             <div>
               <Icon name="material-symbols:phone-in-talk-outline-rounded" class="h-10 w-10 xl:h-12 xl:w-12" />
             </div>
@@ -44,17 +44,17 @@
       </div>
       <!--Social Media Contact-->
       <div class="my-4 flex justify-center items-center gap-2" >
-        <NuxtLink to="https://www.facebook.com/abdulbasetbappy.info" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
-          <Icon name="mdi:facebook" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 sm:w-8 sm:h-8 " />
+        <NuxtLink to="https://www.facebook.com/abdulbasetbappy.info" class="border-none p-2 rounded-md bg-neutral-100 dark:bg-neutral-900 dark:border-none">
+          <Icon name="mdi:facebook" class="xl:h-8 2xs:h-6 2xs:w-6 text-neutral-500 xl:w-8 sm:w-8 sm:h-8 " />
         </NuxtLink>
-        <NuxtLink to="www.github.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
-          <Icon name="mdi:github" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 sm:w-8 sm:h-8" />
+        <NuxtLink to="www.github.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-neutral-100 dark:bg-neutral-900 dark:border-none">
+          <Icon name="mdi:github" class="xl:h-8 2xs:h-6 2xs:w-6 text-neutral-500 xl:w-8 sm:w-8 sm:h-8" />
         </NuxtLink>
-        <NuxtLink to="https://www.codepen.com/abdulbasetbappy" class="border-none p-2  rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
-          <Icon name="mdi:codepen" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 sm:w-8 sm:h-8" />
+        <NuxtLink to="https://www.codepen.com/abdulbasetbappy" class="border-none p-2  rounded-md bg-neutral-100 dark:bg-neutral-900 dark:border-none">
+          <Icon name="mdi:codepen" class="xl:h-8 2xs:h-6 2xs:w-6 text-neutral-500 xl:w-8 sm:w-8 sm:h-8" />
         </NuxtLink>
-        <NuxtLink to="https://www.youtube.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-slate-100 dark:bg-slate-900 dark:border-none">
-          <Icon name="mdi:youtube" class="xl:h-8 2xs:h-6 2xs:w-6 text-slate-500 xl:w-8 sm:w-8 sm:h-8" />
+        <NuxtLink to="https://www.youtube.com/abdulbasetbappy" class="border-none p-2 rounded-md bg-neutral-100 dark:bg-neutral-900 dark:border-none">
+          <Icon name="mdi:youtube" class="xl:h-8 2xs:h-6 2xs:w-6 text-neutral-500 xl:w-8 sm:w-8 sm:h-8" />
         </NuxtLink>
       </div>
       <!--Form-->
@@ -70,7 +70,7 @@
                 name="name"
                 v-model="formData.name"
                 placeholder="Your Name"
-                class="w-full 2xs:text-sm sm:text-base outline-none placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 rounded-md p-2"
+                class="w-full 2xs:text-sm sm:text-base outline-none placeholder-neutral-700 text-neutral-200 caret-neutral-400 bg-neutral-500 rounded-md p-2"
               />
             </div>
             <!--Email-->
@@ -82,7 +82,7 @@
                 v-model="formData.email"
                 name="email"
                 placeholder="Your Email"
-                class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
+                class="w-full 2xs:text-sm sm:text-base placeholder-neutral-700 text-neutral-200 caret-neutral-400 bg-neutral-500 outline-none rounded-md p-2"
               />
             </div>
           </div>
@@ -95,7 +95,7 @@
               name="subject"
               v-model="formData.subject"
               placeholder="Your Subject"
-              class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
+              class="w-full 2xs:text-sm sm:text-base placeholder-neutral-700 text-neutral-200 caret-neutral-400 bg-neutral-500 outline-none rounded-md p-2"
             />
           </div>
           <!--Message-->
@@ -106,11 +106,11 @@
               v-model="formData.message"
               name="message"
               placeholder="Your Message"
-              class="w-full 2xs:text-sm sm:text-base placeholder-slate-700 text-slate-200 caret-slate-400 bg-slate-500 outline-none rounded-md p-2"
+              class="w-full 2xs:text-sm sm:text-base placeholder-neutral-700 text-neutral-200 caret-neutral-400 bg-neutral-500 outline-none rounded-md p-2"
             ></textarea>
           </div>
           <!--Send Button-->
-          <button class="bg-slate-700 rounded-lg mt-2 py-2 2xs:text-base w-full" @click.prevent="handleSend">Send</button>
+          <button class="bg-neutral-700 rounded-lg mt-2 py-2 2xs:text-base w-full" @click.prevent="handleSend">Send</button>
         </form>
       </div>
       <!--Google Map-->

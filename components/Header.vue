@@ -7,13 +7,13 @@
     <!--Header Container-->
     <div>
       <div
-        class="flex backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 p-2 rounded-lg dark:text-white items-center justify-between"
+        class="flex backdrop-blur-3xl shadow-xl bg-neutral-100 dark:bg-neutral-700 dark:bg-opacity-30 bg-opacity-30 p-2 rounded-lg dark:text-white items-center justify-between animate-fadeIn"
       >
         <!--Logo-->
-        <NuxtLink to="/" class="flex items-center justify-center flex-row">
+        <NuxtLink to="/" class="flex items-center justify-center flex-row animate-jump-in animate-once animate-ease-in-out animate-normal animate-fill-both">
           <span class="text-sky-700 font-semibold text-3xl">
             #
-            <span class="text-slate-500 text-2xl"> Bappy </span>
+            <span class="text-neutral-500 text-2xl"> Bappy </span>
           </span>
         </NuxtLink>
         <!--Menu Navigation Section-->
@@ -24,14 +24,14 @@
               <li v-for="item in menuItems" :key="item.id" class="">
                 <NuxtLink
                   :to="item.path"
-                  class="flex items-center justify-center transition-colors duration-300 flex-row text-slate-800 dark:text-slate-400 xl:text-xl lg:text-sm p-3 rounded-lg group hover:bg-slate-700 focus:bg-slate-700"
+                  class="flex items-center justify-center transition-colors duration-300 flex-row text-neutral-800 dark:text-neutral-400 xl:text-xl lg:text-sm p-3 rounded-lg group hover:bg-neutral-700 focus:bg-neutral-700"
                 >
                   <Icon
                     :name="item.iconName"
-                    class="group-hover:text-slate-100 group-focus:text-slate-100"
+                    class="group-hover:text-neutral-100 group-focus:text-neutral-100"
                   />
                   <span
-                    class="group-hover:text-slate-100 group-focus:text-slate-100"
+                    class="group-hover:text-neutral-100 group-focus:text-neutral-100"
                     >{{ item.label }}</span
                   >
                 </NuxtLink>
@@ -45,20 +45,20 @@
             <button
               v-if="!isDarkMode"
               @click="toggleDarkMode"
-              class="p-2 text-slate-500 rounded-lg transition-colors duration-300 hover:bg-slate-200"
+              class="p-2 text-neutral-500 rounded-lg transition-colors duration-300 hover:bg-neutral-200"
             >
               <Icon name="MoonIcon" />
             </button>
             <button
               v-if="isDarkMode"
               @click="toggleDarkMode"
-              class="p-2 rounded-lg transition-colors duration-300 hover:bg-slate-700"
+              class="p-2 rounded-lg transition-colors duration-300 hover:bg-neutral-700"
             >
               <Icon name="SunIcon" />
             </button>
             <NuxtLink
               to="/contact"
-              class="flex ml-2 items-center justify-center flex-row bg-slate-500 py-2 px-3 rounded-md text-slate-100 text-xl"
+              class="flex ml-2 items-center justify-center flex-row bg-neutral-500 py-2 px-3 rounded-md text-neutral-100 text-xl"
             >
               <span>Let's Talk</span>
               <Icon name="GoArrowIcon" />
@@ -70,12 +70,12 @@
           @click="toggleSidebar()"
           class="w-7 cursor-pointer lg:hidden flex justify-end items-end gap-1 flex-col ease-in-out delay-700 group"
         >
-          <div class="w-full bg-slate-400 h-1 rounded-md"></div>
+          <div class="w-full bg-neutral-400 h-1 rounded-md"></div>
           <div
-            class="w-[75%] group-hover:w-full transition-all ease-in-out duration-700 bg-slate-500 h-1 rounded-md"
+            class="w-[75%] group-hover:w-full transition-all ease-in-out duration-700 bg-neutral-500 h-1 rounded-md"
           ></div>
           <div
-            class="w-[50%] group-hover:w-full transition-all ease-in-out duration-700 bg-slate-400 h-1 rounded-md"
+            class="w-[50%] group-hover:w-full transition-all ease-in-out duration-700 bg-neutral-400 h-1 rounded-md"
           ></div>
         </div>
       </div>
@@ -97,20 +97,20 @@
           <button
             v-if="!isDarkMode"
             @click="toggleDarkMode"
-            class="p-2 text-slate-500 rounded-lg transition-colors duration-300 hover:bg-slate-200"
+            class="p-2 text-neutral-500 rounded-lg transition-colors duration-300 hover:bg-neutral-200"
           >
             <Icon name="MoonIcon" />
           </button>
           <button
             v-if="isDarkMode"
             @click="toggleDarkMode"
-            class="p-2 rounded-lg transition-colors duration-300 hover:bg-slate-700"
+            class="p-2 rounded-lg transition-colors duration-300 hover:bg-neutral-700"
           >
             <Icon name="SunIcon" />
           </button>
           <NuxtLink
             to="/"
-            class="flex ml-2 items-center justify-center flex-row bg-slate-500 py-2 px-3 rounded-md text-slate-100 text-xl"
+            class="flex ml-2 items-center justify-center flex-row bg-neutral-500 py-2 px-3 rounded-md text-neutral-100 text-xl"
           >
             <span>Let's Talk</span>
             <Icon name="GoArrowIcon" />
@@ -134,7 +134,7 @@
 
         <!--Bottom Profile Card Section-->
         <div
-          class="w-full flex flex-row items-center justify-start p-2 dark:bg-slate-700 rounded-xl"
+          class="w-full flex flex-row items-center justify-start p-2 dark:bg-neutral-700 rounded-xl"
         >
           <img
             src="https://i.pinimg.com/280x280_RS/65/aa/b4/65aab49a5d7170aa1497bd61caec6dc6.jpg"
@@ -217,15 +217,15 @@ const menuItems = reactive([
   transition: transform 0.8s ease;
 }
 .slide-enter-to{
-  transform: translateX(0);
+  transform: tranneutralX(0);
 }
 .slide-leave {
-  transform: translateX(0);
+  transform: tranneutralX(0);
 }
 .slide-enter{
-  transform: translateX(100%);
+  transform: tranneutralX(100%);
 }
 .slide-leave-to {
-  transform: translateX(100%);
+  transform: tranneutralX(100%);
 }
 </style>

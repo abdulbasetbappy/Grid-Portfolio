@@ -8,9 +8,9 @@
         class="2xs:static md:col-start-1 md:col-end-7 lg:col-span-4 md:sticky md:top-[4.8rem] left-0 h-fit"
       ></NuxtLayout>
 
-      <div class="2xs:col-span-12 md:col-span-6 lg:col-span-8 rounded-xl dark:text-slate-100">
+      <div class="2xs:col-span-12 md:col-span-6 lg:col-span-8 rounded-xl dark:text-neutral-100">
         <!--About Me Block-->
-        <div class="backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200 2xs:p-4 rounded-xl">
+        <div class="backdrop-blur-3xl shadow-xl bg-neutral-100 dark:bg-neutral-700 dark:bg-opacity-30 bg-opacity-30 text-neutral-800 dark:text-neutral-200 2xs:p-4 rounded-xl">
           <!--Title-->
           <div
             class="flex 2xs:flex-col 2xs:justify-start 2xs:items-start lg:justify-between lg:flex-row lg:items-center"
@@ -23,7 +23,7 @@
             </h2>
             <!--Title Badge-->
             <div
-              class="bg-slate-900 md:py-3 lg:px-5 rounded-xl 2xs:hidden lg:block md:text-xl  text-slate-100"
+              class="bg-neutral-900 md:py-3 lg:px-5 rounded-xl 2xs:hidden lg:block md:text-xl  text-neutral-100"
             >
               <div class="relative inline-flex">
                 <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
@@ -56,19 +56,19 @@
               class="2xs:col-span-6 lg:col-span-4 grid grid-cols-3 row-start-2 2xs:gap-2 md:gap-4"
             >
               <div
-                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-slate-700 bg-slate-300 rounded-xl 2xl:p-5 p-2 m"
+                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-neutral-700 bg-neutral-300 rounded-xl 2xl:p-5 p-2 m"
               >
                 <span class="2xs:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">2+</span>
                 <span class="2xs:text-sm 2xl:text-lg text-center">Year of <br> Experience</span>
               </div>
               <div
-                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-slate-700 bg-slate-300 rounded-xl 2xl:p-4 p-2"
+                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-neutral-700 bg-neutral-300 rounded-xl 2xl:p-4 p-2"
               >
                 <span class="2xs:text-3xl font-bold md:text-4xl lg:text-4xl xl:text-5xl">10+</span>
                 <span class="2xs:text-sm text-center 2xl:text-lg">Projects <br> Completed </span>
               </div>
               <div
-                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-slate-700 bg-slate-300 rounded-xl 2xl:p-4 p-2"
+                class="flex flex-col justify-center items-center 2xs:gap-0 sm:gap-2 dark:bg-neutral-700 bg-neutral-300 rounded-xl 2xl:p-4 p-2"
               >
                 <span class="2xs:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">5+</span>
                 <span class="2xs:text-sm text-center 2xl:text-lg">Clients <br> Worked </span>
@@ -81,10 +81,10 @@
               <div class="w-full h-full flex items-center justify-center">
                 <div class="field flex items-center justify-around w-72">
                   <div
-                    class="w-12 h-20  lg:w-16 lg:h-28 2xl:w-28 2xl:h-48 border-2 2xl:border-4 border-black dark:border-slate-400 rounded-full relative"
+                    class="w-12 h-20  lg:w-16 lg:h-28 2xl:w-28 2xl:h-48 border-2 2xl:border-4 border-black dark:border-neutral-400 rounded-full relative"
                   >
                     <div
-                      class="w-3 h-3 2xl:w-8 2xl:h-8 bg-black dark:bg-blue-500 rounded-full absolute top-3 left-1/2 transform -translate-x-1/2 animate-wheel"
+                      class="w-3 h-3 2xl:w-8 2xl:h-8 bg-black dark:bg-blue-500 rounded-full absolute top-3 left-1/2 transform -tranneutral-x-1/2 animate-wheel"
                     ></div>
                   </div>
                 </div>
@@ -94,7 +94,7 @@
         </div>
 
         <!-- All Details -->
-        <div class="backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
+        <div class="backdrop-blur-3xl shadow-xl bg-neutral-100 dark:bg-neutral-700 dark:bg-opacity-30 bg-opacity-30 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
           <!--Details-->
           <div
             class="grid 2xs:auto-rows-fr lg:auto-rows-fr 2xs:grid-cols-12 2xs:gap-3 sm:gap-6 md:grid-rows-4 lg:grid-rows-2 2xs:grid-rows-3"
@@ -105,7 +105,7 @@
                 Experience
               </h2>
               <div
-                class="flex justify-between items-center mt-2 md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
+                class="flex justify-between items-center mt-2 md:p-4 2xs:p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800"
               >
                 <div>
                   <p class="2xs:text-xs 2xl:text-base">2023 - Present</p>
@@ -128,7 +128,7 @@
                 Certification
               </h2>
               <div
-                class="flex justify-between items-center mt-2 md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
+                class="flex justify-between items-center mt-2 md:p-4 2xs:p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800"
               >
                 <div class="w-[70%]">
                   <p class="2xs:text-xs 2xl:text-base">2023 - 2024</p>
@@ -147,7 +147,7 @@
 
               <div class="flex items-start justify-start flex-col md:gap-1 2xl:gap-3">
                              <div
-                class="flex justify-between items-center mt-2 w-full md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
+                class="flex justify-between items-center mt-2 w-full md:p-4 2xs:p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800"
               >
                 <div class="w-full">
                   <p class="2xs:text-xs 2xl:text-base">2018 - 2020</p>
@@ -165,7 +165,7 @@
                 </div>
               </div>
               <div
-                class="flex justify-between items-center w-full mt-2 md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
+                class="flex justify-between items-center w-full mt-2 md:p-4 2xs:p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800"
               >
                 <div class="w-full">
                   <p class="2xs:text-xs 2xl:text-base ">2020 - 2025</p>
@@ -185,7 +185,7 @@
         </div>
 
         <!-- Tools That I Use -->
-        <div class="backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
+        <div class="backdrop-blur-3xl shadow-xl bg-neutral-100 dark:bg-neutral-700 dark:bg-opacity-30 bg-opacity-30 2xs:p-4 p-6 2xs:my-2 md:my-4 rounded-xl">
           <!--Details-->
           <div
             class="grid lg:grid-cols-12 lg:gap-6 h-fit lg:grid-rows-2 2xs:grid-rows-3"
@@ -198,7 +198,7 @@
                 Frontend
               </h2>
               <div
-                class="flex justify-around items-center md:mt-2 2xs:mt-0 md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
+                class="flex justify-around items-center md:mt-2 2xs:mt-0 md:p-4 2xs:p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800"
               >
                 <Icon name="simple-icons:nuxtdotjs" class="h-8 w-8" />
                 <Icon name="uil:vuejs" class="h-8 w-8" />
@@ -224,7 +224,7 @@
                 Backend
               </h2>
               <div
-                class="flex justify-around items-center md:mt-2 2xs:mb-1 lg:mb-0 md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
+                class="flex justify-around items-center md:mt-2 2xs:mb-1 lg:mb-0 md:p-4 2xs:p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800"
               >
                 <Icon name="teenyicons:nodejs-solid" class="h-8 w-8" />
                 <Icon name="simple-icons:express" class="h-8 w-8" />
@@ -241,7 +241,7 @@
                 Other Tools
               </h2>
               <div
-                class="flex justify-around items-center md:mt-2 2xs:mt-0 md:p-4 2xs:p-3 rounded-xl bg-slate-50 dark:bg-slate-800"
+                class="flex justify-around items-center md:mt-2 2xs:mt-0 md:p-4 2xs:p-3 rounded-xl bg-neutral-50 dark:bg-neutral-800"
               >
                 <Icon name="bi:github" class="h-8 w-8" />
                 <Icon name="fa6-brands:docker" class="h-8 w-8" />
@@ -262,24 +262,24 @@
           <div class="grid grid-cols-12 md:gap-2 lg:gap-3 2xs:gap-3 h-full justify-center grid-rows-1">
             <!--Signature-->
             <div class="2xs:col-span-5 md:col-span-5 row-start-1">
-              <div class="2xs:p-2 md:p-4 rounded-xl flex items-center justify-center backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30">
+              <div class="2xs:p-2 md:p-4 rounded-xl flex items-center justify-center backdrop-blur-3xl shadow-xl bg-neutral-100 dark:bg-neutral-700 dark:bg-opacity-30 bg-opacity-30">
                 <Icon
                   name="Signature"
-                  class="2xs:h-12 2xs:w-32 md:h-20 md:w-80 lg:h-16 lg:w-64 xl:h-20 xl:w-80 dark:text-slate-100 text-slate-800"
+                  class="2xs:h-12 2xs:w-32 md:h-20 md:w-80 lg:h-16 lg:w-64 xl:h-20 xl:w-80 dark:text-neutral-100 text-neutral-800"
                 />
               </div>
             </div>
             <!--Marquee-->
             <div class="2xs:col-span-7 md:col-span-7 row-start-1">
               <div
-                class="2xs:p-2 md:p-4 rounded-xl flex items-center justify-center h-full backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30"
+                class="2xs:p-2 md:p-4 rounded-xl flex items-center justify-center h-full backdrop-blur-3xl shadow-xl bg-neutral-100 dark:bg-neutral-700 dark:bg-opacity-30 bg-opacity-30"
               >
                 <marquee
                   direction="rl"
                   behavior="scroll"
                   scrollamount="2"
                   delay="1s"
-                  class="2xs:py-2 md:py-3 rounded-md px-2 font-semibold 2xs:text-lg md:text-3xl text-slate-400"
+                  class="2xs:py-2 md:py-3 rounded-md px-2 font-semibold 2xs:text-lg md:text-3xl text-neutral-400"
                 >
                   Available For Hire 🚀 Crafting Digital Experiences 🎨
                 </marquee>

@@ -5,16 +5,36 @@
     >
     
       <!--Profile Card Details From Profile Layout-->
-      <NuxtLayout name="profile"></NuxtLayout>
+      <NuxtLayout name="profile" class="animate-fadeIn"></NuxtLayout>
 
       <!--Work Experience Details Section-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-1 md:col-span-6 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-sm border-2 dark:border-neutral-800 border-neutral-300 border-opacity-30 shadow-xl text-neutral-800 dark:text-neutral-200 animate-fadeIn"
       >
       <!--Title-->
         <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl 2xs:pb-0 md:pb-2 font-san font-semibold">
           Work Experience
         </h2>
+        <!--First Experience Details-->
+        <div
+          class="flex justify-between items-center md:mt-2 2xs:mt-0 md:p-3 p-4 rounded-xl bg-opacity-80  "
+        >
+          <div>
+            <p class="text-xs xl:text-lg 2xl:text-xl">2023 - Present</p>
+            <p
+              class="font-semibold xl:text-xl 2xl:text-2xl 2xs:text-base xs:text-xl md:text-lg lg:text-base"
+            >
+              Frontend Developer
+            </p>
+          </div>
+          <div>
+            <img
+              class="xl:h-6 2xs:h-5 sm:h-6 lg:h-5 2xl:h-7"
+              src="~/public/coderorbit.png"
+              alt=""
+            />
+          </div>
+        </div>
         <!--First Experience Details-->
         <div
           class="flex justify-between items-center md:mt-2 2xs:mt-0 md:p-3 p-4 rounded-xl bg-opacity-80  "
@@ -39,7 +59,7 @@
 
       <!--Expertise Section-->
       <div
-        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
+        class="col-span-12 md:row-span-1 md:row-start-2 md:col-span-6 lg:col-span-4 rounded-xl 2xs:p-4 xl:p-6 backdrop-blur-sm border-2 dark:border-neutral-800 border-neutral-300 border-opacity-30 shadow-xl text-neutral-800 dark:text-neutral-200 animate-fadeIn"
       >
       <!--Title-->
         <h2 class="2xl:text-4xl xl:text-3xl 2xs:text-2xl lg:text-xl pb-2 font-san font-semibold">
@@ -56,7 +76,7 @@
             >
               <Icon name="devicon:vuejs" class="xl:h-14 2xl:h-16 w-14 2xs:h-8 2xs:w-8" />
             </div>
-            <p class="font-semibold 2xs:text-xs sm:text-sm text-slate-400 ">Vue</p>
+            <p class="font-semibold 2xs:text-xs sm:text-sm text-neutral-400 ">Vue</p>
           </div>
           <!--Pinia-->
           <div class="flex justify-center items-center flex-col">
@@ -65,7 +85,7 @@
             >
               <Icon name="logos:pinia" class="xl:h-14 w-14 2xs:h-8 2xl:h-16 2xs:w-8" />
             </div>
-            <p class="font-semibold 2xs:text-xs sm:text-sm text-slate-400">Pinia</p>
+            <p class="font-semibold 2xs:text-xs sm:text-sm text-neutral-400">Pinia</p>
           </div>
           <!--Nuxt-->
           <div class="flex justify-center items-center flex-col">
@@ -74,7 +94,7 @@
             >
               <Icon name="logos:nuxt-icon" class="xl:h-14 w-14 2xl:h-16 2xs:h-8 2xs:w-8" />
             </div>
-            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">Nuxt</p>
+            <p class="text-neutral-400 2xs:text-xs sm:text-sm font-semibold">Nuxt</p>
           </div>
           <!--Tailwind CSS-->
           <div class="flex justify-center items-center flex-col">
@@ -86,7 +106,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">Tailwind</p>
+            <p class="text-neutral-400 2xs:text-xs sm:text-sm font-semibold">Tailwind</p>
           </div>
           <!--SCSS-->
           <div class="flex justify-center items-center flex-col">
@@ -98,7 +118,7 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">scss</p>
+            <p class="text-neutral-400 2xs:text-xs sm:text-sm font-semibold">scss</p>
           </div>
           <!--MongoDB-->
           <div class="flex justify-center items-center flex-col">
@@ -110,47 +130,14 @@
                 class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
               />
             </div>
-            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">MongoDB</p>
-          </div>
-          <!--NodeJs-->
-          <div class="flex justify-center items-center flex-col">
-            <div
-              class=" py-3 flex justify-center w-full rounded-md"
-            >
-              <Icon
-                name="logos:nodejs-icon-alt"
-                class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
-              />
-            </div>
-            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">NodeJs</p>
-          </div>
-          <!--ExpressJs-->
-          <div class="flex justify-center items-center flex-col">
-            <div
-              class="py-3 flex justify-center w-full rounded-md"
-            >
-              <Icon
-                name="skill-icons:expressjs-dark"
-                class="xl:h-12 w-12 2xl:h-14 2xs:h-8 2xs:w-8"
-              />
-            </div>
-            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">ExpressJs</p>
-          </div>
-          <!--Firebase-->
-          <div class="flex justify-center items-center flex-col">
-            <div
-              class="py-3 flex justify-center w-full rounded-md"
-            >
-              <Icon name="devicon:firebase" class="xl:h-12 2xl:h-14 w-12 2xs:h-8 2xs:w-8" />
-            </div>
-            <p class="text-slate-400 2xs:text-xs sm:text-sm font-semibold">Firebase</p>
+            <p class="text-neutral-400 2xs:text-xs sm:text-sm font-semibold">MongoDB</p>
           </div>
         </div>
       </div>
 
       <!--Recent Projects Details Section-->
       <div
-        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
+        class="col-span-12 md:col-span-6 md:row-span-2 lg:col-span-4 rounded-xl xl:p-6 2xs:p-4 shadow-xl backdrop-blur-sm border-2 dark:border-neutral-800 border-neutral-300 border-opacity-30 text-neutral-800 dark:text-neutral-200 animate-fadeIn"
       >
 
         <!--Title-->
@@ -162,7 +149,7 @@
           </h2>
           <NuxtLink
             to="/works"
-            class="dark:text-slate-400 text-slate-600 2xl:text-xl 2xs:text-sm lg:text-sm border-slate-600 dark:border-slate-400 border-b-2"
+            class="dark:text-neutral-400 text-neutral-600 2xl:text-xl 2xs:text-sm lg:text-sm border-neutral-600 dark:border-neutral-400 border-b-2"
           >
             All Projects
             <Icon name="ph:arrow-elbow-right-light" class="h-6 w-6" />
@@ -175,7 +162,7 @@
         >
           <!--Project 01-->
           <div
-            class="xl:p-6 md:p-4 relative pb-0 md:pb-0 xl:pb-0 bg-opacity-35 bg-slate-400 dark:bg-slate-900 dark:bg-opacity-35 rounded-xl"
+            class="xl:p-6 md:p-4 relative pb-0 md:pb-0 xl:pb-0 bg-opacity-35 bg-transparent  dark:bg-opacity-35 rounded-xl"
           >
             <img
               class="rounded-t-xl 2xl:h-[245px] xl:h-[225px] 2xl:w-[340px] w-[320px] 2xs:h-[220px] lg:h-[190px]"
@@ -183,7 +170,7 @@
               alt=""
             />
             <p
-              class="absolute bottom-6 2xs:bottom-4 left-0 text-slate-200 bg-slate-700 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm rounded-r-xl lg:text-xs 2xl:text-xl"
+              class="absolute bottom-6 2xs:bottom-4 left-0 text-neutral-200 bg-neutral-700 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm rounded-r-xl lg:text-xs 2xl:text-xl"
             >
               Blog Website
             </p>
@@ -191,7 +178,7 @@
 
           <!--Project 02-->
           <div
-            class="xl:p-6 md:p-4 pb-0 md:pb-0 xl:pb-0 bg-opacity-35 bg-slate-400 dark:bg-slate-900 dark:bg-opacity-35 relative rounded-xl"
+            class="xl:p-6 md:p-4 pb-0 md:pb-0 xl:pb-0 bg-opacity-35 bg-transparent dark:bg-opacity-35 relative rounded-xl"
           >
             <img
               class="rounded-t-xl 2xl:h-[245px] 2xl:w-[340px] xl:h-[225px] w-[320px] 2xs:h-[220px] lg:h-[190px]"
@@ -199,7 +186,7 @@
               alt=""
             />
             <p
-              class="absolute bottom-6 2xs:bottom-4 left-0 text-slate-200 bg-slate-700 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm lg:text-xs rounded-r-xl 2xl:text-xl"
+              class="absolute bottom-6 2xs:bottom-4 left-0 text-neutral-200 bg-neutral-700 p-2 px-4 2xs:px-2 xl:text-sm 2xs:text-sm lg:text-xs rounded-r-xl 2xl:text-xl"
             >
               Portfolio
             </p>
@@ -211,7 +198,7 @@
 
       <!--Services Details Section Responsive/Design/Code/Efficiency-->
       <div
-        class="col-span-12 md:col-span-6 lg:col-span-6 rounded-xl xl:p-6 2xs:p-6 backdrop-blur-3xl grid items-center justify-center bordered shadow-xl bg-slate-200 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-6 rounded-xl xl:p-6 2xs:p-6  grid items-center justify-center backdrop-blur-sm border-2 dark:border-neutral-800 border-neutral-300 border-opacity-30 text-neutral-800 dark:text-neutral-200 shadow-xl animate-fadeIn"
       >
         <!--Main Services-->
         <div
@@ -240,7 +227,7 @@
           behavior="scroll"
           scrollamount="2"
           delay="1s"
-          class="py-3 dark:bg-slate-700 bg-slate-300 rounded-md xl:hidden 2xs:hidden md:block lg:hidden px-2 md:mt-5 font-semibold text-xl text-slate-800 dark:text-slate-400"
+          class="py-3 dark:bg-neutral-700 bg-neutral-300 rounded-md xl:hidden 2xs:hidden md:block lg:hidden px-2 md:mt-5 font-semibold text-xl text-neutral-800 dark:text-neutral-400"
         >
           Available For Hire 🚀 Crafting Digital Experiences 🎨
         </marquee>
@@ -248,7 +235,7 @@
 
       <!-- Total Project/Experience/Client Count Section-->
       <div
-        class="col-span-12 md:col-span-6 lg:col-span-6 grid items-center rounded-xl 2xs:p-4 xl:p-6 md:p-3 lg:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200"
+        class="col-span-12 md:col-span-6 lg:col-span-6 grid items-center rounded-xl 2xs:p-4 xl:p-6 md:p-3 lg:p-4 backdrop-blur-sm border-2 dark:border-neutral-800 border-neutral-300 border-opacity-30 shadow-xl text-neutral-800 dark:text-neutral-200"
       >
         <div
           class="grid grid-cols-3 justify-center gap-6 2xs:gap-2 lg:gap-4 items-center"
@@ -291,20 +278,20 @@
 
       <!--More About Me With Signature Section-->
       <div
-        class="col-span-12 md:col-span-5 lg:col-span-5 rounded-xl 2xs:p-4 p-6 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
+        class="col-span-12 md:col-span-5 lg:col-span-5 rounded-xl 2xs:p-4 p-6 backdrop-blur-sm border-2 dark:border-neutral-800 border-neutral-300 border-opacity-30 shadow-xl dark:text-neutral-200"
       >
         <div class="">
           <!--My Signature-->
           <div class="flex items-center justify-center">
             <Icon
               name="Signature"
-              class="h-32 w-80 text-slate-500 2xs:h-24 2xs:w-60 md:h-32 md:w-72 lg:h-40 lg:w-80 xl:h-50 xl:w-80 "
+              class="h-32 w-80 text-neutral-500 2xs:h-24 2xs:w-60 md:h-32 md:w-72 lg:h-40 lg:w-80 xl:h-50 xl:w-80 "
             />
           </div>
           <!--Buttons-->
           <div class="flex items-end justify-between  xl:mt-4 2xl:mt-16">
-            <p class="uppercase 2xs:text-sm xl:text-xl text-slate-600 dark:text-slate-400 xl:font-semibold 2xl:text-2xl">Credentials</p>
-            <NuxtLink to="/About" class="border-b-2 border-slate-400 text-slate-800 dark:text-slate-400 2xs:text-sm xl:text-xl 2xl:text-xl">
+            <p class="uppercase 2xs:text-sm xl:text-xl text-neutral-600 dark:text-neutral-400 xl:font-semibold 2xl:text-2xl">Credentials</p>
+            <NuxtLink to="/About" class="border-b-2 border-neutral-400 text-neutral-800 dark:text-neutral-400 2xs:text-sm xl:text-xl 2xl:text-xl">
               More About Me
               <Icon name="ph:arrow-elbow-right-light" class="md:h-8 md:w-8 2xs:h-6 2xs:w-6" />
             </NuxtLink>
@@ -317,7 +304,7 @@
 
       <!--Let's Work Together Section-->
       <div
-        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 lg:row-end-4 lg:col-span-7 rounded-xl p-6 2xs:p-4 backdrop-blur-3xl bordered shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-200"
+        class="col-span-12 md:col-span-7 md:row-span-1 md:row-start-5 lg:row-end-4 lg:col-span-7 rounded-xl p-6 2xs:p-4 backdrop-blur-sm border-2 dark:border-neutral-800 border-neutral-300 border-opacity-30 shadow-xl dark:text-neutral-200"
       >
       <!--Top Headline-->
         <marquee
@@ -325,20 +312,20 @@
           behavior="scroll"
           scrollamount="infinite"
           delay="1s"
-          class="xl:py-2 2xs:py-2 xl:block 2xs:block md:hidden lg:block bg-slate-400 rounded-md xl:px-2 font-semibold 2xs:text-lg xl:text-2xl 2xl:text-3xl text-slate-800"
+          class="xl:py-2 2xs:py-2 xl:block 2xs:block md:hidden lg:block bg-neutral-400 rounded-md xl:px-2 font-semibold 2xs:text-lg xl:text-2xl 2xl:text-3xl text-neutral-800"
         >
           Available For Hire 🚀 Crafting Digital Experiences 🎨
         </marquee>
         <!--Main Content-->
         <p
-          class="font-bold xl:pt-2 text-slate-600 dark:text-slate-400 md:pt-2 lg:pt-2 lg:leading-tight xl:text-[46px] 2xl:text-[56px] 2xs:text-[30px] xs:text-[40px]"
+          class="font-bold xl:pt-2 text-neutral-600 dark:text-neutral-400 md:pt-2 lg:pt-2 lg:leading-tight xl:text-[46px] 2xl:text-[56px] 2xs:text-[30px] xs:text-[40px]"
         >
           Let's👋 <br />
           Work Together
         </p>
         <!--Button-->
         <div class="flex justify-end items-center">
-          <NuxtLink to="/contact" class="border-b-2 border-slate-400 text-slate-800 dark:text-slate-200 2xs:text-sm md:text-base   lg:text-sm xl:text-xl 2xl:text-xl">
+          <NuxtLink to="/contact" class="border-b-2 border-neutral-400 text-neutral-800 dark:text-neutral-200 2xs:text-sm md:text-base   lg:text-sm xl:text-xl 2xl:text-xl">
             Let's Talk
             <Icon name="ph:arrow-elbow-right-light" class="md:h-8 md:w-8 2xs:w-6 2xs:h-6" />
           </NuxtLink>

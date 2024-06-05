@@ -5,7 +5,7 @@
   >
     <NuxtLayout name="profile" class="2xs:static md:col-start-1 md:col-end-6 lg:col-span-4 md:sticky md:top-[4.8rem] left-0 h-fit"></NuxtLayout>
     <div
-      class="col-span-12 md:col-span-7 lg:col-span-8 md:col-start-6 lg:col-start-5 rounded-xl p-6 backdrop-blur-3xl shadow-xl bg-slate-100 dark:bg-slate-700 dark:bg-opacity-30 bg-opacity-30 dark:text-slate-100"
+      class="col-span-12 md:col-span-7 lg:col-span-8 md:col-start-6 lg:col-start-5 rounded-xl p-6 backdrop-blur-3xl shadow-xl bg-neutral-100 dark:bg-neutral-700 dark:bg-opacity-30 bg-opacity-30 dark:text-neutral-100"
     >
       <!--Title-->
       <div class="">
@@ -46,7 +46,7 @@
             :src="blog.thumbnail"
             :alt="blog.title"
             class="rounded-xl w-full h-[155px] lg:h-[220px]" />
-            <p class="absolute bottom-2 left-0 dark:bg-slate-700 rounded-r-md px-5">{{ blog.category }}</p>
+            <p class="absolute bottom-2 left-0 dark:bg-neutral-700 rounded-r-md px-5">{{ blog.category }}</p>
           </div>
           <!--single-Blog-Details-->
           <div class="pt-2">
@@ -60,8 +60,8 @@
 
       <!--Pagination-->
       <div class=" flex justify-center items-center gap-4 my-4">
-        <NuxtLink class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-left-alt-rounded" /></NuxtLink>
-        <NuxtLink  class="dark:bg-slate-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-right-alt-rounded" /></NuxtLink>
+        <NuxtLink class="dark:bg-neutral-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-left-alt-rounded" /></NuxtLink>
+        <NuxtLink  class="dark:bg-neutral-600 px-5 py-2 text-lg rounded-xl"><Icon name="material-symbols:arrow-right-alt-rounded" /></NuxtLink>
       </div>
     </div>
   </div>

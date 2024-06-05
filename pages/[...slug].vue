@@ -32,7 +32,7 @@ const uniqueCategories: any = ref([]);
     class="grid grid-cols-12 2xs:max-w-screen-[345px] xs:max-w-screen-xs sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl scroll-smooth font-san m-auto rounded-2xl bg-transparent gap-2 mt-2"
   >
     <article
-      class="bg-slate-200 p-2 pt-0 backdrop-blur-3xl shadow-xl dark:bg-slate-800 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200 rounded-xl col-start-1 col-end-9"
+      class="bg-neutral-200 p-2 pt-0 backdrop-blur-3xl shadow-xl dark:bg-neutral-800 dark:bg-opacity-30 bg-opacity-30 text-neutral-800 dark:text-neutral-200 rounded-xl 2xs:col-span-12 lg:col-start-1  lg:col-end-9"
     >
       <ContentDoc :path="`/posts/${slug}`" v-slot="{ doc }">
         <!-- Header  -->
@@ -47,16 +47,16 @@ const uniqueCategories: any = ref([]);
             <h1 class="text-3xl font-bold">{{ doc.title }}</h1>
           </div>
           <div class="flex flex-row justify-around items-center text-center px-5 pt-0">
-            <p class="text-slate-500 text-sm mt-2">
+            <p class="text-neutral-500 text-sm mt-2">
               <Icon name="material-symbols:contract-edit-outline-rounded" class="h-5 w-5" />
               {{ doc.author }}</p>
-            <p class="text-slate-500 text-sm mt-2">
+            <p class="text-neutral-500 text-sm mt-2">
               <Icon name="material-symbols:calendar-month-outline-rounded" class="h-5 w-5" />
               {{ doc.date }}</p>
-            <p class="text-slate-500 text-sm mt-2">
+            <p class="text-neutral-500 text-sm mt-2">
               <Icon name="material-symbols:music-cast-rounded" class="h-5 w-5" />
               {{ doc.readTime }}</p>
-            <p class="text-slate-500 text-sm mt-2">
+            <p class="text-neutral-500 text-sm mt-2">
               <Icon name="material-symbols:category-outline-rounded" class="h-5 w-5" /> 
               {{ doc.category }}
             </p>
@@ -77,21 +77,21 @@ const uniqueCategories: any = ref([]);
       </ContentDoc>
     </article>
     <!--Show all tags and search bar and top 5 post title-->
-    <aside class="col-start-9 col-end-13">
+    <aside class="2xs:col-span-12 lg:col-start-9 lg:col-end-13">
       <div
-        class="bg-slate-200 backdrop-blur-3xl shadow-xl dark:bg-slate-800 dark:bg-opacity-30 bg-opacity-30 text-slate-800 dark:text-slate-200 rounded-xl"
+        class="bg-neutral-200 backdrop-blur-3xl shadow-xl dark:bg-neutral-800 dark:bg-opacity-30 bg-opacity-30 text-neutral-800 dark:text-neutral-200 rounded-xl"
       >
         <!--Search Bar
         <div class="p-4 relative mx-auto text-gray-600">
           <input
-            class="border-none w-full font-medium caret-slate-700 border-gray-300 bg-white h-12 px-4 pr-10 rounded-lg text-lg focus:outline-none"
+            class="border-none w-full font-medium caret-neutral-700 border-gray-300 bg-white h-12 px-4 pr-10 rounded-lg text-lg focus:outline-none"
             type="search"
             name="search"
             placeholder="Search"
           />
           <button type="submit" class="absolute right-3 top-2 mt-5 mr-4">
             <svg
-              class="text-slate-600 h-6 w-6 fill-current"
+              class="text-neutral-600 h-6 w-6 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
               version="1.1"
@@ -157,7 +157,7 @@ const uniqueCategories: any = ref([]);
               class="my-2"
             >
               <span
-                class="dark:text-slate-400 text-slate-600 dark:bg-slate-800 bg-slate-300 px-3 py-2 rounded-lg text-base"
+                class="dark:text-neutral-400 text-neutral-600 dark:bg-neutral-800 bg-neutral-300 px-3 py-2 rounded-lg text-base"
                 >#{{ category }}</span
               >
             </div>
@@ -167,7 +167,7 @@ const uniqueCategories: any = ref([]);
 
         <!--Author Details-->
         <div class="p-4">
-          <div class="dark:bg-slate-800 bg-slate-300 p-2 rounded-lg">
+          <div class="dark:bg-neutral-800 bg-neutral-300 p-2 rounded-lg">
             <!--Title-->
             <div class="flex items-start justify-start gap-2">
               <img
@@ -176,15 +176,15 @@ const uniqueCategories: any = ref([]);
                 class="h-10 w-10 mt-2 rounded-[50%]"
               />
               <div>
-                <h3 class="dark:text-slate-200  text-xl mt-1 font-bold">
+                <h3 class="dark:text-neutral-200  text-xl mt-1 font-bold">
                   Abdul Baset Bappy
                 </h3>
-                <p class="dark:text-slate-400 text-slate-600 mt-[-5px] text-sm">Full-Stack Developer</p>
+                <p class="dark:text-neutral-400 text-neutral-600 mt-[-5px] text-sm">Full-Stack Developer</p>
               </div>
 
               <!--Title Badge-->
               <div
-                class="dark:bg-slate-700 bg-slate-400 rounded-lg px-3 py-1 ml-5 lg:block text-slate-100"
+                class="dark:bg-neutral-700 bg-neutral-400 rounded-lg px-3 py-1 ml-5 lg:block text-neutral-100"
               >
                 <div class="relative inline-flex">
                   <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
@@ -195,7 +195,7 @@ const uniqueCategories: any = ref([]);
                     class="w-3 h-3 bg-blue-500 rounded-full absolute top-0 left-0 animate-pulse"
                   ></div>
                 </div>
-                <p class="inline text-slate-800 dark:text-slate-200 ml-2">Active</p>
+                <p class="inline text-neutral-800 dark:text-neutral-200 ml-2">Active</p>
               </div>
             </div>
             <p class="text-sm p-2 pb-0">
@@ -207,44 +207,44 @@ const uniqueCategories: any = ref([]);
               <div class="flex flex-row">
                 <NuxtLink
                   to="https://www.facebook.com/abdulbasetbappy.info"
-                  class="border-none p-1 m-1 my-2 rounded-md dark:bg-opacity-65 bg-slate-200 opacity-65 dark:bg-slate-900 dark:border-none"
+                  class="border-none p-1 m-1 my-2 rounded-md dark:bg-opacity-65 bg-neutral-200 opacity-65 dark:bg-neutral-900 dark:border-none"
                 >
                   <Icon
                     name="mdi:facebook"
-                    class="h-6 w-6 transition-all duration-150 text-slate-500 dark:text-slate-400 group-hover:text-slate-200"
+                    class="h-6 w-6 transition-all duration-150 text-neutral-500 dark:text-neutral-400 group-hover:text-neutral-200"
                   />
                 </NuxtLink>
                 <NuxtLink
                   to="https://www.github.com/abdulbasetbappy"
-                  class="border-none p-1 m-1 my-2 rounded-md bg-slate-200 opacity-65 dark:bg-opacity-65 dark:bg-slate-900 dark:border-none"
+                  class="border-none p-1 m-1 my-2 rounded-md bg-neutral-200 opacity-65 dark:bg-opacity-65 dark:bg-neutral-900 dark:border-none"
                 >
                   <Icon
                     name="mdi:github"
-                    class="w-6 h-6 text-slate-500 dark:text-slate-400"
+                    class="w-6 h-6 text-neutral-500 dark:text-neutral-400"
                   />
                 </NuxtLink>
                 <NuxtLink
                   to="https://www.codepen.com/abdulbasetbappy"
-                  class="border-none p-1 m-1 my-2 dark:bg-opacity-65 rounded-md opacity-65 bg-slate-200 dark:bg-slate-900 dark:border-none"
+                  class="border-none p-1 m-1 my-2 dark:bg-opacity-65 rounded-md opacity-65 bg-neutral-200 dark:bg-neutral-900 dark:border-none"
                 >
                   <Icon
                     name="mdi:codepen"
-                    class="w-6 h-6 text-slate-500 dark:text-slate-400"
+                    class="w-6 h-6 text-neutral-500 dark:text-neutral-400"
                   />
                 </NuxtLink>
                 <NuxtLink
                   to="https://www.youtube.com/abdulbasetbappy"
-                  class="border-none p-1 m-1 my-2 opacity-65 rounded-md dark:bg-opacity-65 bg-slate-200 dark:bg-slate-900 dark:border-none"
+                  class="border-none p-1 m-1 my-2 opacity-65 rounded-md dark:bg-opacity-65 bg-neutral-200 dark:bg-neutral-900 dark:border-none"
                 >
                   <Icon
                     name="mdi:youtube"
-                    class="w-6 h-6 text-slate-500 dark:text-slate-400"
+                    class="w-6 h-6 text-neutral-500 dark:text-neutral-400"
                   />
                 </NuxtLink>
               </div>
 
               <!--Signature-->
-              <Icon name="Signature" class="h-12 w-28 text-slate-500" />
+              <Icon name="Signature" class="h-12 w-28 text-neutral-500" />
             </div>
           </div>
         </div>

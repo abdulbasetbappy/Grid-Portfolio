@@ -18,28 +18,26 @@ const isDarkMode = computed(() => darkModeStore.darkMode);
 <style>
 /*=======Background=========*/
 .dark_bg {
-background-color: #111827;
+background-color: #171717 ;
 }
 .light_bg {
-background-color: #e2e8f0;
+background-color: #f5f5f5;
 }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #28242b #ffffff;
+  scrollbar-color: #171717 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 16px;
 }
-
 *::-webkit-scrollbar-track {
   background: #ffffff;
 }
-
 *::-webkit-scrollbar-thumb {
   background-color: #28242b;
   border-radius: 4px;

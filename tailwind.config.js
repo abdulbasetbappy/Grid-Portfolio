@@ -12,15 +12,23 @@ module.exports = {
     extend: {
       animation: {
         wheel: 'wheel 2s infinite',
+        fadeIn: 'fadeIn 0.8s ease-in-out 1',
       },
       keyframes: {
         wheel: {
           to: {
             opacity: 0,
-            top: '3.75rem', // 60px in rem
           },
         },
-      },
+        fadeIn:{
+          '0%': {
+            opacity: 0,
+          },
+          '100%': {
+            opacity: 1,
+          },
+        },
+      }
     },
     variants: {
       extend: {
